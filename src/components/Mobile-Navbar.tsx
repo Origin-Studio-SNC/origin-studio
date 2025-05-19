@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState } from "react";
 import { CustomLink } from "./CustomLink";
@@ -47,15 +47,13 @@ export function MobileNavbar({ dictionary }: { dictionary: Dictionary }) {
       </button>
 
       <div
-        className={`fixed left-0 top-[80px] z-50 h-[calc(100vh-80px)] w-full overflow-hidden overflow-y-auto bg-zinc-950 px-8 pb-12 pt-8 font-medium transition-[opacity,visibility] duration-300 ${
-          isToggleOpen
-            ? "visible opacity-100"
-            : "invisible opacity-0"
+        className={`fixed left-0 top-[70px] z-50 h-[calc(100vh-80px)] w-full overflow-hidden overflow-y-auto bg-zinc-950 px-8 pb-12 pt-8 font-medium transition-[opacity,visibility] duration-300 ${
+          isToggleOpen ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
         <nav className="flex flex-col items-center gap-8 text-lg">
           <CustomLink href="/" label={nav.home} />
-          <CustomLink href='/prestations' label={nav.prestations} />
+          <CustomLink href="/prestations" label={nav.prestations} />
           <CustomLink href="/about" label={nav.about} />
           <CustomLink href="/projects" label={nav.projects} />
           <CustomLink href="/contact" label={nav.contact} />

@@ -16,11 +16,7 @@ type HeroTranslations = {
 
 export function HeroSlider({ dictionary }: { dictionary: Dictionary }) {
   const hero = dictionary.hero as HeroTranslations;
-  const images = [
-    "/img/BigData.webp",
-    "/img/LLM.webp",
-    "/img/Security.webp",
-  ];
+  const images = ["/img/BigData.webp", "/img/LLM.webp", "/img/Security.webp"];
   return (
     <ImagesSlider className="min-h-screen" images={images}>
       <motion.div
@@ -44,8 +40,12 @@ export function HeroSlider({ dictionary }: { dictionary: Dictionary }) {
           {hero.description}
         </motion.p>
         <div className="flex gap-4">
-          <Button variant="secondary" size="lg" className="mt-4">{hero.servicesButton}</Button>
-          <Button variant="outline" size="lg" className="mt-4">{hero.projectsButton}</Button>
+          <Button variant="secondary" size="lg" className="mt-4">
+            {hero.servicesButton}
+          </Button>
+          <Button variant="outline" size="lg" className="mt-4 py-6">
+            {hero.projectsButton}
+          </Button>
         </div>
       </motion.div>
       <MouseScrollIndicator />
