@@ -7,8 +7,8 @@ import flagFR from '../../public/img/flagFR.png';
 import { useState, useRef, useEffect } from 'react';
 
 const LANGUAGES = [
-  { code: 'fr', label: 'Français', flag: flagFR },
-  { code: 'en', label: 'English', flag: flagEN },
+  { code: 'fr', label: 'Français', labelShort: 'FR', flag: flagFR },
+  { code: 'en', label: 'English', labelShort: 'EN', flag: flagEN },
 ];
 
 export function LanguageSwitcher() {
@@ -45,23 +45,24 @@ export function LanguageSwitcher() {
         aria-haspopup="listbox"
         aria-expanded={isOpen}
       >
-        <Image
+        {/* <Image
           src={currentLang.flag}
           alt={currentLang.label}
           width={20}
           height={20}
           className="w-auto h-auto bg-white rounded-sm"
-        />
+        /> */}
+        <span className="xl:hidden">{currentLang.labelShort}</span>
         <span className='hidden xl:block'>{currentLang.label}</span>
         <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
       </button>
       {isOpen && (
-        <div className="absolute left-0 mt-2 w-full min-w-[120px] bg-gray-900 rounded-md shadow-lg z-50">
+        <div className="absolute overflow-hidden left-0 mt-2 w-full min-w-[120px] bg-zinc-800 rounded-md shadow-lg z-50">
           {LANGUAGES.map(lang => (
             <button
               key={lang.code}
               onClick={() => switchLocale(lang.code as 'fr' | 'en')}
-              className={`flex items-center rounded-md gap-2 w-full px-4 py-2 text-white hover:bg-gray-800 text-left ${lang.code === currentLocale ? 'font-bold' : ''}`}
+              className={`flex items-center gap-2 w-full px-4 py-2 text-white hover:bg-zinc-700 text-left ${lang.code === currentLocale ? 'font-bold' : ''}`}
               role="option"
               aria-selected={lang.code === currentLocale}
             >

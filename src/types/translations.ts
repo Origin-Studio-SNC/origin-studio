@@ -22,3 +22,7 @@ export type ProcessTranslations = {
   developmentAgileDesc: string;
   deploymentMaintenanceDesc: string;
 };
+
+export type FooterTranslations = {
+  description: string;
+};

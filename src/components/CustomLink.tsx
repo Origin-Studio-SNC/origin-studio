@@ -14,7 +14,7 @@ export const CustomLink = ({ href, label }: { href: string, label: string }) => 
         <div
         className={`relative flex cursor-pointer items-center gap-3 transition-colors rounded-full hover:bg-neutral-800/60 ${
           isActive ? "bg-neutral-800/60" : ""
-        } justify-start px-8 py-3`}
+        } justify-start px-4 py-2`}
       >
       {label}
     </div>

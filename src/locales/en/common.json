@@ -35,5 +35,8 @@
         "architecturalDesignDesc": "Definition of the technical architecture and detailed functional specifications.",
         "developmentAgileDesc": "Iterative and collaborative implementation to ensure alignment with your expectations.",
         "deploymentMaintenanceDesc": "Secure deployment and continuous monitoring to ensure optimal performance."
+    },
+    "footer": {
+        "description": "Three areas of expertise, one vision: transforming your ideas into remarkable digital solutions."
     }
 }

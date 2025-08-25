@@ -1,12 +1,13 @@
 import { getDictionary } from "@/lib/i18n/get-dictionnary";
 import { HeroSlider } from "@/components/HeroSlider";
-import FeatureCard from "@/components/FeatureCard";
+import FeatureCardsContainer from "@/components/FeatureCardsContainer";
 import { BrainCircuitIcon, Code2Icon, ShieldCheckIcon } from "lucide-react";
 import ProcessCard from "@/components/ProcessCard";
 import { Separator } from "@/components/ui/separator";
 import {
   FeaturesTranslations,
   ProcessTranslations,
+  FooterTranslations
 } from "@/types/translations";
 import Footer from "@/components/Footer";
 export default async function Home({
@@ -21,6 +22,28 @@ export default async function Home({
   const dictionary = await getDictionary(locales);
   const features = dictionary.features as FeaturesTranslations;
   const process = dictionary.process as ProcessTranslations;
+  const footer = dictionary.footer as FooterTranslations;
+  
+  const featureCards = [
+    {
+      id: "web-apps",
+      title: features.customWebApplications,
+      description: features.customWebApplicationsDesc,
+      icon: <Code2Icon />,
+    },
+    {
+      id: "llm",
+      title: features.privateLLMs,
+      description: features.privateLLMsDesc,
+      icon: <BrainCircuitIcon />,
+    },
+    {
+      id: "security",
+      title: features.secureSolutions,
+      description: features.secureSolutionsDesc,
+      icon: <ShieldCheckIcon />,
+    },
+  ];
   return (
     <main className="flex flex-col items-center">
       {/* Hero Slider */}
@@ -34,23 +57,7 @@ export default async function Home({
         <p className="text-center text-lg text-neutral-400">
           {features.description}
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-10">
-          <FeatureCard
-            title={features.customWebApplications}
-            description={features.customWebApplicationsDesc}
-            icon={<Code2Icon />}
-          />
-          <FeatureCard
-            title={features.privateLLMs}
-            description={features.privateLLMsDesc}
-            icon={<BrainCircuitIcon />}
-          />
-          <FeatureCard
-            title={features.secureSolutions}
-            description={features.secureSolutionsDesc}
-            icon={<ShieldCheckIcon />}
-          />
-        </div>
+        <FeatureCardsContainer features={featureCards} />
       </section>
 
       {/* Process Section */}
@@ -70,7 +77,7 @@ export default async function Home({
             />
             <Separator
               orientation="horizontal"
-              className="block lg:hidden w-1/2 bg-gradient-to-b from-purple-500 to-blue-500 mx-10 border-0 h-full"
+              className="block lg:hidden w-1/2 bg-[var(--color-accent-violet)] mx-10 border-0 h-full"
             />
             <div className="block lg:hidden w-full">
               <ProcessCard
@@ -81,7 +88,7 @@ export default async function Home({
             </div>
             <Separator
               orientation="horizontal"
-              className="block lg:hidden w-1/2 bg-gradient-to-b from-blue-500 to-purple-500 mx-10 border-0 h-full"
+              className="block lg:hidden w-1/2 bg-[var(--color-accent-violet)] mx-10 border-0 h-full"
             />
             <ProcessCard
               title={process.developmentAgile}
@@ -90,7 +97,7 @@ export default async function Home({
             />
             <Separator
               orientation="horizontal"
-              className="block lg:hidden w-1/2 bg-gradient-to-b from-blue-500 to-purple-500 mx-10 border-0 h-full"
+              className="block lg:hidden w-1/2 bg-[var(--color-accent-violet)] mx-10 border-0 h-full"
             />
             <div className="block lg:hidden w-full">
               <ProcessCard
@@ -102,7 +109,7 @@ export default async function Home({
           </div>
           <Separator
             orientation="vertical"
-            className="hidden lg:block w-2 bg-gradient-to-b from-blue-500 to-purple-500 mx-10 border-0 h-full"
+            className="hidden lg:block w-2 bg-[var(--color-accent-violet)] mx-10 border-0 h-full"
           />
           <div className="hidden lg:flex flex-col items-center justify-center gap-8 max-w-xl w-full">
             <ProcessCard
@@ -118,7 +125,7 @@ export default async function Home({
           </div>
         </div>
       </section>
-      <Footer />
+      <Footer dictionary={footer} />
     </main>
   );
 }

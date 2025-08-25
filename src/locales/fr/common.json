@@ -35,5 +35,8 @@
     "architecturalDesignDesc": "Définition de l'architecture technique et des spécifications fonctionnelles détaillées.",
     "developmentAgileDesc": "Implémentation itérative et collaborative pour garantir l'adéquation avec vos attentes.",
     "deploymentMaintenanceDesc": "Mise en production sécurisée et suivi continu pour garantir une performance optimale."
+  },
+  "footer": {
+    "description": "Trois expertises, une vision : transformer vos idées en solutions digitales remarquables."
   }
 }

@@ -1,9 +1,11 @@
 "use client"
 
-import { MessageSquareCodeIcon } from "lucide-react";
 import { useParams } from "next/navigation";
+import Image from "next/image";
+import { FooterTranslations } from "@/types/translations";
 
-export default function FooterFiveColsLogoSubFooter() {
+
+export default function FooterFiveColsLogoSubFooter({ dictionary }: { dictionary: FooterTranslations }) {
     const params = useParams();
     const locale = params.locales as string;
     return (
@@ -15,13 +17,10 @@ export default function FooterFiveColsLogoSubFooter() {
               {/* Logo and description */}
               <div className="flex-1 max-w-md">
                 <div className="flex items-center gap-4 mb-4">
-                  <MessageSquareCodeIcon className="w-10 h-10 text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-full p-2" />
-                  <h1 className="text-2xl text-white font-bold">Logo</h1>
+                  <Image src="/img/logo_origin_full.svg" alt="Logo" width={100} height={40} className="w-30 h-auto" />
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+                  {dictionary.description}
                 </p>
               </div>
 
@@ -115,7 +114,7 @@ export default function FooterFiveColsLogoSubFooter() {
           <div className="container px-6 mx-auto">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
               <div>
-                © {new Date().getFullYear()} Brand. {locale === 'en' ? 'All rights reserved' : 'Tous droits réservés'}
+                © {new Date().getFullYear()} Origin Studio. {locale === 'en' ? 'All rights reserved' : 'Tous droits réservés'}
               </div>
               <nav aria-labelledby="subfooter-links-3-sub">
                 <h3 className="sr-only" id="subfooter-links-3-sub">Get in touch</h3>
