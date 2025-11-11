@@ -4,22 +4,24 @@ import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import flagEN from '../../public/img/flagEN.png';
 import flagFR from '../../public/img/flagFR.png';
+// import flagDE from '../../public/img/flagDE.png'; // À ajouter quand l'image sera disponible
 import { useState, useRef, useEffect } from 'react';
 
 const LANGUAGES = [
   { code: 'fr', label: 'Français', labelShort: 'FR', flag: flagFR },
   { code: 'en', label: 'English', labelShort: 'EN', flag: flagEN },
+  { code: 'de', label: 'Deutsch', labelShort: 'DE', flag: null }, // null en attendant flagDE
 ];
 
 export function LanguageSwitcher() {
   const pathname = usePathname();
   const router = useRouter();
-  const currentLocale = pathname.startsWith('/fr') ? 'fr' : 'en';
+  const currentLocale = pathname.startsWith('/fr') ? 'fr' : pathname.startsWith('/de') ? 'de' : 'en';
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
-  const switchLocale = (newLocale: 'fr' | 'en') => {
-    const newPath = pathname.replace(/^\/(fr|en)/, `/${newLocale}`);
+  const switchLocale = (newLocale: 'fr' | 'en' | 'de') => {
+    const newPath = pathname.replace(/^\/(fr|en|de)/, `/${newLocale}`);
     router.push(newPath);
     setIsOpen(false);
   };
@@ -61,7 +63,7 @@ export function LanguageSwitcher() {
           {LANGUAGES.map(lang => (
             <button
               key={lang.code}
-              onClick={() => switchLocale(lang.code as 'fr' | 'en')}
+              onClick={() => switchLocale(lang.code as 'fr' | 'en' | 'de')}
               className={`flex items-center gap-2 w-full px-4 py-2 text-white hover:bg-zinc-700 text-left ${lang.code === currentLocale ? 'font-bold' : ''}`}
               role="option"
               aria-selected={lang.code === currentLocale}

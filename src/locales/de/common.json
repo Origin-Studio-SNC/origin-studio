@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "prestations": "Dienstleistungen",
+    "about": "Über uns",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "contactUs": "Kontaktieren Sie uns"
+  },
+  "hero": {
+    "title": "Maßgeschneiderte digitale Erlebnisse.",
+    "description": "Webentwicklung, Design und intelligente Lösungen für Leistung, Nachhaltigkeit und Datenschutz. Ein moderner, lokaler und menschlicher Ansatz.",
+    "servicesButton": "Unsere Dienstleistungen ansehen",
+    "projectsButton": "Ihr Projekt besprechen"
+  },
+  "identity": {
+    "text": "Origin Studio ist eine in der Schweiz gegründete Agentur von drei komplementären Entwicklern. Wir entwerfen elegante, schnelle und sichere digitale Lösungen mit menschlicher Begleitung von Anfang bis Ende."
+  },
+  "strengths": {
+    "title": "Was uns auszeichnet",
+    "quality": {
+      "title": "Qualität & Nachhaltigkeit",
+      "description": "Klarer, skalierbarer Code, der für die Zukunft konzipiert ist."
+    },
+    "proximity": {
+      "title": "Nähe & Transparenz",
+      "description": "Direkte Kommunikation mit dem Team, klare Nachverfolgung in jeder Phase."
+    },
+    "local": {
+      "title": "Lokal & Sicher",
+      "description": "Hosting und Datenspeicherung in der Schweiz."
+    }
+  },
+  "teamMini": {
+    "title": "Das Team",
+    "thomas": {
+      "name": "Thomas",
+      "role": "Front-end & UI",
+      "description": "Elegante, fließende und benutzerorientierte Oberflächen."
+    },
+    "eric": {
+      "name": "Eric",
+      "role": "Back-end & Architektur",
+      "description": "Leistungsstarke APIs, Sicherheit und Skalierbarkeit."
+    },
+    "shadi": {
+      "name": "Shadi",
+      "role": "Kundenbeziehungen & Strategie",
+      "description": "Bedarfsverständnis, Management und menschliche Begleitung."
+    }
+  },
+  "testimonials": {
+    "title": "Sie vertrauen uns",
+    "placeholder": "Unsere ersten Projekte sind im Gange. Testimonials kommen sehr bald."
+  },
+  "techStack": {
+    "title": "Technologien & Services, die wir beherrschen",
+    "subtitle": "Wir verwenden moderne, zuverlässige und leistungsstarke Tools, um nachhaltige und skalierbare Erlebnisse zu schaffen."
+  },
+  "features": {
+    "featuresTitle": "Unsere Dienstleistungen",
+    "description": "Auf Ihre Bedürfnisse zugeschnittene Lösungen.",
+    "customWebApplications": "Maßgeschneiderte Webentwicklung",
+    "design": "Design & Benutzererfahrung",
+    "ai": "Künstliche Intelligenz & Automatisierung",
+    "secureSolutions": "Sichere Lösungen & Infrastrukturen",
+    "customWebApplicationsDesc": "Leistungsstarke und skalierbare Webanwendungen, entwickelt nach Ihren spezifischen Anforderungen.",
+    "designDesc": "Intuitive und elegante Oberflächen, die den Benutzer in den Mittelpunkt stellen.",
+    "aiDesc": "KI-Integration und Prozessautomatisierung zur Optimierung Ihres Geschäfts.",
+    "secureSolutionsDesc": "Sichere Infrastruktur, Schweizer Hosting und Datenschutz.",
+    "learnMore": "Mehr erfahren"
+  },
+  "process": {
+    "title": "Unser Vorgehen",
+    "description": "Strukturierte Begleitung von der Idee bis zur Bereitstellung.",
+    "discovery": "Entdeckung",
+    "quote": "Angebot",
+    "design": "Konzeption",
+    "development": "Entwicklung",
+    "testing": "Test",
+    "deployment": "Bereitstellung & Betreuung"
+  },
+  "finalCTA": {
+    "title": "Erzählen Sie uns von Ihrem Projekt. Wir nehmen uns Zeit zum Austausch, auch wenn es nur eine Idee ist.",
+    "button": "Gespräch planen"
+  },
+  "about": {
+    "title": "Über Origin Studio",
+    "subtitle": "Drei Freunde, drei Expertisen, eine gemeinsame Vision",
+    "intro": "Begeistert vom weiten Universum des Webs haben wir unsere komplementären Fähigkeiten vereint, um Origin Studio zu gründen - eine Agentur, die sich auf die Erstellung, Entwicklung und Wartung von Websites und Webanwendungen spezialisiert hat.",
+    "mission": {
+      "title": "Am Ursprung Ihres Erfolgs",
+      "description": "Bei Origin vereinen wir Design, Technologie und Vision, um digitale Projekte zu schaffen, die sowohl solide als auch nachhaltig sind. Unsere Mission: Ihre Ideen in Lösungen zu verwandeln, die mit Ihnen wachsen."
+    },
+    "team": {
+      "title": "Unser Team",
+      "description": "Drei Bachelor-Absolventen in Webtechnologie, drei komplementäre Expertisen:",
+      "protectionMessage": "Anti-Roboter-Schutz, klicken Sie, um Kontaktinformationen zu sehen",
+      "commercial": {
+        "title": "Vertriebsexperte",
+        "description": "Spezialisiert auf das Verstehen von Kundenbedürfnissen und die Umwandlung von Geschäftsanforderungen in angepasste technische Lösungen.",
+        "name": "Chadi C."
+      },
+      "backend": {
+        "title": "Backend-Entwickler",
+        "description": "Experte für Serverarchitektur, Datenbanken und Integration komplexer Systeme für optimale Leistung.",
+        "name": "Eric T."
+      },
+      "frontend": {
+        "title": "Frontend-Entwickler",
+        "description": "Spezialisiert auf Benutzererfahrung und moderne Oberflächen, die Ästhetik und Funktionalität vereinen.",
+        "name": "Thomas B."
+      }
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "description": "Prinzipien, die jede unserer Entscheidungen leiten:",
+      "responsibleHosting": {
+        "title": "Verantwortliches Hosting",
+        "description": "Alle unsere Projekte werden in der Schweiz mit umweltfreundlichen Infrastrukturen gehostet und entsprechen den höchsten Sicherheitsstandards."
+      },
+      "quality": {
+        "title": "Qualität",
+        "description": "Code, der ausschließlich von unserem lokalen Schweizer Team entwickelt wird, gewährleistet ein konstantes Qualitätsniveau und optimale Wartung."
+      },
+      "commitment": {
+        "title": "Engagement",
+        "description": "Wir verpflichten uns langfristig gegenüber unseren Kunden und bieten kontinuierliche Unterstützung und Weiterentwicklung ihrer digitalen Lösungen."
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihr Projekt zum Leben zu erwecken?",
+      "description": "Kontaktieren Sie uns, um Ihre Bedürfnisse zu besprechen und zu erfahren, wie wir Sie unterstützen können.",
+      "button": "Lassen Sie uns über Ihr Projekt sprechen"
+    }
+  },
+  "projects": {
+    "title": "Unsere Projekte",
+    "description": "Entdecken Sie unsere Errungenschaften und die Lösungen, die wir für unsere Kunden entwickelt haben.",
+    "viewProject": "Projekt ansehen",
+    "pinnedProjects": {
+      "title": "Ausgewählte Projekte",
+      "subtitle": "Entdecken Sie unsere bemerkenswertesten Errungenschaften und Flaggschiff-Projekte"
+    },
+    "allProjects": {
+      "title": "Alle Projekte"
+    },
+    "actions": {
+      "seeMore": "Mehr sehen",
+      "visitProject": "Projekt besuchen",
+      "clickToSeeMore": "Klicken Sie, um mehr zu sehen..."
+    },
+    "modal": {
+      "descriptionTitle": "Beschreibung"
+    }
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Entschuldigung, wir konnten die gesuchte Seite nicht finden. Sie wurde möglicherweise verschoben oder gelöscht.",
+    "homeButton": "Zurück zur Startseite",
+    "aboutButton": "Mehr über uns erfahren"
+  },
+  "footer": {
+    "description": "Drei Fachbereiche, eine Vision: Ihre Ideen in bemerkenswerte digitale Lösungen verwandeln.",
+    "services": {
+      "title": "Dienstleistungen",
+      "features": "Funktionen",
+      "customers": "Kunden",
+      "whyUs": "Warum wir",
+      "pricing": "Preise"
+    },
+    "aboutUs": {
+      "title": "Über uns",
+      "aboutUs": "Über uns",
+      "careers": "Karriere",
+      "blog": "Blog",
+      "contact": "Kontakt"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "support": "Support",
+      "partners": "Partner"
+    }
+  }
+}

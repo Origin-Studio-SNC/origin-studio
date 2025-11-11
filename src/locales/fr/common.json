@@ -8,35 +8,178 @@
     "contactUs": "Contactez-nous"
   },
   "hero": {
-    "title": "Développement web et applicatifs sur mesure",
-    "description": "Nous concevons des applications web sur mesure et des modèles de langage privés pour les entreprises exigeantes qui recherchent des solutions innovantes.",
-    "servicesButton": "Explorez nos services",
-    "projectsButton": "Découvrez nos projets"
+    "title": "Des expériences digitales sur mesure.",
+    "description": "Développement web, design et solutions intelligentes pensés pour la performance, la durabilité et la confidentialité. Une approche moderne, locale et humaine.",
+    "servicesButton": "Voir nos services",
+    "projectsButton": "Discuter de votre projet"
+  },
+  "identity": {
+    "text": "Origin Studio est une agence créée en Suisse par trois développeurs complémentaires. Nous concevons des solutions digitales élégantes, rapides et sécurisées, avec un accompagnement humain du début à la fin."
+  },
+  "strengths": {
+    "title": "Ce qui nous distingue",
+    "quality": {
+      "title": "Qualité & Durabilité",
+      "description": "Code clair, évolutif et conçu pour durer."
+    },
+    "proximity": {
+      "title": "Proximité & Transparence",
+      "description": "Communication directe avec l'équipe, suivi clair à chaque étape."
+    },
+    "local": {
+      "title": "Local & Sécurisé",
+      "description": "Hébergement et stockage des données en Suisse."
+    }
+  },
+  "teamMini": {
+    "title": "L'équipe",
+    "thomas": {
+      "name": "Thomas",
+      "role": "Front-end & UI",
+      "description": "Interfaces élégantes, fluides et orientées utilisateur."
+    },
+    "eric": {
+      "name": "Eric",
+      "role": "Back-end & Architecture",
+      "description": "API performantes, sécurité et scalabilité."
+    },
+    "shadi": {
+      "name": "Shadi",
+      "role": "Relation client & Stratégie",
+      "description": "Compréhension du besoin, pilotage et accompagnement humain."
+    }
+  },
+  "testimonials": {
+    "title": "Ils nous font confiance",
+    "placeholder": "Nos premiers projets sont en cours. Témoignages à venir très prochainement."
+  },
+  "techStack": {
+    "title": "Technologies & services que nous maîtrisons",
+    "subtitle": "Nous utilisons des outils modernes, fiables et performants pour créer des expériences durables et évolutives."
   },
   "features": {
     "featuresTitle": "Nos Services",
-    "description": "Des solutions technologiques conçues pour répondre aux besoins de votre entreprise.",
-    "customWebApplications": "Applications Web sur mesure",
-    "privateLLMs": "Modèles de langage privés",
-    "secureSolutions": "Solutions sécurisées",
-    "customWebApplicationsDesc": "Applications web sur mesure développées pour répondre à vos besoins commerciaux.",
-    "privateLLMsDesc": "Modèles de langage privés développés pour répondre à vos besoins commerciaux.",
-    "secureSolutionsDesc": "Solutions sécurisées développées pour répondre à vos besoins commerciaux.",
+    "description": "Des solutions adaptées à vos besoins.",
+    "customWebApplications": "Développement web sur mesure",
+    "design": "Design & Expérience utilisateur",
+    "ai": "Intelligence artificielle & Automatisation",
+    "secureSolutions": "Solutions sécurisées & infrastructures",
+    "customWebApplicationsDesc": "Applications web performantes et évolutives, développées selon vos besoins spécifiques.",
+    "designDesc": "Interfaces intuitives et élégantes qui placent l'utilisateur au centre de l'expérience.",
+    "aiDesc": "Intégration de l'IA et automatisation des processus pour optimiser votre activité.",
+    "secureSolutionsDesc": "Infrastructure sécurisée, hébergement suisse et protection des données.",
     "learnMore": "En savoir plus"
   },
   "process": {
     "title": "Notre Processus",
-    "description": "Une méthodologie rigoureuse pour garantir la qualité et la satisfaction de nos clients.",
-    "initialConsultation": "Consultation initiale",
-    "architecturalDesign": "Conception architecturale",
-    "developmentAgile": "Développement agile",
-    "deploymentMaintenance": "Déploiement et maintenance",
-    "initialConsultationDesc": "Analyse approfondie de vos besoins et objectifs pour concevoir une solution parfaitement adaptée.",
-    "architecturalDesignDesc": "Définition de l'architecture technique et des spécifications fonctionnelles détaillées.",
-    "developmentAgileDesc": "Implémentation itérative et collaborative pour garantir l'adéquation avec vos attentes.",
-    "deploymentMaintenanceDesc": "Mise en production sécurisée et suivi continu pour garantir une performance optimale."
+    "description": "Un accompagnement structuré de l'idée au déploiement.",
+    "discovery": "Découverte",
+    "quote": "Devis",
+    "design": "Conception",
+    "development": "Développement",
+    "testing": "Test",
+    "deployment": "Déploiement & Suivi"
+  },
+  "finalCTA": {
+    "title": "Parlez-nous de votre projet. Nous prenons le temps d'échanger, même si ce n'est qu'une idée.",
+    "button": "Planifier un appel"
+  },
+  "about": {
+    "title": "À Propos d'Origin Studio",
+    "subtitle": "Trois amis, trois expertises, une vision commune",
+    "intro": "Passionnés par l'univers vaste du web, nous avons uni nos compétences complémentaires pour créer Origin Studio, une agence spécialisée dans la création, le développement et la maintenance de sites internet et d'applications web.",
+    "mission": {
+      "title": "À l'origine de vos succès",
+      "description": "Chez Origin, nous réunissons design, technologie et vision pour donner vie à des projets digitaux solides et durables. Notre mission : transformer vos idées en solutions qui grandissent avec vous."
+    },
+    "team": {
+      "title": "Notre Équipe",
+      "description": "Trois bachelors en technologie web, trois expertises complémentaires :",
+      "protectionMessage": "Protection anti-robot, cliquez pour voir les informations de contact",
+      "commercial": {
+        "title": "Expert Commercial",
+        "description": "Spécialisé dans la compréhension des besoins clients et la transformation des exigences métier en solutions techniques adaptées.",
+        "name": "Chadi C."
+      },
+      "backend": {
+        "title": "Développeur Backend",
+        "description": "Expert en architecture serveur, bases de données et intégration de systèmes complexes pour des performances optimales.",
+        "name": "Eric T."
+      },
+      "frontend": {
+        "title": "Développeur Frontend",
+        "description": "Spécialisé dans l'expérience utilisateur et les interfaces modernes, alliant esthétique et fonctionnalité.",
+        "name": "Thomas B."
+      }
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "description": "Des principes qui guident chacune de nos décisions :",
+      "responsibleHosting": {
+        "title": "Hébergement Responsable",
+        "description": "Tous nos projets sont hébergés en Suisse avec des infrastructures respectueuses de l'environnement et conformes aux standards de sécurité les plus élevés."
+      },
+      "quality": {
+        "title": "Qualité",
+        "description": "Code développé exclusivement par notre équipe locale suisse, garantissant un niveau de qualité constant et une maintenance optimale."
+      },
+      "commitment": {
+        "title": "Engagement",
+        "description": "Nous nous engageons sur la durée avec nos clients, offrant un support continu et une évolution constante de leurs solutions digitales."
+      }
+    },
+    "cta": {
+      "title": "Prêt à donner vie à votre projet ?",
+      "description": "Contactez-nous pour discuter de vos besoins et découvrir comment nous pouvons vous accompagner.",
+      "button": "Parlons de votre projet"
+    }
+  },
+  "projects": {
+    "title": "Nos Projets",
+    "description": "Découvrez nos réalisations et les solutions que nous avons développées pour nos clients.",
+    "viewProject": "Voir le Projet",
+    "pinnedProjects": {
+      "title": "Projets Épinglés",
+      "subtitle": "Découvrez nos réalisations les plus remarquables et nos projets phares"
+    },
+    "allProjects": {
+      "title": "Tous les projets"
+    },
+    "actions": {
+      "seeMore": "Voir plus",
+      "visitProject": "Visiter le projet",
+      "clickToSeeMore": "Cliquez pour voir plus..."
+    },
+    "modal": {
+      "descriptionTitle": "Description"
+    }
+  },
+  "notFound": {
+    "title": "Page Introuvable",
+    "description": "Désolé, nous n'avons pas pu trouver la page que vous recherchez. Elle a peut-être été déplacée ou supprimée.",
+    "homeButton": "Retour à l'Accueil",
+    "aboutButton": "En savoir plus sur nous"
   },
   "footer": {
-    "description": "Trois expertises, une vision : transformer vos idées en solutions digitales remarquables."
+    "description": "Trois expertises, une vision : transformer vos idées en solutions digitales remarquables.",
+    "services": {
+      "title": "Services",
+      "features": "Fonctionnalités",
+      "customers": "Clients",
+      "whyUs": "Pourquoi Nous",
+      "pricing": "Tarification"
+    },
+    "aboutUs": {
+      "title": "À Propos",
+      "aboutUs": "À Propos",
+      "careers": "Carrières",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "contact": {
+      "title": "Contact",
+      "support": "Support",
+      "partners": "Partenaires"
+    }
   }
 }

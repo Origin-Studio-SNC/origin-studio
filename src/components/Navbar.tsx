@@ -10,7 +10,7 @@ import { useEffect, useState, useRef, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-export const Navbar = ({ params }: { params: { locales: "fr" | "en" } }) => {
+export const Navbar = ({ params }: { params: { locales: "fr" | "en" | "de" } }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [dictionary, setDictionary] = useState<any>(null);
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
@@ -161,10 +161,12 @@ export const Navbar = ({ params }: { params: { locales: "fr" | "en" } }) => {
         
         {navItems.map((item) => {
           const isActive = normalizedPath === (item.href === '/' ? '' : item.href);
+          const localizedHref = item.href === '/' ? `/${params.locales}` : `/${params.locales}${item.href}`;
+          
           return (
             <Link
               key={item.href}
-              href={item.href}
+              href={localizedHref}
               data-href={item.href}
               className={`relative z-10 text-gray-200 transition-colors duration-200 ${
                 isActive ? 'text-blue-500' : 'hover:text-white'

@@ -28,27 +28,27 @@ export default function FooterFiveColsLogoSubFooter({ dictionary }: { dictionary
               <div className="flex flex-wrap justify-between gap-8 lg:gap-12">
                 <nav className="min-w-[160px]" aria-labelledby="footer-product-5-logo">
                   <h3 className="mb-6 text-base font-semibold text-neutral-200" id="footer-product-5-logo">
-                    Services
+                    {dictionary.services.title}
                   </h3>
                   <ul className="space-y-2">
                     <li>
                       <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Features
+                        {dictionary.services.features}
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Customers
+                        {dictionary.services.customers}
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Why us?
+                        {dictionary.services.whyUs}
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Pricing
+                        {dictionary.services.pricing}
                       </a>
                     </li>
                   </ul>
@@ -56,27 +56,27 @@ export default function FooterFiveColsLogoSubFooter({ dictionary }: { dictionary
 
                 <nav className="min-w-[160px]" aria-labelledby="footer-about-5-logo">
                   <h3 className="mb-6 text-base font-semibold text-neutral-200" id="footer-about-5-logo">
-                    About us
+                    {dictionary.aboutUs.title}
                   </h3>
                   <ul className="space-y-2">
                     <li>
                       <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        About us
+                        {dictionary.aboutUs.aboutUs}
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Careers
+                        {dictionary.aboutUs.careers}
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Leadership
+                        {dictionary.aboutUs.blog}
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Blog
+                        {dictionary.aboutUs.contact}
                       </a>
                     </li>
                   </ul>
@@ -84,22 +84,22 @@ export default function FooterFiveColsLogoSubFooter({ dictionary }: { dictionary
 
                 <nav className="min-w-[160px]" aria-labelledby="footer-get-in-touch-5-logo">
                   <h3 className="mb-6 text-base font-bold text-neutral-200" id="footer-get-in-touch-5-logo">
-                    Contact
+                    {dictionary.contact.title}
                   </h3>
                   <ul className="space-y-2">
                     <li>
                       <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Contact
+                        {dictionary.contact.title}
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Support
+                        {dictionary.contact.support}
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Partners
+                        {dictionary.contact.partners}
                       </a>
                     </li>
                   </ul>

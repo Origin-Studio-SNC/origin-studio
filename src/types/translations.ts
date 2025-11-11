@@ -2,10 +2,12 @@ export type FeaturesTranslations = {
   featuresTitle: string;
   description: string;
   customWebApplications: string;
-  privateLLMs: string;
+  design: string;
+  ai: string;
   secureSolutions: string;
   customWebApplicationsDesc: string;
-  privateLLMsDesc: string;
+  designDesc: string;
+  aiDesc: string;
   secureSolutionsDesc: string;
   learnMore: string;
 };
@@ -13,16 +15,166 @@ export type FeaturesTranslations = {
 export type ProcessTranslations = {
   title: string;
   description: string;
-  initialConsultation: string;
-  architecturalDesign: string;
-  developmentAgile: string;
-  deploymentMaintenance: string;
-  initialConsultationDesc: string;
-  architecturalDesignDesc: string;
-  developmentAgileDesc: string;
-  deploymentMaintenanceDesc: string;
+  discovery: string;
+  quote: string;
+  design: string;
+  development: string;
+  testing: string;
+  deployment: string;
+};
+
+export type IdentityTranslations = {
+  text: string;
+};
+
+export type StrengthsTranslations = {
+  title: string;
+  quality: {
+    title: string;
+    description: string;
+  };
+  proximity: {
+    title: string;
+    description: string;
+  };
+  local: {
+    title: string;
+    description: string;
+  };
+};
+
+export type TeamMiniTranslations = {
+  title: string;
+  thomas: {
+    name: string;
+    role: string;
+    description: string;
+  };
+  eric: {
+    name: string;
+    role: string;
+    description: string;
+  };
+  shadi: {
+    name: string;
+    role: string;
+    description: string;
+  };
+};
+
+export type FinalCTATranslations = {
+  title: string;
+  button: string;
+};
+
+export type TestimonialsTranslations = {
+  title: string;
+  placeholder: string;
+};
+
+export type TechStackTranslations = {
+  title: string;
+  subtitle: string;
+};
+
+export type AboutTranslations = {
+  title: string;
+  subtitle: string;
+  intro: string;
+  mission: {
+    title: string;
+    description: string;
+  };
+  team: {
+    title: string;
+    description: string;
+    protectionMessage: string;
+    commercial: {
+      name: string;
+      title: string;
+      description: string;
+    };
+    backend: {
+      name: string;
+      title: string;
+      description: string;
+    };
+    frontend: {
+      name: string;
+      title: string;
+      description: string;
+    };
+  };
+  values: {
+    title: string;
+    description: string;
+    responsibleHosting: {
+      title: string;
+      description: string;
+    };
+    quality: {
+      title: string;
+      description: string;
+    };
+    commitment: {
+      title: string;
+      description: string;
+    };
+  };
+  cta: {
+    title: string;
+    description: string;
+    button: string;
+  };
+};
+
+export type ProjectsTranslations = {
+  title: string;
+  description: string;
+  viewProject: string;
+  pinnedProjects: {
+    title: string;
+    subtitle: string;
+  };
+  allProjects: {
+    title: string;
+  };
+  actions: {
+    seeMore: string;
+    visitProject: string;
+    clickToSeeMore: string;
+  };
+  modal: {
+    descriptionTitle: string;
+  };
+};
+
+export type NotFoundTranslations = {
+  title: string;
+  description: string;
+  homeButton: string;
+  aboutButton: string;
 };
 
 export type FooterTranslations = {
   description: string;
+  services: {
+    title: string;
+    features: string;
+    customers: string;
+    whyUs: string;
+    pricing: string;
+  };
+  aboutUs: {
+    title: string;
+    aboutUs: string;
+    careers: string;
+    blog: string;
+    contact: string;
+  };
+  contact: {
+    title: string;
+    support: string;
+    partners: string;
+  };
 };

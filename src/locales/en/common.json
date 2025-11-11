@@ -1,42 +1,185 @@
 {
-    "nav": {
-        "home": "Home",
-        "prestations": "Prestations",
-        "about": "About",
-        "projects": "Projects",
-        "contact": "Contact",
-        "contactUs": "Contact us"
+  "nav": {
+    "home": "Home",
+    "prestations": "Prestations",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "contactUs": "Contact us"
+  },
+  "hero": {
+    "title": "Tailored digital experiences.",
+    "description": "Web development, design and intelligent solutions designed for performance, sustainability and privacy. A modern, local and human approach.",
+    "servicesButton": "See our services",
+    "projectsButton": "Discuss your project"
+  },
+  "identity": {
+    "text": "Origin Studio is an agency created in Switzerland by three complementary developers. We design elegant, fast and secure digital solutions, with human support from start to finish."
+  },
+  "strengths": {
+    "title": "What sets us apart",
+    "quality": {
+      "title": "Quality & Sustainability",
+      "description": "Clear, scalable code designed to last."
     },
-    "hero": {
-        "title": "Custom Web and Application Development",
-        "description": "We design custom web applications and private language models for demanding businesses seeking innovative solutions.",
-        "servicesButton": "Explore our services",
-        "projectsButton": "Discover our projects"
+    "proximity": {
+      "title": "Proximity & Transparency",
+      "description": "Direct communication with the team, clear follow-up at every stage."
     },
-    "features": {
-        "featuresTitle": "Our Services",
-        "description": "Technology solutions designed to meet your business needs.",
-        "customWebApplications": "Custom Web Applications",
-        "privateLLMs": "Private LLMs",
-        "secureSolutions": "Secure Solutions",
-        "customWebApplicationsDesc": "Custom web applications developed to meet your business needs.",
-        "privateLLMsDesc": "Private language models developed to meet your business needs.",
-        "secureSolutionsDesc": "Secure solutions developed to meet your business needs.",
-        "learnMore": "Learn more"
-    },
-    "process": {
-        "title": "Our Process",
-        "description": "A rigorous methodology to ensure the quality and satisfaction of our clients.",
-        "initialConsultation": "Initial Consultation",
-        "architecturalDesign": "Architectural Design",
-        "developmentAgile": "Development Agile",
-        "deploymentMaintenance": "Deployment Maintenance",
-        "initialConsultationDesc": "Deep analysis of your needs and objectives to design a perfectly tailored solution.",
-        "architecturalDesignDesc": "Definition of the technical architecture and detailed functional specifications.",
-        "developmentAgileDesc": "Iterative and collaborative implementation to ensure alignment with your expectations.",
-        "deploymentMaintenanceDesc": "Secure deployment and continuous monitoring to ensure optimal performance."
-    },
-    "footer": {
-        "description": "Three areas of expertise, one vision: transforming your ideas into remarkable digital solutions."
+    "local": {
+      "title": "Local & Secure",
+      "description": "Hosting and data storage in Switzerland."
     }
+  },
+  "teamMini": {
+    "title": "The team",
+    "thomas": {
+      "name": "Thomas",
+      "role": "Front-end & UI",
+      "description": "Elegant, fluid and user-oriented interfaces."
+    },
+    "eric": {
+      "name": "Eric",
+      "role": "Back-end & Architecture",
+      "description": "High-performance APIs, security and scalability."
+    },
+    "shadi": {
+      "name": "Shadi",
+      "role": "Client Relations & Strategy",
+      "description": "Understanding needs, management and human support."
+    }
+  },
+  "testimonials": {
+    "title": "They trust us",
+    "placeholder": "Our first projects are underway. Testimonials coming very soon."
+  },
+  "techStack": {
+    "title": "Technologies & services we master",
+    "subtitle": "We use modern, reliable and high-performance tools to create sustainable and scalable experiences."
+  },
+  "features": {
+    "featuresTitle": "Our Services",
+    "description": "Solutions adapted to your needs.",
+    "customWebApplications": "Custom web development",
+    "design": "Design & User experience",
+    "ai": "Artificial Intelligence & Automation",
+    "secureSolutions": "Secure solutions & infrastructures",
+    "customWebApplicationsDesc": "High-performance and scalable web applications, developed according to your specific needs.",
+    "designDesc": "Intuitive and elegant interfaces that place the user at the center of the experience.",
+    "aiDesc": "AI integration and process automation to optimize your business.",
+    "secureSolutionsDesc": "Secure infrastructure, Swiss hosting and data protection.",
+    "learnMore": "Learn more"
+  },
+  "process": {
+    "title": "Our Process",
+    "description": "Structured support from idea to deployment.",
+    "discovery": "Discovery",
+    "quote": "Quote",
+    "design": "Design",
+    "development": "Development",
+    "testing": "Testing",
+    "deployment": "Deployment & Follow-up"
+  },
+  "finalCTA": {
+    "title": "Tell us about your project. We take the time to talk, even if it's just an idea.",
+    "button": "Schedule a call"
+  },
+  "about": {
+    "title": "About Origin Studio",
+    "subtitle": "Three friends, three expertises, one common vision",
+    "intro": "Passionate about the vast universe of the web, we have united our complementary skills to create Origin Studio, an agency specialized in the creation, development and maintenance of websites and web applications.",
+    "mission": {
+      "title": "At the origin of your success",
+      "description": "At Origin, we bring together design, technology, and vision to create digital projects that are both solid and sustainable. Our mission: turning your ideas into solutions that grow with you."
+    },
+    "team": {
+      "title": "Our Team",
+      "description": "Three bachelors in web technology, three complementary expertises:",
+      "protectionMessage": "Anti-robot protection, click to see contact information",
+      "commercial": {
+        "title": "Commercial Expert",
+        "description": "Specialized in understanding customer needs and transforming business requirements into adapted technical solutions.",
+        "name": "Chadi C."
+      },
+      "backend": {
+        "title": "Backend Developer",
+        "description": "Expert in server architecture, databases and integration of complex systems for optimal performance.",
+        "name": "Eric T."
+      },
+      "frontend": {
+        "title": "Frontend Developer",
+        "description": "Specialized in user experience and modern interfaces, combining aesthetics and functionality.",
+        "name": "Thomas B."
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "Principles that guide each of our decisions:",
+      "responsibleHosting": {
+        "title": "Responsible Hosting",
+        "description": "All our projects are hosted in Switzerland with environmentally friendly infrastructures and compliant with the highest security standards."
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Code developed exclusively by our local Swiss team, ensuring a consistent level of quality and optimal maintenance."
+      },
+      "commitment": {
+        "title": "Commitment",
+        "description": "We commit to our clients over the long term, providing ongoing support and continuous evolution of their digital solutions."
+      }
+    },
+    "cta": {
+      "title": "Ready to bring your project to life?",
+      "description": "Contact us to discuss your needs and discover how we can support you.",
+      "button": "Let's talk about your project"
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "description": "Discover our achievements and the solutions we have developed for our clients.",
+    "viewProject": "View Project",
+    "pinnedProjects": {
+      "title": "Pinned Projects",
+      "subtitle": "Discover our most remarkable achievements and flagship projects"
+    },
+    "allProjects": {
+      "title": "All projects"
+    },
+    "actions": {
+      "seeMore": "See more",
+      "visitProject": "Visit project",
+      "clickToSeeMore": "Click to see more..."
+    },
+    "modal": {
+      "descriptionTitle": "Description"
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, we couldn't find the page you're looking for. It may have been moved or deleted.",
+    "homeButton": "Back to Home",
+    "aboutButton": "Learn more about us"
+  },
+  "footer": {
+    "description": "Three areas of expertise, one vision: transforming your ideas into remarkable digital solutions.",
+    "services": {
+      "title": "Services",
+      "features": "Features",
+      "customers": "Customers",
+      "whyUs": "Why Us",
+      "pricing": "Pricing"
+    },
+    "aboutUs": {
+      "title": "About Us",
+      "aboutUs": "About Us",
+      "careers": "Careers",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "contact": {
+      "title": "Contact",
+      "support": "Support",
+      "partners": "Partners"
+    }
+  }
 }

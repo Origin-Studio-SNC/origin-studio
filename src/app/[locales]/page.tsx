@@ -1,19 +1,28 @@
 import { getDictionary } from "@/lib/i18n/get-dictionnary";
 import { HeroSlider } from "@/components/HeroSlider";
 import FeatureCardsContainer from "@/components/FeatureCardsContainer";
-import { BrainCircuitIcon, Code2Icon, ShieldCheckIcon } from "lucide-react";
-import ProcessCard from "@/components/ProcessCard";
-import { Separator } from "@/components/ui/separator";
+import { Code2Icon, PaletteIcon, BrainCircuitIcon, ShieldCheckIcon, CheckCircleIcon, UsersIcon, MapPinIcon } from "lucide-react";
+import ProcessTimeline from "@/components/ProcessTimeline";
+import IdentitySection from "@/components/IdentitySection";
+import StrengthCard from "@/components/StrengthCard";
+import TeamMemberMini from "@/components/TeamMemberMini";
+import FinalCTA from "@/components/FinalCTA";
+import TestimonialCard from "@/components/TestimonialCard";
+import TechStackIcons from "@/components/TechStackIcons";
 import {
   FeaturesTranslations,
   ProcessTranslations,
-  FooterTranslations
+  IdentityTranslations,
+  StrengthsTranslations,
+  TeamMiniTranslations,
+  FinalCTATranslations,
+  TestimonialsTranslations,
+  TechStackTranslations
 } from "@/types/translations";
-import Footer from "@/components/Footer";
 export default async function Home({
   params,
 }: {
-  params: { locales: "fr" | "en" };
+  params: { locales: "fr" | "en" | "de" };
 }) {
   // On attend les paramètres
   const { locales } = await Promise.resolve(params);
@@ -22,19 +31,31 @@ export default async function Home({
   const dictionary = await getDictionary(locales);
   const features = dictionary.features as FeaturesTranslations;
   const process = dictionary.process as ProcessTranslations;
-  const footer = dictionary.footer as FooterTranslations;
+  const identity = dictionary.identity as IdentityTranslations;
+  const strengths = dictionary.strengths as StrengthsTranslations;
+  const teamMini = dictionary.teamMini as TeamMiniTranslations;
+  const finalCTA = dictionary.finalCTA as FinalCTATranslations;
+  const testimonials = dictionary.testimonials as TestimonialsTranslations;
+  const techStack = dictionary.techStack as TechStackTranslations;
   
+  // Services cards avec 4 catégories
   const featureCards = [
     {
-      id: "web-apps",
+      id: "web-dev",
       title: features.customWebApplications,
       description: features.customWebApplicationsDesc,
       icon: <Code2Icon />,
     },
     {
-      id: "llm",
-      title: features.privateLLMs,
-      description: features.privateLLMsDesc,
+      id: "design",
+      title: features.design,
+      description: features.designDesc,
+      icon: <PaletteIcon />,
+    },
+    {
+      id: "ai",
+      title: features.ai,
+      description: features.aiDesc,
       icon: <BrainCircuitIcon />,
     },
     {
@@ -44,88 +65,140 @@ export default async function Home({
       icon: <ShieldCheckIcon />,
     },
   ];
+
+  // Process steps pour la timeline
+  const processSteps = [
+    { label: process.discovery },
+    { label: process.quote },
+    { label: process.design },
+    { label: process.development },
+    { label: process.testing },
+    { label: process.deployment },
+  ];
+
   return (
     <main className="flex flex-col items-center">
       {/* Hero Slider */}
       <HeroSlider dictionary={dictionary} />
 
-      {/* Feature Section */}
-      <section className="flex flex-col items-center justify-center gap-8 min-h-[45rem] py-16 md:py-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-white">
-          {features.featuresTitle}
-        </h2>
-        <p className="text-center text-lg text-neutral-400">
-          {features.description}
-        </p>
-        <FeatureCardsContainer features={featureCards} />
-      </section>
+      {/* Identity Section - Espacement modéré après hero */}
+      <div className="py-8 md:py-12" />
+      <IdentitySection text={identity.text} />
 
-      {/* Process Section */}
-      <section className="w-full flex flex-col items-center justify-center py-16 lg:px-10 gap-10 min-h-[50rem] bg-gradient-to-b from-neutral-950 to-slate-900">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-white">
-          {process.title}
-        </h2>
-        <p className="text-center text-lg text-neutral-400">
-          {process.description}
-        </p>
-        <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-8 lg:h-[400px]">
-          <div className="flex flex-col items-center justify-center gap-8 max-w-xl w-full">
-            <ProcessCard
-              title={process.initialConsultation}
-              description={process.initialConsultationDesc}
-              number={1}
+      {/* Strengths Section - Respiration légère avant */}
+      <div className="py-10 md:py-16" />
+      <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4 bg-neutral-950/50">
+        <div className="max-w-7xl w-full">
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12 md:mb-14">
+            {strengths.title}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <StrengthCard
+              title={strengths.quality.title}
+              description={strengths.quality.description}
+              icon={<CheckCircleIcon className="w-full h-full" />}
+              index={0}
             />
-            <Separator
-              orientation="horizontal"
-              className="block lg:hidden w-1/2 bg-[var(--color-accent-violet)] mx-10 border-0 h-full"
+            <StrengthCard
+              title={strengths.proximity.title}
+              description={strengths.proximity.description}
+              icon={<UsersIcon className="w-full h-full" />}
+              index={1}
             />
-            <div className="block lg:hidden w-full">
-              <ProcessCard
-                title={process.architecturalDesign}
-                description={process.architecturalDesignDesc}
-                number={2}
-              />
-            </div>
-            <Separator
-              orientation="horizontal"
-              className="block lg:hidden w-1/2 bg-[var(--color-accent-violet)] mx-10 border-0 h-full"
-            />
-            <ProcessCard
-              title={process.developmentAgile}
-              description={process.developmentAgileDesc}
-              number={3}
-            />
-            <Separator
-              orientation="horizontal"
-              className="block lg:hidden w-1/2 bg-[var(--color-accent-violet)] mx-10 border-0 h-full"
-            />
-            <div className="block lg:hidden w-full">
-              <ProcessCard
-                title={process.deploymentMaintenance}
-                description={process.deploymentMaintenanceDesc}
-                number={4}
-              />
-            </div>
-          </div>
-          <Separator
-            orientation="vertical"
-            className="hidden lg:block w-2 bg-[var(--color-accent-violet)] mx-10 border-0 h-full"
-          />
-          <div className="hidden lg:flex flex-col items-center justify-center gap-8 max-w-xl w-full">
-            <ProcessCard
-              title={process.architecturalDesign}
-              description={process.architecturalDesignDesc}
-              number={2}
-            />
-            <ProcessCard
-              title={process.deploymentMaintenance}
-              description={process.deploymentMaintenanceDesc}
-              number={4}
+            <StrengthCard
+              title={strengths.local.title}
+              description={strengths.local.description}
+              icon={<MapPinIcon className="w-full h-full" />}
+              index={2}
             />
           </div>
         </div>
       </section>
-      <Footer dictionary={footer} />
+
+      {/* Testimonials Section - Espacement modéré */}
+      <div className="py-10 md:py-16" />
+      <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4">
+        <div className="max-w-5xl w-full">
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12 md:mb-14">
+            {testimonials.title}
+          </h2>
+          <div className="max-w-2xl mx-auto">
+            <TestimonialCard
+              text={testimonials.placeholder}
+              index={0}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Tech Stack Section - Respiration légère */}
+      <div className="py-8 md:py-12" />
+      <TechStackIcons 
+        title={techStack.title}
+        subtitle={techStack.subtitle}
+      />
+
+      {/* Team Mini Section - Espacement modéré */}
+      <div className="py-10 md:py-16" />
+      <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4">
+        <div className="max-w-5xl w-full">
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12 md:mb-14">
+            {teamMini.title}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <TeamMemberMini
+              name={teamMini.thomas.name}
+              role={teamMini.thomas.role}
+              description={teamMini.thomas.description}
+              index={0}
+            />
+            <TeamMemberMini
+              name={teamMini.eric.name}
+              role={teamMini.eric.role}
+              description={teamMini.eric.description}
+              index={1}
+            />
+            <TeamMemberMini
+              name={teamMini.shadi.name}
+              role={teamMini.shadi.role}
+              description={teamMini.shadi.description}
+              index={2}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section - Respiration avant section sombre */}
+      <div className="py-10 md:py-16" />
+      <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4 bg-neutral-950/50">
+        <div className="max-w-7xl w-full">
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-5">
+            {features.featuresTitle}
+          </h2>
+          <p className="text-center text-lg text-neutral-400 mb-12 md:mb-14">
+            {features.description}
+          </p>
+          <FeatureCardsContainer features={featureCards} />
+        </div>
+      </section>
+
+      {/* Process Timeline Section - Espacement modéré */}
+      <div className="py-10 md:py-16" />
+      <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4">
+        <div className="max-w-7xl w-full">
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-5">
+            {process.title}
+          </h2>
+          <p className="text-center text-lg text-neutral-400 mb-14 md:mb-16">
+            {process.description}
+          </p>
+          <ProcessTimeline steps={processSteps} />
+        </div>
+      </section>
+
+      {/* Final CTA - Respiration légère avant le CTA final */}
+      <div className="py-8 md:py-12" />
+      <FinalCTA title={finalCTA.title} buttonText={finalCTA.button} locale={locales} />
     </main>
   );
 }

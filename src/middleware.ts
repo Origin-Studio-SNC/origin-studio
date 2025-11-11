@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 // Liste des locales supportées
-const locales = ['fr', 'en'];
+const locales = ['fr', 'en', 'de'];
 
 // Fonction pour obtenir la locale préférée
 function getLocale(request: NextRequest) {
@@ -31,6 +31,23 @@ export function middleware(request: NextRequest) {
   );
 
   if (pathnameHasLocale) return;
+
+  // Si c'est une page 404, on essaie de deviner la locale depuis le referer ou les headers
+  if (pathname === '/404') {
+    const referer = request.headers.get('referer');
+    let locale = 'fr';
+    
+    if (referer) {
+      const refererLocale = referer.match(/\/(fr|en)(?=\/|$)/)?.[1];
+      if (refererLocale && locales.includes(refererLocale)) {
+        locale = refererLocale;
+      }
+    } else {
+      locale = getLocale(request);
+    }
+    
+    return NextResponse.redirect(new URL(`/${locale}/404`, request.url));
+  }
 
   // Redirige vers la locale préférée
   const locale = getLocale(request);

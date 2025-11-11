@@ -12,6 +12,7 @@ interface FeatureCardProps {
   description: string;
   icon: ReactNode;
   link?: string;
+  newTab?: boolean;
   className?: string;
   cardId?: string;
   onMouseEnter?: (cardId: string) => void;
@@ -22,7 +23,8 @@ export default function FeatureCard({
   title, 
   description, 
   icon, 
-  link = "/", 
+  link,
+  newTab = true,
   className,
   cardId = "default",
   onMouseEnter,
@@ -48,8 +50,7 @@ export default function FeatureCard({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <Link href={`/${locale}${link}`}>
-        {/* Retirer l'AnimatePresence d'ici car c'est géré au niveau parent */}
+      {/* Retirer l'AnimatePresence d'ici car c'est géré au niveau parent */}
         <div className="relative z-20 max-w-md min-h-64 flex flex-col items-start gap-4 bg-neutral-950 rounded-lg border border-neutral-800 p-6 group-hover:border-neutral-600 transition-all duration-500 ease-out group-hover:drop-shadow-[0_8px_60px_rgba(95,16,220,0.4)]">
           <div className="flex items-center rounded bg-[var(--color-accent-violet)] p-2 text-white">
             {icon}
@@ -61,12 +62,13 @@ export default function FeatureCard({
             <p className="text-neutral-400 max-w-prose">
               {description}
             </p>
-              <div className="text-blue-500 font-medium flex items-center gap-2 mt-2 group-hover:text-blue-400">
+            {link && (
+              <Link href={link} className="text-blue-500 font-medium flex items-center gap-2 mt-2 group-hover:text-blue-400 hover:underline transition-colors" target={newTab ? "_blank" : "_self"}>
                 {locale === 'en' ? 'Learn more' : 'En savoir plus'} <ArrowRightIcon className="w-4 h-4" />
-              </div>
+              </Link>
+            )}
           </div>
         </div>
-      </Link>
     </div>
   );
 }

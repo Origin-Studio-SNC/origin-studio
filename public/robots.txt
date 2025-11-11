@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://origin-studio.ch/sitemap.xml
+
+# Disallow crawling of unnecessary files
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow important assets
+Allow: /public/
+Allow: /img/
+Allow: /*.css
+Allow: /*.js
