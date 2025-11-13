@@ -1,0 +1,56 @@
+"use client";
+
+import { ReactNode } from "react";
+import { motion } from "framer-motion";
+import { CheckIcon } from "lucide-react";
+import { Button } from "./ui/button";
+import { cn } from "@/lib/utils";
+
+interface ServiceCardProps {
+  title: string;
+  shortDescription: string;
+  description: string;
+  features: string[];
+  icon: ReactNode;
+  index: number;
+}
+
+export default function ServiceCard({
+  title,
+  shortDescription,
+  description,
+  features,
+  icon,
+  index,
+}: ServiceCardProps) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      viewport={{ once: true }}
+      className="group relative bg-neutral-950 rounded-lg border border-neutral-800 p-8 hover:border-neutral-600 transition-all duration-500 hover:drop-shadow-[0_8px_60px_rgba(95,16,220,0.3)]"
+    >
+      <div className="flex items-start gap-4 mb-6">
+        <div className="flex items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-500 p-3 text-white flex-shrink-0">
+          {icon}
+        </div>
+        <div>
+          <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
+          <p className="text-neutral-400">{shortDescription}</p>
+        </div>
+      </div>
+
+      <p className="text-neutral-300 mb-6 leading-relaxed">{description}</p>
+
+      <div className="space-y-3">
+        {features.map((feature, idx) => (
+          <div key={idx} className="flex items-start gap-3">
+            <CheckIcon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+            <span className="text-neutral-400 text-sm">{feature}</span>
+          </div>
+        ))}
+      </div>
+    </motion.div>
+  );
+}

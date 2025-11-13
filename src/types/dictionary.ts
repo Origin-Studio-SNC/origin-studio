@@ -1,4 +1,4 @@
-export type TranslationValue = string | { [key: string]: TranslationValue };
+export type TranslationValue = string | boolean | TranslationValue[] | { [key: string]: TranslationValue };
 
 export type Dictionary = {
   [key: string]: TranslationValue;

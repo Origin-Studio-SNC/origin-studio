@@ -235,3 +235,85 @@ export type FooterTranslations = {
     partners: string;
   };
 };
+
+export type ServicesTranslations = {
+  title: string;
+  subtitle: string;
+  intro: string;
+  services: {
+    title: string;
+    description: string;
+    items: Array<{
+      id: string;
+      title: string;
+      shortDescription: string;
+      description: string;
+      features: string[];
+    }>;
+  };
+  process: {
+    title: string;
+    description: string;
+    steps: Array<{
+      number: string;
+      title: string;
+      description: string;
+      duration: string;
+    }>;
+  };
+  technologies: {
+    title: string;
+    description: string;
+    categories: Array<{
+      name: string;
+      items: string[];
+    }>;
+  };
+  packages: {
+    title: string;
+    description: string;
+    starter: {
+      name: string;
+      description: string;
+      price: string;
+      features: string[];
+      cta: string;
+    };
+    business: {
+      name: string;
+      description: string;
+      price: string;
+      features: string[];
+      cta: string;
+      highlighted: boolean;
+    };
+    enterprise: {
+      name: string;
+      description: string;
+      price: string;
+      features: string[];
+      cta: string;
+    };
+  };
+  useCases: {
+    title: string;
+    description: string;
+    items: Array<{
+      question: string;
+      answer: string;
+    }>;
+  };
+  faq: {
+    title: string;
+    items: Array<{
+      question: string;
+      answer: string;
+    }>;
+  };
+  cta: {
+    title: string;
+    description: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
+};
