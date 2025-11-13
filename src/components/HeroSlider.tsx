@@ -5,7 +5,6 @@ import React from "react";
 import { Button } from "./ui/button";
 import MouseScrollIndicator from "./MouseScrollIndicator";
 import { Dictionary } from "@/types/dictionary";
-import DarkVeil from "./bg-ui/DarkVeil";
 
 type HeroTranslations = {
   title: string;
@@ -49,10 +48,6 @@ export function HeroSlider({ dictionary }: { dictionary: Dictionary }) {
         </div>
       </motion.div>
       <MouseScrollIndicator />
-      <div className="absolute inset-0 -z-10 w-full h-full">
-        {/* <Silk color="#5F10DC" /> */}
-        <DarkVeil />
-      </div>
     </div>
     
   );

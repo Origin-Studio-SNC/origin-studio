@@ -3,12 +3,13 @@ import enCommon from '@/locales/en/common.json';
 import deCommon from '@/locales/de/common.json';
 import frServices from '@/locales/fr/services.json';
 import enServices from '@/locales/en/services.json';
+import deServices from '@/locales/de/services.json';
 import { Dictionary } from '@/types/dictionary';
 
 const dictionaries: Record<'fr' | 'en' | 'de', Dictionary> = {
   fr: { ...frCommon, services: frServices },
   en: { ...enCommon, services: enServices },
-  de: { ...deCommon },
+  de: { ...deCommon, services: deServices },
 };
 
 // Fonction qui retourne le dictionnaire correspondant à la locale demandée

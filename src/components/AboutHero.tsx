@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { AboutTranslations } from "@/types/translations";
-import DarkVeil from "@/components/bg-ui/DarkVeil";
 
 interface AboutHeroProps {
   about: AboutTranslations;
@@ -35,9 +34,6 @@ export default function AboutHero({ about }: AboutHeroProps) {
           {about.intro}
         </motion.p>
       </motion.div>
-      <div className="absolute inset-0 -z-10 w-full h-full">
-        <DarkVeil />
-      </div>
     </section>
   );
 }

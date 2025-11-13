@@ -32,7 +32,7 @@ export default function ServiceCard({
       className="group relative bg-neutral-950 rounded-lg border border-neutral-800 p-8 hover:border-neutral-600 transition-all duration-500 hover:drop-shadow-[0_8px_60px_rgba(95,16,220,0.3)]"
     >
       <div className="flex items-start gap-4 mb-6">
-        <div className="flex items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-500 p-3 text-white flex-shrink-0">
+        <div className="flex items-center justify-center rounded-lg bg-[var(--color-accent-violet)] p-3 text-white flex-shrink-0">
           {icon}
         </div>
         <div>

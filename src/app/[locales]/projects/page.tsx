@@ -44,7 +44,7 @@ export default async function Projects({
 
   // Fonction pour récupérer les traductions en fonction de la locale
   const dictionary = await getDictionary(locales);
-  const translations = dictionary.projects as ProjectsTranslations;
+  const translations = dictionary.projects;
 
   // Récupération des projets depuis le fichier JSON
   const projectsData = await getProjects();

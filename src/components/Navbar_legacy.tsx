@@ -3,14 +3,14 @@
 import Image from "next/image";
 import { getDictionary } from "@/lib/i18n/get-dictionnary";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { Button } from "./ui/button";
 import { MobileNavbar } from "./Mobile-Navbar";
 import { useEffect, useState, useRef, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 export const Navbar = ({ params }: { params: { locales: "fr" | "en" | "de" } }) => {
-  const [showNavbar, setShowNavbar] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [dictionary, setDictionary] = useState<any>(null);
   const [isToggleOpen, setIsToggleOpen] = useState(false);
@@ -34,23 +34,12 @@ export const Navbar = ({ params }: { params: { locales: "fr" | "en" | "de" } }) 
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollThreshold = 200; // Apparaît après 200px de scroll
-      const shouldShow = window.scrollY > scrollThreshold;
-      
-      if (shouldShow && !showNavbar) {
-        setShowNavbar(true);
-        setIsAnimating(true);
-        // Fin de l'animation après 700ms (durée de l'animation)
-        setTimeout(() => setIsAnimating(false), 700);
-      } else if (!shouldShow && showNavbar) {
-        setShowNavbar(false);
-      }
+      setIsScrolled(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [showNavbar]);
+  }, []);
 
   useEffect(() => {
     const loadDictionary = async () => {
@@ -145,76 +134,66 @@ export const Navbar = ({ params }: { params: { locales: "fr" | "en" | "de" } }) 
   if (!dictionary) return null;
 
   return (
-    <>
-      {/* Mobile navbar - always visible at top */}
-      <div className="xl:hidden fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-4 px-4 bg-black/80 backdrop-blur-md">
-        <div className="flex items-center gap-4">
-          <Image src="/img/logo_origin.svg" alt="Logo" width={40} height={40} className="w-10 h-10" />
-        </div>
-        <div className="flex items-center gap-4">
-          <LanguageSwitcher />
-          <MobileNavbar 
-            dictionary={dictionary} 
-            isToggleOpen={isToggleOpen}
-            setIsToggleOpen={setIsToggleOpen}
-          />
-        </div>
+    <div
+      className={`fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-4 px-4 xl:px-16 transition-colors duration-300 ${
+        isScrolled || isToggleOpen ? "bg-black" : "bg-transparent"
+      }`}
+    >
+      <div className="flex items-center justify-center gap-4">
+        <Image src="/img/logo_origin.svg" alt="Logo" width={40} height={40} className="w-10 h-10 md:hidden" />
+        <Image src="/img/logo_origin_full.svg" alt="Logo" width={100} height={40} className="hidden w-30 h-auto md:block" />
       </div>
 
-      {/* Desktop floating pill navbar */}
-      <div
-        className={`hidden xl:block fixed top-8 left-1/2 -translate-x-1/2 z-50 transition-all duration-700 ease-[cubic-bezier(0.34,1.36,0.44,1)] ${
-          showNavbar ? 'translate-y-0 opacity-100' : '-translate-y-32 opacity-0'
-        }`}
-      >
-        <div className={`backdrop-blur-xl border border-white/10 rounded-full px-4 py-3 shadow-2xl transition-colors duration-700 ${
-          !showNavbar || isAnimating ? 'bg-black' : 'bg-black/40'
-        }`}>
-          <nav ref={navRef} className="flex items-center gap-2 relative">
-            {/* Fond mobile pour hover */}
-            <div 
-              className={`absolute top-0 left-0 h-full rounded-full pointer-events-none transition-all duration-500 ease-[cubic-bezier(0.34,1.36,0.44,1)] ${
-                isHovering ? 'bg-white/20' : 'bg-white/10'
+      {/* Desktop navigation */}
+      <nav ref={navRef} className="hidden xl:flex items-center gap-4 relative">
+        {/* Fond mobile */}
+        <div 
+          className={`absolute top-0 left-0 h-full rounded-full pointer-events-none transition-all duration-500 ease-[cubic-bezier(0.34,1.36,0.44,1)] ${
+            isHovering ? 'bg-white/20' : 'bg-white/10'
+          }`}
+          style={{
+            opacity: backgroundStyle.opacity,
+            transform: backgroundStyle.transform,
+            width: backgroundStyle.width
+          }}
+        />
+        
+        {navItems.map((item) => {
+          const isActive = normalizedPath === (item.href === '/' ? '' : item.href);
+          const localizedHref = item.href === '/' ? `/${params.locales}` : `/${params.locales}${item.href}`;
+          
+          return (
+            <Link
+              key={item.href}
+              href={localizedHref}
+              data-href={item.href}
+              className={`relative z-10 text-gray-200 transition-colors duration-200 ${
+                isActive ? 'text-blue-500' : 'hover:text-white'
               }`}
-              style={{
-                opacity: backgroundStyle.opacity,
-                transform: backgroundStyle.transform,
-                width: backgroundStyle.width
-              }}
-            />
-            
-            {navItems.map((item) => {
-              const isActive = normalizedPath === (item.href === '/' ? '' : item.href);
-              const localizedHref = item.href === '/' ? `/${params.locales}` : `/${params.locales}${item.href}`;
-              
-              return (
-                <Link
-                  key={item.href}
-                  href={localizedHref}
-                  data-href={item.href}
-                  className={`relative z-10 text-sm transition-colors duration-200 ${
-                    isActive ? 'text-white font-medium' : 'text-gray-300 hover:text-white'
-                  }`}
-                  onMouseEnter={(e) => handleMouseEnter(item.href, e)}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <div className="px-4 py-2 cursor-pointer whitespace-nowrap">
-                    {dictionary?.nav?.[item.key]}
-                  </div>
-                </Link>
-              );
-            })}
-
-            {/* Separator */}
-            <div className="h-6 w-px bg-white/20 mx-2" />
-
-            {/* Language Switcher */}
-            <div className="relative z-10">
-              <LanguageSwitcher />
-            </div>
-          </nav>
-        </div>
+              onMouseEnter={(e) => handleMouseEnter(item.href, e)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className="px-4 py-2 cursor-pointer">
+                {dictionary?.nav?.[item.key]}
+              </div>
+            </Link>
+          );
+        })}
+      </nav>
+      <div className="flex items-center gap-4">
+        <LanguageSwitcher />
+        <Button variant="secondary" className="hidden md:flex">
+          <span className="text-md font-medium">
+            {dictionary.nav.contactUs}
+          </span>
+        </Button>
+        {/* Mobile Drawer Trigger */}
+        <MobileNavbar 
+          dictionary={dictionary} 
+          isToggleOpen={isToggleOpen}
+          setIsToggleOpen={setIsToggleOpen}
+        />
       </div>
-    </>
+    </div>
   );
 };

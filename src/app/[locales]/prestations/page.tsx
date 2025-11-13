@@ -23,7 +23,7 @@ export default async function Services({
 }) {
   const { locales } = await Promise.resolve(params);
   const dictionary = await getDictionary(locales);
-  const services = dictionary.services as unknown as ServicesTranslations;
+  const services = dictionary.services!;
 
   const serviceIcons: { [key: string]: React.ReactNode } = {
     "web-development": <CodeIcon className="w-8 h-8" />,
@@ -44,7 +44,7 @@ export default async function Services({
       />
 
       {/* Services Section */}
-      <section className="w-full flex flex-col items-center justify-start py-[15vh] px-4 bg-black">
+      <section className="w-full flex flex-col items-center justify-start py-[15vh] px-4">
         <div className="max-w-7xl w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -91,6 +91,7 @@ export default async function Services({
                 title={step.title}
                 description={step.description}
                 duration={step.duration}
+                durationLabel={services.process.durationLabel}
                 index={index}
                 isLast={index === services.process.steps.length - 1}
               />
@@ -100,7 +101,7 @@ export default async function Services({
       </section>
 
       {/* Technologies Section */}
-      <section className="w-full flex flex-col items-center justify-center py-[15vh] px-4 bg-black">
+      <section className="w-full flex flex-col items-center justify-center py-[15vh] px-4">
         <div className="max-w-6xl w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -151,6 +152,8 @@ export default async function Services({
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
             <PricingCard
               name={services.packages.starter.name}
+              mountainInfo={services.packages.starter.mountainInfo}
+              mountainDescription={services.packages.starter.mountainDescription}
               description={services.packages.starter.description}
               price={services.packages.starter.price}
               features={services.packages.starter.features}
@@ -159,6 +162,8 @@ export default async function Services({
             />
             <PricingCard
               name={services.packages.business.name}
+              mountainInfo={services.packages.business.mountainInfo}
+              mountainDescription={services.packages.business.mountainDescription}
               description={services.packages.business.description}
               price={services.packages.business.price}
               features={services.packages.business.features}
@@ -168,6 +173,8 @@ export default async function Services({
             />
             <PricingCard
               name={services.packages.enterprise.name}
+              mountainInfo={services.packages.enterprise.mountainInfo}
+              mountainDescription={services.packages.enterprise.mountainDescription}
               description={services.packages.enterprise.description}
               price={services.packages.enterprise.price}
               features={services.packages.enterprise.features}
@@ -179,7 +186,7 @@ export default async function Services({
       </section>
 
       {/* Use Cases Section */}
-      <section className="w-full flex flex-col items-center justify-center py-[15vh] px-4 bg-black">
+      <section className="w-full flex flex-col items-center justify-center py-[15vh] px-4">
         <div className="max-w-5xl w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -229,7 +236,7 @@ export default async function Services({
       </section>
 
       {/* CTA Section */}
-      <section className="w-full flex flex-col items-center justify-center py-[20vh] px-4 bg-black">
+      <section className="w-full flex flex-col items-center justify-center py-[20vh] px-4">
         <div className="max-w-4xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             {services.cta.title}
@@ -238,11 +245,7 @@ export default async function Services({
             {services.cta.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              variant="default"
-              size="lg"
-              className="bg-gradient-to-r from-blue-500 to-purple-500 hover:shadow-lg hover:scale-105 transition-all"
-            >
+            <Button variant="secondary" size="lg">
               {services.cta.primaryButton}
               <ArrowRightIcon className="ml-2 w-5 h-5" />
             </Button>

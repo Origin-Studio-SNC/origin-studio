@@ -89,7 +89,7 @@ export default async function Home({
 
       {/* Strengths Section - Respiration légère avant */}
       <div className="py-10 md:py-16" />
-      <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4 bg-neutral-950/50">
+      <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4 ">
         <div className="max-w-7xl w-full">
           <SectionTitle className="mb-12 md:mb-14">
             {strengths.title}
@@ -172,7 +172,7 @@ export default async function Home({
 
       {/* Services Section - Respiration avant section sombre */}
       <div className="py-10 md:py-16" />
-      <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4 bg-neutral-950/50">
+      <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4 ">
         <div className="max-w-7xl w-full">
           <SectionTitle className="mb-5">
             {features.featuresTitle}

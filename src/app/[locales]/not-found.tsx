@@ -20,7 +20,7 @@ export default async function NotFound() {
   
   const dictionary = await getDictionary(locale);
   const footer = dictionary.footer as FooterTranslations;
-  const notFound = dictionary.notFound as NotFoundTranslations;
+  const notFound = dictionary.notFound;
 
   return (
     <>

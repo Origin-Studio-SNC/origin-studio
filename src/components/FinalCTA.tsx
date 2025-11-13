@@ -12,7 +12,7 @@ interface FinalCTAProps {
 
 export default function FinalCTA({ title, buttonText, locale }: FinalCTAProps) {
   return (
-    <section className="w-full flex items-center justify-center py-24 px-4 bg-gradient-to-b from-neutral-950 to-black">
+    <section className="w-full flex items-center justify-center py-24 px-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

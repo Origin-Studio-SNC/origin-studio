@@ -91,6 +91,7 @@
   "process": {
     "title": "Notre Processus",
     "description": "Un accompagnement structuré et transparent, de l'idée au déploiement.",
+    "durationLabel": "Durée :",
     "steps": [
       {
         "number": "01",
@@ -162,7 +163,9 @@
     "title": "Nos Formules",
     "description": "Des solutions adaptées à tous les budgets, du projet simple à l'application complexe.",
     "starter": {
-      "name": "Starter",
+      "name": "Salève",
+      "mountainInfo": "Genève, 1379m",
+      "mountainDescription": "Le balcon de Genève, entre France et Suisse",
       "description": "Idéal pour démarrer votre présence en ligne",
       "price": "À partir de CHF 3'000",
       "features": [
@@ -176,7 +179,9 @@
       "cta": "Demander un devis"
     },
     "business": {
-      "name": "Business",
+      "name": "Teysachaux",
+      "mountainInfo": "Fribourg, 2024m",
+      "mountainDescription": "Préalpes fribourgeoises, vue panoramique sur les Alpes",
       "description": "Pour les projets plus ambitieux",
       "price": "À partir de CHF 8'000",
       "features": [
@@ -192,7 +197,9 @@
       "highlighted": true
     },
     "enterprise": {
-      "name": "Enterprise",
+      "name": "Diablerets",
+      "mountainInfo": "Vaud, 3210m",
+      "mountainDescription": "Sommet emblématique des Alpes vaudoises",
       "description": "Solutions sur mesure et accompagnement complet",
       "price": "Sur devis",
       "features": [

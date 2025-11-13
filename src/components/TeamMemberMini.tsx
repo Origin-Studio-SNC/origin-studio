@@ -22,9 +22,14 @@ export default function TeamMemberMini({ name, role, description, index }: TeamM
       viewport={{ once: true, margin: "-50px" }}
       className="flex flex-col gap-3 p-6 bg-neutral-900/50 border border-neutral-800 rounded-lg hover:border-neutral-700 transition-colors duration-300"
     >
-      <h3 className="text-lg font-bold text-white">
-        {name} <span className="text-[var(--color-accent-violet)]">—</span> {role}
-      </h3>
+      <div>
+        <h3 className="text-lg font-bold text-white">
+          {name}
+        </h3>
+        <p className="text-neutral-400 text-xs leading-relaxed">
+          {role}
+        </p>
+      </div>
       <p className="text-neutral-400 text-sm leading-relaxed">
         {description}
       </p>

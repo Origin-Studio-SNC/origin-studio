@@ -254,6 +254,7 @@ export type ServicesTranslations = {
   process: {
     title: string;
     description: string;
+    durationLabel: string;
     steps: Array<{
       number: string;
       title: string;
@@ -274,6 +275,8 @@ export type ServicesTranslations = {
     description: string;
     starter: {
       name: string;
+      mountainInfo: string;
+      mountainDescription: string;
       description: string;
       price: string;
       features: string[];
@@ -281,6 +284,8 @@ export type ServicesTranslations = {
     };
     business: {
       name: string;
+      mountainInfo: string;
+      mountainDescription: string;
       description: string;
       price: string;
       features: string[];
@@ -289,6 +294,8 @@ export type ServicesTranslations = {
     };
     enterprise: {
       name: string;
+      mountainInfo: string;
+      mountainDescription: string;
       description: string;
       price: string;
       features: string[];

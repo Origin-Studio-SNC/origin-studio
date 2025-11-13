@@ -7,6 +7,7 @@ interface ProcessStepProps {
   title: string;
   description: string;
   duration: string;
+  durationLabel: string;
   index: number;
   isLast: boolean;
 }
@@ -16,6 +17,7 @@ export default function ProcessStep({
   title,
   description,
   duration,
+  durationLabel,
   index,
   isLast,
 }: ProcessStepProps) {
@@ -30,7 +32,7 @@ export default function ProcessStep({
       >
         {/* Number Circle */}
         <div className="flex-shrink-0">
-          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-white font-bold text-xl">
+          <div className="w-16 h-16 rounded-full bg-[var(--color-accent-violet)] flex items-center justify-center text-white font-bold text-xl">
             {number}
           </div>
         </div>
@@ -39,13 +41,13 @@ export default function ProcessStep({
         <div className="flex-1">
           <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
           <p className="text-neutral-400 mb-2 leading-relaxed">{description}</p>
-          <p className="text-sm text-neutral-500 italic">Durée : {duration}</p>
+          <p className="text-sm text-neutral-500 italic">{durationLabel} {duration}</p>
         </div>
       </motion.div>
 
       {/* Connector Line */}
       {!isLast && (
-        <div className="hidden md:block absolute left-8 top-20 w-0.5 h-20 bg-gradient-to-b from-purple-500/50 to-transparent" />
+        <div className="hidden md:block absolute left-8 top-20 w-0.5 h-20 bg-[var(--color-accent-violet)]/30" />
       )}
     </div>
   );

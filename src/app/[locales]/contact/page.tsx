@@ -14,7 +14,7 @@ export default async function Contact({
 }) {
   const { locales } = await params;
   const dictionary = await getDictionary(locales);
-  const contact = dictionary.contact as ContactTranslations;
+  const contact = dictionary.contact;
 
   return (
     <main className="flex flex-col items-center">

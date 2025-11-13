@@ -1,0 +1,272 @@
+{
+  "title": "Unsere Dienstleistungen",
+  "subtitle": "Maßgeschneiderte digitale Lösungen für Ihr Unternehmen",
+  "intro": "Von der Idee bis zur Umsetzung begleiten wir Sie bei der Entwicklung leistungsstarker, sicherer und skalierbarer digitaler Lösungen.",
+  
+  "services": {
+    "title": "Unsere Services",
+    "description": "An Ihre Bedürfnisse angepasste Lösungen, entwickelt mit Expertise und Leidenschaft.",
+    "items": [
+      {
+        "id": "web-development",
+        "title": "Webentwicklung & Anwendungen",
+        "shortDescription": "Moderne und leistungsstarke Websites und Webanwendungen",
+        "description": "Wir erstellen maßgeschneiderte Websites und Anwendungen, optimiert für Performance und Benutzererfahrung. Von der Präsentationswebsite bis zur komplexen Geschäftsanwendung beherrschen wir die gesamte Entwicklungskette.",
+        "features": [
+          "Moderne und responsive Websites",
+          "Maßgeschneiderte Webanwendungen",
+          "Progressive Web Apps (PWA)",
+          "E-Commerce und Buchungsplattformen",
+          "Dashboards und Administrationsoberflächen"
+        ]
+      },
+      {
+        "id": "ai-solutions",
+        "title": "Künstliche Intelligenz & Private LLMs",
+        "shortDescription": "Sichere und personalisierte KI-Lösungen",
+        "description": "Wir integrieren künstliche Intelligenz in Ihre Geschäftsprozesse mit Fokus auf Vertraulichkeit und Sicherheit. Private Hosting Ihrer KI-Modelle in der Schweiz für vollständige Datensouveränität.",
+        "features": [
+          "Integration von LLMs in Ihre Prozesse",
+          "Personalisierte intelligente Chatbots",
+          "Datenanalyse mit KI",
+          "Automatisierungslösungen",
+          "Privates und sicheres Hosting in der Schweiz"
+        ]
+      },
+      {
+        "id": "infrastructure",
+        "title": "Sichere Lösungen & Infrastruktur",
+        "shortDescription": "Schweizer Hosting und sichere Architektur",
+        "description": "Wir entwerfen und implementieren robuste und sichere Infrastrukturen, gehostet in der Schweiz. Garantierte DSGVO-Konformität und optimaler Schutz Ihrer Daten.",
+        "features": [
+          "Verantwortungsvolles Schweizer Hosting",
+          "Sichere Cloud-Architektur",
+          "DSGVO-Konformität",
+          "Sicherheitsaudits",
+          "Datensicherung und Wiederherstellung"
+        ]
+      },
+      {
+        "id": "design",
+        "title": "UX/UI Design",
+        "shortDescription": "Moderne und intuitive Oberflächen",
+        "description": "Wir erstellen elegante und intuitive Oberflächen, die den Benutzer in den Mittelpunkt des Erlebnisses stellen. Design System, Prototyping und Benutzertests für ein optimales Erlebnis.",
+        "features": [
+          "Modernes Oberflächendesign",
+          "Prototyping und Wireframing",
+          "Kohärente visuelle Identität",
+          "Benutzertests",
+          "Skalierbares Design System"
+        ]
+      },
+      {
+        "id": "maintenance",
+        "title": "Wartung & Support",
+        "shortDescription": "Kontinuierliche und skalierbare Begleitung",
+        "description": "Wir gewährleisten die Wartung und Weiterentwicklung Ihrer digitalen Lösungen langfristig. Reaktiver Support, regelmäßige Updates und personalisierte Begleitung.",
+        "features": [
+          "Kontinuierlicher technischer Support",
+          "Updates und Weiterentwicklungen",
+          "Monitoring und Optimierung",
+          "Schulung Ihrer Teams",
+          "Schnelle technische Unterstützung"
+        ]
+      },
+      {
+        "id": "consulting",
+        "title": "Beratung & Digitale Strategie",
+        "shortDescription": "Strategische Begleitung und Expertise",
+        "description": "Wir begleiten Sie bei Ihrer digitalen Transformation mit strategischen Ratschlägen, die auf Ihre Ziele zugeschnitten sind. Audit, Technologieauswahl und Projekt-Roadmap.",
+        "features": [
+          "Audit Ihrer digitalen Präsenz",
+          "Beratung zur digitalen Transformation",
+          "Angepasste Technologieauswahl",
+          "Projekt-Roadmap",
+          "Personalisierte Begleitung"
+        ]
+      }
+    ]
+  },
+
+  "process": {
+    "title": "Unser Prozess",
+    "description": "Eine strukturierte und transparente Begleitung, von der Idee bis zum Deployment.",
+    "durationLabel": "Dauer:",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Entdeckung",
+        "description": "Wir analysieren Ihre Bedürfnisse, Ziele und Ihren Kontext, um gemeinsam den besten Ansatz zu definieren.",
+        "duration": "1-2 Wochen"
+      },
+      {
+        "number": "02",
+        "title": "Angebot & Planung",
+        "description": "Detailliertes Angebot mit Zeitplan, Budget und Meilensteinen des Projekts. Vollständige Transparenz über Kosten und Termine.",
+        "duration": "3-5 Tage"
+      },
+      {
+        "number": "03",
+        "title": "Konzeption",
+        "description": "Design der Oberflächen, technische Architektur und Validierung der Mockups vor der Entwicklung.",
+        "duration": "2-4 Wochen"
+      },
+      {
+        "number": "04",
+        "title": "Entwicklung",
+        "description": "Iterative Entwicklung mit regelmäßigen Besprechungen. Sie verfolgen den Fortschritt in Echtzeit und validieren jeden Schritt.",
+        "duration": "Variabel"
+      },
+      {
+        "number": "05",
+        "title": "Tests & Validierung",
+        "description": "Funktionstests, Leistungstests und Benutzertests zur Gewährleistung optimaler Qualität.",
+        "duration": "1-2 Wochen"
+      },
+      {
+        "number": "06",
+        "title": "Deployment & Betreuung",
+        "description": "Online-Schaltung, Schulung Ihrer Teams und kontinuierlicher Support. Wir bleiben nach dem Launch an Ihrer Seite.",
+        "duration": "Kontinuierlich"
+      }
+    ]
+  },
+
+  "technologies": {
+    "title": "Technologien & Tech-Stack",
+    "description": "Wir verwenden moderne, zuverlässige und leistungsstarke Technologien, um nachhaltige Lösungen zu schaffen.",
+    "categories": [
+      {
+        "name": "Frontend",
+        "items": ["React", "Next.js", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "Backend",
+        "items": ["Node.js", "Python", "PostgreSQL", "MongoDB"]
+      },
+      {
+        "name": "Künstliche Intelligenz",
+        "items": ["OpenAI", "LangChain", "Hugging Face", "TensorFlow"]
+      },
+      {
+        "name": "Infrastruktur",
+        "items": ["Docker", "AWS", "Azure", "Vercel"]
+      },
+      {
+        "name": "Werkzeuge",
+        "items": ["Git", "GitHub", "Figma", "VS Code"]
+      }
+    ]
+  },
+
+  "packages": {
+    "title": "Unsere Pakete",
+    "description": "An alle Budgets angepasste Lösungen, vom einfachen Projekt bis zur komplexen Anwendung.",
+    "starter": {
+      "name": "Salève",
+      "mountainInfo": "Genf, 1379m",
+      "mountainDescription": "Der Balkon von Genf, zwischen Frankreich und der Schweiz",
+      "description": "Ideal um Ihre Online-Präsenz zu starten",
+      "price": "Ab CHF 3'000",
+      "features": [
+        "Responsive Website",
+        "Bis zu 5 Seiten",
+        "Modernes und personalisiertes Design",
+        "Basis-SEO-Optimierung",
+        "Schweizer Hosting inklusive (1 Jahr)",
+        "3 Monate Support"
+      ],
+      "cta": "Angebot anfordern"
+    },
+    "business": {
+      "name": "Teysachaux",
+      "mountainInfo": "Freiburg, 2024m",
+      "mountainDescription": "Freiburger Voralpen, Panoramablick auf die Alpen",
+      "description": "Für ehrgeizigere Projekte",
+      "price": "Ab CHF 8'000",
+      "features": [
+        "Maßgeschneiderte Webanwendung",
+        "Administrationsoberfläche (CMS)",
+        "API-Integrationen",
+        "Datenbank",
+        "Erweiterte Optimierung",
+        "Schweizer Hosting inklusive (1 Jahr)",
+        "6 Monate Support"
+      ],
+      "cta": "Lassen Sie uns über Ihr Projekt sprechen",
+      "highlighted": true
+    },
+    "enterprise": {
+      "name": "Diablerets",
+      "mountainInfo": "Waadt, 3210m",
+      "mountainDescription": "Emblematischer Gipfel der Waadtländer Alpen",
+      "description": "Maßgeschneiderte Lösungen und vollständige Begleitung",
+      "price": "Auf Anfrage",
+      "features": [
+        "Komplexe und skalierbare Architektur",
+        "Personalisierte KI-Integration",
+        "Dedizierte Infrastruktur",
+        "Erweiterte Sicherheit",
+        "Audit und strategische Beratung",
+        "Unbegrenzter Priority-Support"
+      ],
+      "cta": "Anruf planen"
+    }
+  },
+
+  "useCases": {
+    "title": "Anwendungsfälle",
+    "description": "Einige Beispiele von Projekten, die wir gemeinsam realisieren können",
+    "items": [
+      {
+        "question": "Sie möchten einen Chatbot, der Ihre Kunden 24/7 beantwortet?",
+        "answer": "Wir erstellen personalisierte KI-Assistenten, die Ihr Geschäft und Ihre Prozesse verstehen."
+      },
+      {
+        "question": "Sie müssen Tausende von Dokumenten analysieren?",
+        "answer": "Unsere KI-Lösungen können Informationen automatisch extrahieren, analysieren und strukturieren."
+      },
+      {
+        "question": "Ihre aktuelle Website ist langsam und nicht sicher?",
+        "answer": "Wir modernisieren Ihre Infrastruktur mit leistungsstarken und sicheren Technologien."
+      },
+      {
+        "question": "Sie möchten sich wiederholende Aufgaben automatisieren?",
+        "answer": "Wir entwickeln maßgeschneiderte Automatisierungslösungen, um Zeit zu sparen."
+      }
+    ]
+  },
+
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "question": "Wie lange dauert die Umsetzung?",
+        "answer": "Die Dauer variiert je nach Komplexität des Projekts. Eine Präsentationswebsite dauert in der Regel 4-6 Wochen, eine Webanwendung 2-4 Monate. Wir erstellen einen detaillierten Zeitplan bei der Angebotserstellung."
+      },
+      {
+        "question": "Bieten Sie Wartung nach dem Launch an?",
+        "answer": "Ja, wir bieten Wartungsverträge an, die technischen Support, Updates, Monitoring und funktionale Weiterentwicklungen umfassen."
+      },
+      {
+        "question": "Arbeiten Sie mit begrenzten Budgets?",
+        "answer": "Wir passen uns Ihrem Budget an, indem wir die wesentlichen Funktionen priorisieren. Unser Starter-Paket beginnt bei CHF 3'000 für eine professionelle Website."
+      },
+      {
+        "question": "Wo hosten Sie die Projekte?",
+        "answer": "Alle unsere Projekte werden in der Schweiz mit umweltfreundlichen Infrastrukturen gehostet, die den höchsten Sicherheitsstandards entsprechen (DSGVO)."
+      },
+      {
+        "question": "Kann ich meine Website nach der Lieferung selbst ändern?",
+        "answer": "Ja, wir integrieren ein Content-Management-System (CMS), das auf Ihre Bedürfnisse zugeschnitten ist, und schulen Ihre Teams in dessen Verwendung."
+      }
+    ]
+  },
+
+  "cta": {
+    "title": "Bereit, Ihr Projekt zu starten?",
+    "description": "Lassen Sie uns über Ihre Bedürfnisse sprechen und gemeinsam die passende Lösung finden. Erstes Gespräch unverbindlich.",
+    "primaryButton": "Anruf planen",
+    "secondaryButton": "Angebot anfordern"
+  }
+}

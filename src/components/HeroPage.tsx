@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import DarkVeil from "@/components/bg-ui/DarkVeil";
 
 interface HeroPageProps {
   title: string;
@@ -38,9 +37,6 @@ export default function HeroPage({ title, subtitle, intro }: HeroPageProps) {
           </motion.p>
         )}
       </motion.div>
-      <div className="absolute inset-0 -z-10 w-full h-full">
-        <DarkVeil />
-      </div>
     </section>
   );
 }

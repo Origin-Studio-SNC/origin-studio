@@ -5,6 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { getDictionary } from "@/lib/i18n/get-dictionnary";
 import Footer from "@/components/Footer";
 import { FooterTranslations } from "@/types/translations";
+import DarkVeilWrapper from "@/components/bg-ui/DarkVeilWrapper";
 
 // Fonction pour générer les métadonnées dynamiques selon la locale
 export async function generateMetadata({ 
@@ -171,6 +172,8 @@ export default async function LocaleLayout({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {/* Fixed background animation with scroll effects */}
+      <DarkVeilWrapper />
       <Navbar params={{ locales }} />
       {children}
       <Footer dictionary={footer} />

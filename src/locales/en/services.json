@@ -91,6 +91,7 @@
   "process": {
     "title": "Our Process",
     "description": "Structured and transparent support, from idea to deployment.",
+    "durationLabel": "Duration:",
     "steps": [
       {
         "number": "01",
@@ -162,7 +163,9 @@
     "title": "Our Packages",
     "description": "Solutions adapted to all budgets, from simple projects to complex applications.",
     "starter": {
-      "name": "Starter",
+      "name": "Salève",
+      "mountainInfo": "Geneva, 1379m",
+      "mountainDescription": "Geneva's balcony, between France and Switzerland",
       "description": "Ideal to start your online presence",
       "price": "From CHF 3,000",
       "features": [
@@ -176,7 +179,9 @@
       "cta": "Request a quote"
     },
     "business": {
-      "name": "Business",
+      "name": "Teysachaux",
+      "mountainInfo": "Fribourg, 2024m",
+      "mountainDescription": "Fribourg Prealps, panoramic view of the Alps",
       "description": "For more ambitious projects",
       "price": "From CHF 8,000",
       "features": [
@@ -192,7 +197,9 @@
       "highlighted": true
     },
     "enterprise": {
-      "name": "Enterprise",
+      "name": "Diablerets",
+      "mountainInfo": "Vaud, 3210m",
+      "mountainDescription": "Iconic summit of the Vaud Alps",
       "description": "Custom solutions and complete support",
       "price": "On quote",
       "features": [

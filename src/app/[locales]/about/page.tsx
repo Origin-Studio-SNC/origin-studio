@@ -18,7 +18,7 @@ export default async function About({
 
   // Fonction pour récupérer les traductions en fonction de la locale
   const dictionary = await getDictionary(locales);
-  const about = dictionary.about as AboutTranslations;
+  const about = dictionary.about;
 
   const valuesFeatures = [
     {
@@ -88,7 +88,7 @@ export default async function About({
             title={about.team.commercial.title}
             name={about.team.commercial.name}
             description={about.team.commercial.description}
-            image="/img/team/chadi.webp"
+            image="/img/team/blank.webp"
             phone="+41 79 176 39 92"
             mail="chadi@origin-studio.ch"
             protectionMessage={about.team.protectionMessage}
@@ -97,7 +97,7 @@ export default async function About({
             title={about.team.backend.title}
             name={about.team.backend.name}
             description={about.team.backend.description}
-            image="/img/team/eric.webp"
+            image="/img/team/blank.webp"
             phone="+41 79 941 89 68"
             mail="eric@origin-studio.ch"
             protectionMessage={about.team.protectionMessage}
