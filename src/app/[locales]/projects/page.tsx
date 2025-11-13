@@ -37,10 +37,10 @@ async function getProjects(): Promise<ProjectsData> {
 export default async function Projects({
   params,
 }: {
-  params: { locales: "fr" | "en" | "de" };
+  params: Promise<{ locales: "fr" | "en" | "de" }>;
 }) {
   // On attend les paramètres
-  const { locales } = await Promise.resolve(params);
+  const { locales } = await params;
 
   // Fonction pour récupérer les traductions en fonction de la locale
   const dictionary = await getDictionary(locales);

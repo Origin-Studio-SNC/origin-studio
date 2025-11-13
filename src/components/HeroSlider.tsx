@@ -2,12 +2,10 @@
 
 import { motion } from "framer-motion";
 import React from "react";
-import { ImagesSlider } from "./ui/images-slider";
 import { Button } from "./ui/button";
 import MouseScrollIndicator from "./MouseScrollIndicator";
 import { Dictionary } from "@/types/dictionary";
 import DarkVeil from "./bg-ui/DarkVeil";
-import Silk from "./bg-ui/Silk";
 
 type HeroTranslations = {
   title: string;

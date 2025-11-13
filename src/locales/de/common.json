@@ -44,7 +44,7 @@
       "description": "Leistungsstarke APIs, Sicherheit und Skalierbarkeit."
     },
     "shadi": {
-      "name": "Shadi",
+      "name": "Chadi",
       "role": "Kundenbeziehungen & Strategie",
       "description": "Bedarfsverständnis, Management und menschliche Begleitung."
     }
@@ -81,20 +81,76 @@
     "deployment": "Bereitstellung & Betreuung"
   },
   "finalCTA": {
-    "title": "Erzählen Sie uns von Ihrem Projekt. Wir nehmen uns Zeit zum Austausch, auch wenn es nur eine Idee ist.",
+    "title": "Erzählen Sie uns von Ihrem Projekt. Wir nehmen uns Zeit für ein Gespräch, auch wenn es nur eine Idee ist.",
     "button": "Gespräch planen"
+  },
+  "contact": {
+    "title": "Lassen Sie uns über Ihr Projekt sprechen",
+    "subtitle": "Ein offenes Gespräch, ohne Verpflichtung.",
+    "infoTitle": "Unsere Kontaktdaten",
+    "infoSubtitle": "Schreiben Sie uns, rufen Sie uns an oder besuchen Sie uns",
+    "methods": {
+      "email": {
+        "title": "E-Mail",
+        "description": "Der einfachste Weg, uns zu erreichen."
+      },
+      "call": {
+        "title": "Telefon",
+        "description": "Lassen Sie uns direkt telefonieren."
+      },
+      "address": {
+        "title": "Unser Büro",
+        "description": "Kommen Sie auf einen Kaffee vorbei"
+      }
+    },
+    "form": {
+      "intro": "Schreiben Sie uns ein paar Zeilen, wir antworten schnell.",
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon (optional)",
+      "message": "Nachricht",
+      "namePlaceholder": "Ihr Name",
+      "emailPlaceholder": "ihre@email.com",
+      "phonePlaceholder": "+41 79 123 45 67",
+      "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt...",
+      "submit": "Senden",
+      "sending": "Wird gesendet...",
+      "loading": "Laden...",
+      "errors": {
+        "nameRequired": "Name ist erforderlich",
+        "emailRequired": "E-Mail ist erforderlich",
+        "emailInvalid": "Ungültige E-Mail",
+        "messageRequired": "Nachricht ist erforderlich",
+        "messageMinLength": "Nachricht muss mindestens 10 Zeichen enthalten"
+      },
+      "messages": {
+        "success": "Vielen Dank! Ihre Nachricht wurde gesendet.",
+        "errorGeneric": "Etwas ist schief gelaufen. Bitte versuchen Sie es in einem Moment erneut.",
+        "errorValidation": "Bitte überprüfen Sie die Formularfelder.",
+        "errorRateLimit": "Zu viele Versuche. Bitte versuchen Sie es in ein paar Minuten erneut."
+      }
+    },
+    "cta": {
+      "title": "Bevorzugen Sie einen Anruf?",
+      "description": "Lassen Sie uns ein Gespräch vereinbaren, um über Ihre Idee zu sprechen.",
+      "button": "Gespräch vereinbaren"
+    }
   },
   "about": {
     "title": "Über Origin Studio",
-    "subtitle": "Drei Freunde, drei Expertisen, eine gemeinsame Vision",
-    "intro": "Begeistert vom weiten Universum des Webs haben wir unsere komplementären Fähigkeiten vereint, um Origin Studio zu gründen - eine Agentur, die sich auf die Erstellung, Entwicklung und Wartung von Websites und Webanwendungen spezialisiert hat.",
+    "subtitle": "Drei Expertisen, eine gemeinsame Vision",
+    "intro": "Wir sind drei Entwickler, die leidenschaftlich am Web und an Innovation arbeiten. Gemeinsam entwerfen wir elegante, nachhaltige digitale Lösungen, die auf Ihre Bedürfnisse zugeschnitten sind.",
+    "story": {
+      "title": "Unsere Geschichte",
+      "description": "Origin Studio entstand aus dem Treffen von drei Freunden, die dieselbe Vision teilten: nützliche, schöne und nachhaltige digitale Erlebnisse zu schaffen. Wir haben beschlossen, unsere komplementären Fähigkeiten zu vereinen, um einen menschlichen, transparenten und anspruchsvollen Ansatz für die Webentwicklung anzubieten.\n\nWir glauben, dass das Digitale klar, schön und nützlich sein sollte. Jedes Projekt, das wir erstellen, ist darauf ausgelegt, mit Ihnen zu wachsen."
+    },
     "mission": {
       "title": "Am Ursprung Ihres Erfolgs",
       "description": "Bei Origin vereinen wir Design, Technologie und Vision, um digitale Projekte zu schaffen, die sowohl solide als auch nachhaltig sind. Unsere Mission: Ihre Ideen in Lösungen zu verwandeln, die mit Ihnen wachsen."
     },
     "team": {
       "title": "Unser Team",
-      "description": "Drei Bachelor-Absolventen in Webtechnologie, drei komplementäre Expertisen:",
+      "description": "Wir arbeiten seit mehreren Jahren zusammen. Unsere Komplementarität ist die Grundlage für kohärente Arbeit: Verständnis, Konzeption, Ausführung, ohne Informationsverlust.",
       "protectionMessage": "Anti-Roboter-Schutz, klicken Sie, um Kontaktinformationen zu sehen",
       "commercial": {
         "title": "Vertriebsexperte",
@@ -115,23 +171,23 @@
     "values": {
       "title": "Unsere Werte",
       "description": "Prinzipien, die jede unserer Entscheidungen leiten:",
-      "responsibleHosting": {
-        "title": "Verantwortliches Hosting",
-        "description": "Alle unsere Projekte werden in der Schweiz mit umweltfreundlichen Infrastrukturen gehostet und entsprechen den höchsten Sicherheitsstandards."
+      "local": {
+        "title": "Lokal & Nachhaltig",
+        "description": "Daten-Hosting und Speicherung in der Schweiz, mit leistungsstarken und verantwortungsvollen Infrastrukturen."
       },
       "quality": {
-        "title": "Qualität",
-        "description": "Code, der ausschließlich von unserem lokalen Schweizer Team entwickelt wird, gewährleistet ein konstantes Qualitätsniveau und optimale Wartung."
+        "title": "Exzellenz",
+        "description": "Jede Codezeile wird intern geschrieben und gewartet, um Leistung und Langlebigkeit zu gewährleisten."
       },
       "commitment": {
-        "title": "Engagement",
-        "description": "Wir verpflichten uns langfristig gegenüber unseren Kunden und bieten kontinuierliche Unterstützung und Weiterentwicklung ihrer digitalen Lösungen."
+        "title": "Begleitung",
+        "description": "Wir bauen dauerhafte Beziehungen auf, mit menschlicher und kontinuierlicher Betreuung."
       }
     },
     "cta": {
-      "title": "Bereit, Ihr Projekt zum Leben zu erwecken?",
-      "description": "Kontaktieren Sie uns, um Ihre Bedürfnisse zu besprechen und zu erfahren, wie wir Sie unterstützen können.",
-      "button": "Lassen Sie uns über Ihr Projekt sprechen"
+      "title": "Lassen Sie uns über Ihr Projekt sprechen",
+      "description": "Ein offenes Gespräch, ohne Verpflichtung, um Ihre Bedürfnisse zu verstehen.",
+      "button": "Gespräch vereinbaren"
     }
   },
   "projects": {

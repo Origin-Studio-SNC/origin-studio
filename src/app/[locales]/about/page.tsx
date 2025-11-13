@@ -4,18 +4,17 @@ import { Button } from "@/components/ui/button";
 import TeamCard from "@/components/TeamCard";
 import HeroPage from "@/components/HeroPage";
 import FeatureCardsContainer from "@/components/FeatureCardsContainer";
+import SectionTitle from "@/components/SectionTitle";
+import SectionSubtitle from "@/components/SectionSubtitle";
 import { ShieldCheckIcon, StarIcon, HandshakeIcon } from "lucide-react";
-import { link } from "fs";
-
-
 
 export default async function About({
   params,
 }: {
-  params: { locales: "fr" | "en" | "de" };
+  params: Promise<{ locales: "fr" | "en" | "de" }>;
 }) {
   // On attend les paramètres
-  const { locales } = await Promise.resolve(params);
+  const { locales } = await params;
 
   // Fonction pour récupérer les traductions en fonction de la locale
   const dictionary = await getDictionary(locales);
@@ -23,10 +22,10 @@ export default async function About({
 
   const valuesFeatures = [
     {
-      title: about.values.responsibleHosting.title,
-      description: about.values.responsibleHosting.description,
+      title: about.values.local.title,
+      description: about.values.local.description,
       icon: <ShieldCheckIcon className="w-6 h-6" />,
-      id: "responsible-hosting",
+      id: "local",
     },
     {
       title: about.values.quality.title,
@@ -50,26 +49,39 @@ export default async function About({
         subtitle={about.subtitle}
         intro={about.intro}
       />
-      {/* Mission Section */}
-      <section className="w-full flex flex-col items-center justify-start pb-[25vh] pt-[10vh] px-4 bg-black">
+
+      {/* Story Section */}
+      <section className="w-full flex flex-col items-center justify-start py-[15vh] px-4">
         <div className="max-w-4xl text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <SectionTitle className="mb-6">
+            {about.story.title}
+          </SectionTitle>
+          <SectionSubtitle className="leading-relaxed whitespace-pre-line">
+            {about.story.description}
+          </SectionSubtitle>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="w-full flex flex-col items-center justify-start py-[15vh] px-4 bg-black">
+        <div className="max-w-4xl text-center">
+          <SectionTitle className="mb-6">
             {about.mission.title}
-          </h2>
-          <p className="text-lg text-neutral-400 leading-relaxed">
+          </SectionTitle>
+          <SectionSubtitle className="leading-relaxed">
             {about.mission.description}
-          </p>
+          </SectionSubtitle>
         </div>
       </section>
 
       {/* Team Section */}
       <section className="w-full flex flex-col items-center justify-center py-[25vh] px-4 min-h-[75vh]">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-6">
+        <SectionTitle className="mb-6">
           {about.team.title}
-        </h2>
-        <p className="text-center text-lg text-neutral-400 mb-12 max-w-2xl">
+        </SectionTitle>
+        <SectionSubtitle className="mb-12 max-w-2xl">
           {about.team.description}
-        </p>
+        </SectionSubtitle>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-6xl w-full relative">
           <TeamCard
@@ -104,12 +116,12 @@ export default async function About({
 
       {/* Values Section */}
       <section className="w-full flex flex-col items-center justify-center py-[25vh] px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-6">
+        <SectionTitle className="mb-6">
           {about.values.title}
-        </h2>
-        <p className="text-center text-lg text-neutral-400 mb-12 max-w-2xl">
+        </SectionTitle>
+        <SectionSubtitle className="mb-12 max-w-2xl">
           {about.values.description}
-        </p>
+        </SectionSubtitle>
         
         <FeatureCardsContainer features={valuesFeatures} />
       </section>
@@ -117,12 +129,12 @@ export default async function About({
       {/* CTA Section */}
       <section className="w-full flex flex-col items-center justify-center py-[25vh] px-4">
         <div className="max-w-4xl text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <SectionTitle className="mb-6">
             {about.cta.title}
-          </h2>
-          <p className="text-lg text-neutral-400 mb-8 leading-relaxed">
+          </SectionTitle>
+          <SectionSubtitle className="mb-8 leading-relaxed">
             {about.cta.description}
-          </p>
+          </SectionSubtitle>
           <Button variant="secondary" size="lg" className="mt-4">
             {about.cta.button}
           </Button>

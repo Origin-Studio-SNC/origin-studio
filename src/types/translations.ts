@@ -67,6 +67,59 @@ export type FinalCTATranslations = {
   button: string;
 };
 
+export interface ContactTranslations {
+  title: string;
+  subtitle: string;
+  infoTitle: string;
+  infoSubtitle: string;
+  methods: {
+    email: {
+      title: string;
+      description: string;
+    };
+    call: {
+      title: string;
+      description: string;
+    };
+    address: {
+      title: string;
+      description: string;
+    };
+  };
+  form: {
+    intro: string;
+    name: string;
+    email: string;
+    phone: string;
+    message: string;
+    namePlaceholder: string;
+    emailPlaceholder: string;
+    phonePlaceholder: string;
+    messagePlaceholder: string;
+    submit: string;
+    sending: string;
+    loading: string;
+    errors: {
+      nameRequired: string;
+      emailRequired: string;
+      emailInvalid: string;
+      messageRequired: string;
+      messageMinLength: string;
+    };
+    messages: {
+      success: string;
+      errorGeneric: string;
+      errorValidation: string;
+      errorRateLimit: string;
+    };
+  };
+  cta: {
+    title: string;
+    description: string;
+    button: string;
+  };
+};
+
 export type TestimonialsTranslations = {
   title: string;
   placeholder: string;
@@ -81,6 +134,10 @@ export type AboutTranslations = {
   title: string;
   subtitle: string;
   intro: string;
+  story: {
+    title: string;
+    description: string;
+  };
   mission: {
     title: string;
     description: string;
@@ -108,7 +165,7 @@ export type AboutTranslations = {
   values: {
     title: string;
     description: string;
-    responsibleHosting: {
+    local: {
       title: string;
       description: string;
     };

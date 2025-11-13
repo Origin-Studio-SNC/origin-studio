@@ -44,7 +44,7 @@
       "description": "High-performance APIs, security and scalability."
     },
     "shadi": {
-      "name": "Shadi",
+      "name": "Chadi",
       "role": "Client Relations & Strategy",
       "description": "Understanding needs, management and human support."
     }
@@ -84,17 +84,73 @@
     "title": "Tell us about your project. We take the time to talk, even if it's just an idea.",
     "button": "Schedule a call"
   },
+  "contact": {
+    "title": "Let's talk about your project",
+    "subtitle": "An open conversation, with no commitment.",
+    "infoTitle": "Our contact details",
+    "infoSubtitle": "Write to us, call us or visit us",
+    "methods": {
+      "email": {
+        "title": "Email",
+        "description": "The easiest way to reach us."
+      },
+      "call": {
+        "title": "Phone",
+        "description": "Let's talk directly over the phone."
+      },
+      "address": {
+        "title": "Our office",
+        "description": "Come have a coffee"
+      }
+    },
+    "form": {
+      "intro": "Write us a few lines, we'll respond quickly.",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "message": "Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "your@email.com",
+      "phonePlaceholder": "+41 79 123 45 67",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send",
+      "sending": "Sending...",
+      "loading": "Loading...",
+      "errors": {
+        "nameRequired": "Name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Invalid email",
+        "messageRequired": "Message is required",
+        "messageMinLength": "Message must be at least 10 characters"
+      },
+      "messages": {
+        "success": "Thank you! Your message has been sent.",
+        "errorGeneric": "Something went wrong. Please try again in a moment.",
+        "errorValidation": "Please check the form fields.",
+        "errorRateLimit": "Too many attempts. Please try again in a few minutes."
+      }
+    },
+    "cta": {
+      "title": "Prefer a call?",
+      "description": "Let's schedule a conversation to discuss your idea.",
+      "button": "Schedule a call"
+    }
+  },
   "about": {
     "title": "About Origin Studio",
-    "subtitle": "Three friends, three expertises, one common vision",
-    "intro": "Passionate about the vast universe of the web, we have united our complementary skills to create Origin Studio, an agency specialized in the creation, development and maintenance of websites and web applications.",
+    "subtitle": "Three expertises, one shared vision",
+    "intro": "We are three developers passionate about the web and innovation. Together, we design elegant, sustainable digital solutions tailored to your needs.",
+    "story": {
+      "title": "Our story",
+      "description": "Origin Studio was born from the meeting of three friends sharing the same vision: creating useful, beautiful, and sustainable digital experiences. We decided to unite our complementary skills to offer a human, transparent, and demanding approach to web development.\n\nWe believe that digital should be clear, beautiful, and useful. Every project we create is designed to grow with you."
+    },
     "mission": {
       "title": "At the origin of your success",
       "description": "At Origin, we bring together design, technology, and vision to create digital projects that are both solid and sustainable. Our mission: turning your ideas into solutions that grow with you."
     },
     "team": {
       "title": "Our Team",
-      "description": "Three bachelors in web technology, three complementary expertises:",
+      "description": "We have been working together for several years. Our complementarity is the foundation of coherent work: understanding, design, execution, without loss of information.",
       "protectionMessage": "Anti-robot protection, click to see contact information",
       "commercial": {
         "title": "Commercial Expert",
@@ -115,23 +171,23 @@
     "values": {
       "title": "Our Values",
       "description": "Principles that guide each of our decisions:",
-      "responsibleHosting": {
-        "title": "Responsible Hosting",
-        "description": "All our projects are hosted in Switzerland with environmentally friendly infrastructures and compliant with the highest security standards."
+      "local": {
+        "title": "Local & Sustainable",
+        "description": "Data hosting and storage in Switzerland, with high-performance and responsible infrastructures."
       },
       "quality": {
-        "title": "Quality",
-        "description": "Code developed exclusively by our local Swiss team, ensuring a consistent level of quality and optimal maintenance."
+        "title": "Excellence",
+        "description": "Every line of code is written and maintained in-house to guarantee performance and sustainability."
       },
       "commitment": {
-        "title": "Commitment",
-        "description": "We commit to our clients over the long term, providing ongoing support and continuous evolution of their digital solutions."
+        "title": "Support",
+        "description": "We build lasting relationships, with human and continuous follow-up."
       }
     },
     "cta": {
-      "title": "Ready to bring your project to life?",
-      "description": "Contact us to discuss your needs and discover how we can support you.",
-      "button": "Let's talk about your project"
+      "title": "Let's discuss your project",
+      "description": "An open conversation, without commitment, to understand your needs.",
+      "button": "Schedule a call"
     }
   },
   "projects": {

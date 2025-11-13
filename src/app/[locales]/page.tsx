@@ -9,6 +9,8 @@ import TeamMemberMini from "@/components/TeamMemberMini";
 import FinalCTA from "@/components/FinalCTA";
 import TestimonialCard from "@/components/TestimonialCard";
 import TechStackIcons from "@/components/TechStackIcons";
+import SectionTitle from "@/components/SectionTitle";
+import SectionSubtitle from "@/components/SectionSubtitle";
 import {
   FeaturesTranslations,
   ProcessTranslations,
@@ -22,10 +24,10 @@ import {
 export default async function Home({
   params,
 }: {
-  params: { locales: "fr" | "en" | "de" };
+  params: Promise<{ locales: "fr" | "en" | "de" }>;
 }) {
   // On attend les paramètres
-  const { locales } = await Promise.resolve(params);
+  const { locales } = await params;
 
   // Fonction pour récupérer les traductions en fonction de la locale
   const dictionary = await getDictionary(locales);
@@ -89,9 +91,9 @@ export default async function Home({
       <div className="py-10 md:py-16" />
       <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4 bg-neutral-950/50">
         <div className="max-w-7xl w-full">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12 md:mb-14">
+          <SectionTitle className="mb-12 md:mb-14">
             {strengths.title}
-          </h2>
+          </SectionTitle>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <StrengthCard
               title={strengths.quality.title}
@@ -119,9 +121,9 @@ export default async function Home({
       <div className="py-10 md:py-16" />
       <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4">
         <div className="max-w-5xl w-full">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12 md:mb-14">
+          <SectionTitle className="mb-12 md:mb-14">
             {testimonials.title}
-          </h2>
+          </SectionTitle>
           <div className="max-w-2xl mx-auto">
             <TestimonialCard
               text={testimonials.placeholder}
@@ -142,9 +144,9 @@ export default async function Home({
       <div className="py-10 md:py-16" />
       <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4">
         <div className="max-w-5xl w-full">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12 md:mb-14">
+          <SectionTitle className="mb-12 md:mb-14">
             {teamMini.title}
-          </h2>
+          </SectionTitle>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <TeamMemberMini
               name={teamMini.thomas.name}
@@ -172,12 +174,12 @@ export default async function Home({
       <div className="py-10 md:py-16" />
       <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4 bg-neutral-950/50">
         <div className="max-w-7xl w-full">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-5">
+          <SectionTitle className="mb-5">
             {features.featuresTitle}
-          </h2>
-          <p className="text-center text-lg text-neutral-400 mb-12 md:mb-14">
+          </SectionTitle>
+          <SectionSubtitle className="mb-12 md:mb-14">
             {features.description}
-          </p>
+          </SectionSubtitle>
           <FeatureCardsContainer features={featureCards} />
         </div>
       </section>
@@ -186,12 +188,12 @@ export default async function Home({
       <div className="py-10 md:py-16" />
       <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4">
         <div className="max-w-7xl w-full">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-5">
+          <SectionTitle className="mb-5">
             {process.title}
-          </h2>
-          <p className="text-center text-lg text-neutral-400 mb-14 md:mb-16">
+          </SectionTitle>
+          <SectionSubtitle className="mb-14 md:mb-16">
             {process.description}
-          </p>
+          </SectionSubtitle>
           <ProcessTimeline steps={processSteps} />
         </div>
       </section>

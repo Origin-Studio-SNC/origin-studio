@@ -17,11 +17,11 @@ export default function StrengthCard({ title, description, icon, index }: Streng
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ 
         duration: 0.6, 
-        // delay: index * 0.15,
+        delay: index * 0.15,
         ease: "easeOut"
       }}
       viewport={{ once: true, margin: "-50px" }}
-      className="flex flex-col items-center text-center gap-4 p-8 bg-neutral-900/30 border border-neutral-800 rounded-xl hover:border-[var(--color-accent-violet)]/50 transition-all duration-300"
+      className="flex flex-col items-center text-center gap-4 p-8 bg-neutral-900/30 border border-neutral-800 rounded-xl hover:border-[var(--color-accent-violet)]/50 transition-colors duration-300"
     >
       <div className="text-[var(--color-accent-violet)] w-12 h-12">
         {icon}

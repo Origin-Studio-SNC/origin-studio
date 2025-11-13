@@ -1,7 +1,6 @@
 'use client';
 
 import { usePathname, useRouter } from 'next/navigation';
-import Image from 'next/image';
 import flagEN from '../../public/img/flagEN.png';
 import flagFR from '../../public/img/flagFR.png';
 // import flagDE from '../../public/img/flagDE.png'; // À ajouter quand l'image sera disponible

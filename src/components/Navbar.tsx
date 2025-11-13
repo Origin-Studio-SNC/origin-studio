@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { getDictionary } from "@/lib/i18n/get-dictionnary";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import CustomLink from "./CustomLink";
 import { Button } from "./ui/button";
 import { MobileNavbar } from "./Mobile-Navbar";
 import { useEffect, useState, useRef, useCallback } from "react";
@@ -12,8 +11,8 @@ import Link from "next/link";
 
 export const Navbar = ({ params }: { params: { locales: "fr" | "en" | "de" } }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [dictionary, setDictionary] = useState<any>(null);
-  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [isToggleOpen, setIsToggleOpen] = useState(false);
   const [backgroundStyle, setBackgroundStyle] = useState({ 
     opacity: 0, 
@@ -80,13 +79,11 @@ export const Navbar = ({ params }: { params: { locales: "fr" | "en" | "de" } }) 
       timeoutRef.current = null;
     }
     
-    setHoveredItem(href);
     setIsHovering(true);
     updateBackgroundPosition(event.currentTarget);
   }, [updateBackgroundPosition]);
 
   const handleMouseLeave = useCallback(() => {
-    setHoveredItem(null);
     setIsHovering(false);
     
     // Délai de 1 seconde avant de revenir à la position initiale
@@ -105,7 +102,8 @@ export const Navbar = ({ params }: { params: { locales: "fr" | "en" | "de" } }) 
         }));
       }
     }, 1000);
-  }, [normalizedPath, updateBackgroundPosition]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [normalizedPath]);
 
   useEffect(() => {
     // Positionner le fond sur l'élément actif au chargement
@@ -121,7 +119,8 @@ export const Navbar = ({ params }: { params: { locales: "fr" | "en" | "de" } }) 
         updateBackgroundPosition(activeElement);
       }
     }
-  }, [dictionary, normalizedPath, updateBackgroundPosition]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [dictionary, normalizedPath]);
 
   // Nettoyer le timeout au démontage
   useEffect(() => {

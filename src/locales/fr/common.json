@@ -44,7 +44,7 @@
       "description": "API performantes, sécurité et scalabilité."
     },
     "shadi": {
-      "name": "Shadi",
+      "name": "Chadi",
       "role": "Relation client & Stratégie",
       "description": "Compréhension du besoin, pilotage et accompagnement humain."
     }
@@ -84,17 +84,73 @@
     "title": "Parlez-nous de votre projet. Nous prenons le temps d'échanger, même si ce n'est qu'une idée.",
     "button": "Planifier un appel"
   },
+  "contact": {
+    "title": "Parlons de votre projet",
+    "subtitle": "Un échange ouvert, sans engagement.",
+    "infoTitle": "Nos coordonnées",
+    "infoSubtitle": "Écrivez-nous, appelez-nous ou passez nous voir",
+    "methods": {
+      "email": {
+        "title": "Email",
+        "description": "Le moyen le plus simple de nous joindre."
+      },
+      "call": {
+        "title": "Téléphone",
+        "description": "Échangeons directement par téléphone."
+      },
+      "address": {
+        "title": "Notre bureau",
+        "description": "Venez prendre un café"
+      }
+    },
+    "form": {
+      "intro": "Écrivez-nous quelques lignes, on vous répond rapidement.",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone (optionnel)",
+      "message": "Message",
+      "namePlaceholder": "Votre nom",
+      "emailPlaceholder": "votre@email.com",
+      "phonePlaceholder": "+41 79 123 45 67",
+      "messagePlaceholder": "Parlez-nous de votre projet...",
+      "submit": "Envoyer",
+      "sending": "Envoi en cours...",
+      "loading": "Chargement...",
+      "errors": {
+        "nameRequired": "Le nom est requis",
+        "emailRequired": "L'email est requis",
+        "emailInvalid": "Email invalide",
+        "messageRequired": "Le message est requis",
+        "messageMinLength": "Le message doit contenir au moins 10 caractères"
+      },
+      "messages": {
+        "success": "Merci ! Votre message a bien été envoyé.",
+        "errorGeneric": "Un souci est survenu. Réessayez dans un instant.",
+        "errorValidation": "Merci de vérifier les champs du formulaire.",
+        "errorRateLimit": "Trop de tentatives. Réessayez dans quelques minutes."
+      }
+    },
+    "cta": {
+      "title": "Vous préférez un appel ?",
+      "description": "Planifions un échange pour parler de votre idée.",
+      "button": "Planifier un échange"
+    }
+  },
   "about": {
-    "title": "À Propos d'Origin Studio",
-    "subtitle": "Trois amis, trois expertises, une vision commune",
-    "intro": "Passionnés par l'univers vaste du web, nous avons uni nos compétences complémentaires pour créer Origin Studio, une agence spécialisée dans la création, le développement et la maintenance de sites internet et d'applications web.",
+    "title": "À propos d'Origin Studio",
+    "subtitle": "Trois expertises, une vision commune",
+    "intro": "Nous sommes trois développeurs passionnés par le web et l'innovation. Ensemble, nous concevons des solutions digitales élégantes, durables et adaptées à vos besoins.",
+    "story": {
+      "title": "Notre histoire",
+      "description": "Origin Studio est né de la rencontre entre trois amis partageant la même vision : créer des expériences digitales utiles, belles et durables. Nous avons décidé de réunir nos compétences complémentaires pour proposer une approche humaine, transparente et exigeante du développement web.\n\nNous pensons que le digital doit être clair, beau et utile. Chaque projet que nous créons est conçu pour grandir avec vous."
+    },
     "mission": {
       "title": "À l'origine de vos succès",
       "description": "Chez Origin, nous réunissons design, technologie et vision pour donner vie à des projets digitaux solides et durables. Notre mission : transformer vos idées en solutions qui grandissent avec vous."
     },
     "team": {
       "title": "Notre Équipe",
-      "description": "Trois bachelors en technologie web, trois expertises complémentaires :",
+      "description": "Nous travaillons ensemble depuis plusieurs années. Notre complémentarité est la base d'un travail cohérent : compréhension, conception, exécution, sans perte d'information.",
       "protectionMessage": "Protection anti-robot, cliquez pour voir les informations de contact",
       "commercial": {
         "title": "Expert Commercial",
@@ -115,23 +171,23 @@
     "values": {
       "title": "Nos Valeurs",
       "description": "Des principes qui guident chacune de nos décisions :",
-      "responsibleHosting": {
-        "title": "Hébergement Responsable",
-        "description": "Tous nos projets sont hébergés en Suisse avec des infrastructures respectueuses de l'environnement et conformes aux standards de sécurité les plus élevés."
+      "local": {
+        "title": "Local & Durable",
+        "description": "Hébergement et stockage des données en Suisse, avec des infrastructures performantes et responsables."
       },
       "quality": {
-        "title": "Qualité",
-        "description": "Code développé exclusivement par notre équipe locale suisse, garantissant un niveau de qualité constant et une maintenance optimale."
+        "title": "Exigence",
+        "description": "Chaque ligne de code est écrite et maintenue en interne pour garantir performance et pérennité."
       },
       "commitment": {
-        "title": "Engagement",
-        "description": "Nous nous engageons sur la durée avec nos clients, offrant un support continu et une évolution constante de leurs solutions digitales."
+        "title": "Accompagnement",
+        "description": "Nous construisons des relations durables, avec un suivi humain et continu."
       }
     },
     "cta": {
-      "title": "Prêt à donner vie à votre projet ?",
-      "description": "Contactez-nous pour discuter de vos besoins et découvrir comment nous pouvons vous accompagner.",
-      "button": "Parlons de votre projet"
+      "title": "Discutons de votre projet",
+      "description": "Une conversation ouverte, sans engagement, pour comprendre vos besoins.",
+      "button": "Planifier un échange"
     }
   },
   "projects": {

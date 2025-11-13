@@ -28,7 +28,7 @@ export default function NotFound() {
             Page Not Found / Page Introuvable
           </h2>
           <p className="text-lg text-neutral-400 mb-4 leading-relaxed">
-            Sorry, we couldn't find the page you're looking for. / Désolé, nous n'avons pas pu trouver la page que vous recherchez.
+            Sorry, we couldn&apos;t find the page you&apos;re looking for. / Désolé, nous n&apos;avons pas pu trouver la page que vous recherchez.
           </p>
           <p className="text-sm text-neutral-500 mb-8">
             Redirecting to French version in 3 seconds... / Redirection vers la version française dans 3 secondes...

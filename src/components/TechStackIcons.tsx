@@ -65,9 +65,9 @@ export default function TechStackIcons({ title, subtitle }: TechStackIconsProps)
                 ease: "easeOut"
               }}
               viewport={{ once: true, margin: "-50px" }}
-              className="flex flex-col items-center gap-3 p-5 rounded-lg hover:bg-neutral-900/30 transition-all duration-300 group"
+              className="flex flex-col items-center gap-3 p-5 rounded-lg hover:bg-neutral-900/30 transition-colors duration-300 group"
             >
-              <div className="w-12 h-12 text-neutral-500 group-hover:text-[var(--color-accent-violet)] transition-colors">
+              <div className="w-12 h-12 text-neutral-500 group-hover:text-[var(--color-accent-violet)] transition-colors duration-300">
                 {tech.icon}
               </div>
               <p className="text-sm text-neutral-400 text-center">{tech.name}</p>

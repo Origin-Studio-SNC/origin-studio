@@ -1,31 +1,18 @@
 // Layout principal de l'application avec support multilingue
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import { Navbar } from "@/components/Navbar";
 import { getDictionary } from "@/lib/i18n/get-dictionnary";
 import Footer from "@/components/Footer";
 import { FooterTranslations } from "@/types/translations";
-import CustomCursor from "@/components/CustomCursor";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 // Fonction pour générer les métadonnées dynamiques selon la locale
 export async function generateMetadata({ 
   params 
 }: { 
-  params: { locales: 'fr' | 'en' | 'de' } 
+  params: Promise<{ locales: 'fr' | 'en' | 'de' }> 
 }): Promise<Metadata> {
-  const { locales } = await Promise.resolve(params);
-  const dictionary = await getDictionary(locales);
+  const { locales } = await params;
   
   const domain = "https://origin-studio.ch";
   
@@ -138,9 +125,9 @@ export default async function LocaleLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { locales: 'fr' | 'en' | 'de' };
+  params: Promise<{ locales: 'fr' | 'en' | 'de' }>;
 }>) {
-  const { locales } = await Promise.resolve(params);
+  const { locales } = await params;
   const dictionary = await getDictionary(locales);
   const footer = dictionary.footer as FooterTranslations;
   
