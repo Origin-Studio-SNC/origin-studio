@@ -267,7 +267,7 @@
   "cta": {
     "title": "Ready to start your project?",
     "description": "Let's discuss your needs and find the solution that suits you together. First exchange without commitment.",
-    "primaryButton": "Schedule a call",
-    "secondaryButton": "Request a quote"
+    "primaryButton": "Join our Discord",
+    "secondaryButton": "Contact us"
   }
 }

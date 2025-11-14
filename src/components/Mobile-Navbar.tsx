@@ -54,7 +54,7 @@ export function MobileNavbar({ dictionary, isToggleOpen, setIsToggleOpen }: {
           isToggleOpen ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
-        <nav className="flex flex-col items-center gap-8 text-lg">
+        <nav className="flex flex-col items-center gap-8 text-lg" onClick={() => setIsToggleOpen(false)}>
           <CustomLink href="/" label={nav.home} />
           <CustomLink href="/prestations" label={nav.prestations} />
           <CustomLink href="/about" label={nav.about} />

@@ -12,6 +12,7 @@ export const Navbar = ({ params }: { params: { locales: "fr" | "en" | "de" } }) 
   const [showNavbar, setShowNavbar] = useState(true); // Visible au départ
   const [isAnimating, setIsAnimating] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [hasScrolled, setHasScrolled] = useState(false);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [dictionary, setDictionary] = useState<any>(null);
   const [isToggleOpen, setIsToggleOpen] = useState(false);
@@ -36,6 +37,9 @@ export const Navbar = ({ params }: { params: { locales: "fr" | "en" | "de" } }) 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+      
+      // Détecter si on a scrollé
+      setHasScrolled(currentScrollY > 50);
       
       // Si on a scrollé plus de 100px vers le bas depuis le haut
       if (currentScrollY > 100 && currentScrollY > lastScrollY) {
@@ -168,7 +172,13 @@ export const Navbar = ({ params }: { params: { locales: "fr" | "en" | "de" } }) 
   return (
     <>
       {/* Mobile navbar - always visible at top */}
-      <div className="xl:hidden fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-4 px-4 bg-black/80 backdrop-blur-md">
+      <div className={`xl:hidden fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-4 px-4 transition-all duration-300 ${
+        isToggleOpen 
+          ? 'bg-black' 
+          : hasScrolled 
+            ? 'bg-black/40 backdrop-blur-xl' 
+            : 'bg-transparent'
+      }`}>
         <div className="flex items-center gap-4">
           <Image src="/img/logo_origin.svg" alt="Logo" width={40} height={40} className="w-10 h-10" />
         </div>

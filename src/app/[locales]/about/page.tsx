@@ -7,6 +7,7 @@ import FeatureCardsContainer from "@/components/FeatureCardsContainer";
 import SectionTitle from "@/components/SectionTitle";
 import SectionSubtitle from "@/components/SectionSubtitle";
 import { ShieldCheckIcon, StarIcon, HandshakeIcon } from "lucide-react";
+import Link from "next/link";
 
 export default async function About({
   params,
@@ -135,9 +136,11 @@ export default async function About({
           <SectionSubtitle className="mb-8 leading-relaxed">
             {about.cta.description}
           </SectionSubtitle>
-          <Button variant="secondary" size="lg" className="mt-4">
-            {about.cta.button}
-          </Button>
+          <Link href="/contact">
+            <Button variant="secondary" size="lg" className="mt-4">
+              {about.cta.button}
+            </Button>
+          </Link>
         </div>
       </section>
     </main>

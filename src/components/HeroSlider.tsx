@@ -5,6 +5,8 @@ import React from "react";
 import { Button } from "./ui/button";
 import MouseScrollIndicator from "./MouseScrollIndicator";
 import { Dictionary } from "@/types/dictionary";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type HeroTranslations = {
   title: string;
@@ -15,6 +17,9 @@ type HeroTranslations = {
 
 export function HeroSlider({ dictionary }: { dictionary: Dictionary }) {
   const hero = dictionary.hero as HeroTranslations;
+  const pathname = usePathname();
+  const currentLocale = pathname.match(/^\/(fr|en|de)(?=\/|$)/)?.[1] || 'fr';
+  
   return (
     <div className="min-h-screen overflow-hidden h-full w-full relative flex items-center justify-center">
       <motion.div
@@ -38,13 +43,17 @@ export function HeroSlider({ dictionary }: { dictionary: Dictionary }) {
           {hero.description}
           {/* <TextType text={hero.description} /> */}
         </motion.p>
-        <div className="flex gap-4">
-          <Button variant="secondary" size="lg" className="mt-4">
-            {hero.servicesButton}
-          </Button>
-          <Button variant="outline" size="lg" className="mt-4 py-6">
-            {hero.projectsButton}
-          </Button>
+        <div className="flex flex-col md:flex-row gap-4">
+          <Link href={`/${currentLocale}/prestations`}>
+            <Button variant="secondary" size="lg" className="mt-4">
+              {hero.servicesButton}
+            </Button>
+          </Link>
+          <Link href={`/${currentLocale}/contact`}>
+            <Button variant="outline" size="lg" className="mt-4 py-6">
+              {hero.projectsButton}
+            </Button>
+          </Link>
         </div>
       </motion.div>
       <MouseScrollIndicator />

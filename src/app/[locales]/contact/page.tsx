@@ -38,26 +38,20 @@ export default async function Contact({
               </div>
 
               <div className="space-y-6">
-                {/* Email */}
+                {/* Contact Card */}
                 <SimpleContactCard
-                  title={contact.methods.email.title}
-                  description={contact.methods.email.description}
-                  type="email"
-                  value="info@origin-studio.ch"
-                  label="Email"
+                  title={contact.simpleContact.title}
+                  description={contact.simpleContact.description}
+                  email="info@origin-studio.ch"
+                  phone="+41 79 176 39 92"
+                  discord="https://discord.gg/6khXbmbJF9"
+                  emailLabel={contact.simpleContact.emailLabel}
+                  phoneLabel={contact.simpleContact.phoneLabel}
+                  discordLabel={contact.simpleContact.discordLabel}
                 />
 
-                {/* Phone */}
-                <SimpleContactCard
-                  title={contact.methods.call.title}
-                  description={contact.methods.call.description}
-                  type="phone"
-                  value="+41 79 176 39 92"
-                  label="Chadi"
-                />
-
-                {/* Address */}
-                <div className="group cursor-default">
+                {/* Address - Disabled for the moment, as we have no location */}
+                {/* <div className="group cursor-default">
                   <div className="mb-2">
                     <h4 className="text-xl font-semibold text-white mb-1">
                       {contact.methods.address.title}
@@ -70,15 +64,15 @@ export default async function Contact({
                     <p>1203 Genève</p>
                     <p>Suisse</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Google Maps Section */}
-      <section className="w-full flex flex-col items-center justify-center py-[15vh] px-4">
+      {/* Google Maps Section - Disabled for the moment, as we have no location */}
+      {/* <section className="w-full flex flex-col items-center justify-center py-[15vh] px-4">
         <div className="max-w-7xl w-full">
           <div className="relative w-full h-[500px] rounded-4xl overflow-hidden border border-neutral-800">
             <iframe
@@ -94,7 +88,7 @@ export default async function Contact({
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="w-full flex flex-col items-center justify-center py-[25vh] px-4">

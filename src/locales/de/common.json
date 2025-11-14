@@ -82,13 +82,20 @@
   },
   "finalCTA": {
     "title": "Erzählen Sie uns von Ihrem Projekt. Wir nehmen uns Zeit für ein Gespräch, auch wenn es nur eine Idee ist.",
-    "button": "Gespräch planen"
+    "button": "Tritt unserem Discord bei"
   },
   "contact": {
     "title": "Lassen Sie uns über Ihr Projekt sprechen",
     "subtitle": "Ein offenes Gespräch, ohne Verpflichtung.",
     "infoTitle": "Unsere Kontaktdaten",
     "infoSubtitle": "Schreiben Sie uns, rufen Sie uns an oder besuchen Sie uns",
+    "simpleContact": {
+      "title": "Kontakt",
+      "description": "Kontaktieren Sie uns einfach und schnell",
+      "emailLabel": "E-Mail",
+      "phoneLabel": "Telefon",
+      "discordLabel": "Discord"
+    },
     "methods": {
       "email": {
         "title": "E-Mail",

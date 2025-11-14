@@ -58,7 +58,7 @@ export function LanguageSwitcher() {
         </svg>
       </button>
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-32 bg-black/70 border border-white/10 rounded-2xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200 z-50">
+        <div className="absolute right-0 mt-2 w-32 bg-black/70 border border-white/10 rounded-2xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200 z-[60]">
           {LANGUAGES.map((lang, index) => (
             <button
               key={lang.code}

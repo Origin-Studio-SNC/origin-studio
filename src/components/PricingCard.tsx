@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 interface PricingCardProps {
   name: string;
@@ -12,6 +14,7 @@ interface PricingCardProps {
   cta: string;
   highlighted?: boolean;
   bestOffer?: string;
+  serviceId?: string;
   index: number;
 }
 
@@ -25,6 +28,7 @@ export default function PricingCard({
   cta,
   highlighted = false,
   bestOffer,
+  serviceId,
   index,
 }: PricingCardProps) {
   return (
@@ -82,15 +86,17 @@ export default function PricingCard({
         ))}
       </ul>
 
-      <button
-        className={`w-full py-3 rounded-4xl font-semibold transition-all duration-300 cursor-pointer ${
-          highlighted
-            ? "bg-[var(--color-accent-violet)] text-white hover:opacity-90 transition-opacity"
-            : "bg-neutral-800 text-white hover:bg-neutral-700"
-        }`}
-      >
-        {cta}
-      </button>
+      <Link href={`/contact${serviceId ? `?service=${serviceId}` : ''}`}>
+        <Button
+          className={`w-full ${
+            highlighted
+              ? "bg-[var(--color-accent-violet)] text-white hover:opacity-90"
+              : "bg-neutral-800 text-white hover:bg-neutral-700"
+          }`}
+        >
+          {cta}
+        </Button>
+      </Link>
     </motion.div>
   );
 }

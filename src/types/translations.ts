@@ -72,6 +72,13 @@ export interface ContactTranslations {
   subtitle: string;
   infoTitle: string;
   infoSubtitle: string;
+  simpleContact: {
+    title: string;
+    description: string;
+    emailLabel: string;
+    phoneLabel: string;
+    discordLabel: string;
+  };
   methods: {
     email: {
       title: string;
