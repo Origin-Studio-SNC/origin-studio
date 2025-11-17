@@ -80,9 +80,31 @@
     "testing": "Test",
     "deployment": "Déploiement & Suivi"
   },
-  "finalCTA": {
-    "title": "Parlez-nous de votre projet. Nous prenons le temps d'échanger, même si ce n'est qu'une idée.",
-    "button": "Rejoindre le Discord"
+  
+  "cta": {
+    "home": {
+      "title": "Prêt à donner vie à votre projet ?",
+      "description": "Rejoignez notre Discord pour discuter de vos idées ou contactez-nous directement. Nous sommes là pour transformer votre vision en réalité.",
+      "primaryButton": "Rejoindre le Discord",
+      "secondaryButton": "Nous contacter"
+    },
+    "about": {
+      "title": "Travaillons ensemble",
+      "description": "Vous avez un projet en tête ? Discutons-en ! Que ce soit sur Discord ou par email, nous sommes à votre écoute.",
+      "primaryButton": "Rejoindre le Discord",
+      "secondaryButton": "Nous contacter"
+    },
+    "projects": {
+      "title": "Votre projet pourrait être le prochain",
+      "description": "Inspiré par nos réalisations ? Parlons de votre idée et créons ensemble quelque chose d'exceptionnel.",
+      "primaryButton": "Rejoindre le Discord",
+      "secondaryButton": "Démarrer un projet"
+    },
+    "contact": {
+      "title": "Vous préférez discuter directement avec nous ?",
+      "description": "Rejoignez notre Discord pour échanger rapidement et simplement avec notre équipe.",
+      "primaryButton": "Rejoindre notre Discord"
+    }
   },
   "contact": {
     "title": "Parlons de votre projet",
@@ -138,9 +160,9 @@
       }
     },
     "cta": {
-      "title": "Vous préférez un appel ?",
-      "description": "Planifions un échange pour parler de votre idée.",
-      "button": "Planifier un échange"
+      "title": "Vous préférez discuter directement avec nous ?",
+      "description": "Rejoignez notre Discord pour échanger rapidement et simplement avec notre équipe.",
+      "button": "Rejoindre notre Discord"
     }
   },
   "about": {

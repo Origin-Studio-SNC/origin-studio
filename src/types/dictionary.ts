@@ -4,7 +4,7 @@ import {
   IdentityTranslations,
   StrengthsTranslations,
   TeamMiniTranslations,
-  FinalCTATranslations,
+  CTATranslations,
   ContactTranslations,
   TestimonialsTranslations,
   TechStackTranslations,
@@ -13,6 +13,7 @@ import {
   NotFoundTranslations,
   FooterTranslations,
   ServicesTranslations,
+  LegalTranslations,
 } from "./translations";
 
 export type Dictionary = {
@@ -37,12 +38,13 @@ export type Dictionary = {
   process: ProcessTranslations;
   testimonials: TestimonialsTranslations;
   techStack: TechStackTranslations;
-  finalCTA: FinalCTATranslations;
+  cta: CTATranslations;
   contact: ContactTranslations;
   about: AboutTranslations;
   projects: ProjectsTranslations;
   notFound: NotFoundTranslations;
   footer: FooterTranslations;
   services?: ServicesTranslations;
+  legal: LegalTranslations;
 };
  

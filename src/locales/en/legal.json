@@ -1,0 +1,148 @@
+{
+  "terms": {
+    "title": "Terms and Conditions",
+    "lastUpdated": "Last updated: November 17, 2025",
+    "sections": {
+      "introduction": {
+        "title": "1. Introduction",
+        "content": "Welcome to Origin Studio. By accessing and using this website, you agree to be bound by these Terms and Conditions. If you do not accept these terms, please do not use our site."
+      },
+      "company": {
+        "title": "2. Company Information",
+        "content": "Origin Studio SNC\nAddress: Chemin du Bois-Gentil 5\nEmail: info@origin-studio.ch\nPhone: +41 79 176 39 92"
+      },
+      "services": {
+        "title": "3. Services Offered",
+        "content": "Origin Studio offers web development, design, artificial intelligence integration, and secure solutions services. Specific service details are provided on our site and may be modified without notice."
+      },
+      "intellectualProperty": {
+        "title": "4. Intellectual Property",
+        "content": "All content on this site (texts, images, logos, source code) is the property of Origin Studio or its partners and is protected by intellectual property laws. Any unauthorized reproduction or use is strictly prohibited."
+      },
+      "userResponsibilities": {
+        "title": "5. User Responsibilities",
+        "content": "By using our site, you agree to:\n- Provide accurate and up-to-date information\n- Not use the site for illegal or unauthorized purposes\n- Not attempt to compromise the security of the site\n- Respect intellectual property rights"
+      },
+      "liability": {
+        "title": "6. Limitation of Liability",
+        "content": "Origin Studio makes every effort to ensure the accuracy and updating of information on this site. However, we cannot guarantee the absence of errors or service interruptions. We will not be liable for direct or indirect damages resulting from the use of the site."
+      },
+      "dataProtection": {
+        "title": "7. Data Protection",
+        "content": "The collection and processing of your personal data are governed by our Privacy Policy. By using this site, you consent to this policy."
+      },
+      "modifications": {
+        "title": "8. Modifications to Terms",
+        "content": "Origin Studio reserves the right to modify these terms at any time. Modifications will take effect upon publication on the site. It is your responsibility to regularly review these terms."
+      },
+      "applicableLaw": {
+        "title": "9. Applicable Law",
+        "content": "These terms are governed by Swiss law. Any dispute will be subject to the exclusive jurisdiction of the courts of Geneva, Switzerland."
+      },
+      "contact": {
+        "title": "10. Contact",
+        "content": "For any questions regarding these terms, please contact us:\nEmail: info@origin-studio.ch\nPhone: +41 79 176 39 92\nDiscord: https://discord.gg/6khXbmbJF9"
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: November 17, 2025",
+    "sections": {
+      "introduction": {
+        "title": "1. Introduction",
+        "content": "Origin Studio is committed to protecting your privacy. This policy explains how we collect, use, and protect your personal data in accordance with the Swiss Federal Act on Data Protection (FADP) and the General Data Protection Regulation (GDPR)."
+      },
+      "dataController": {
+        "title": "2. Data Controller",
+        "content": "Origin Studio SNC\nAddress: Chemin du Bois-Gentil 5\nEmail: info@origin-studio.ch\nPhone: +41 79 176 39 92"
+      },
+      "dataCollected": {
+        "title": "3. Data Collected",
+        "content": "We collect the following data:\n\n**Voluntarily provided data:**\n- First and last name\n- Email address\n- Phone number (optional)\n- Messages and requests sent via the contact form\n\n**Technical data:**\n- IP address (anonymized)\n- Browser type\n- Pages visited and visit duration\n- Data collected via Umami Analytics (cookie-free analysis)"
+      },
+      "dataUsage": {
+        "title": "4. Data Usage",
+        "content": "Your data is used to:\n- Respond to your contact requests\n- Improve our services and website\n- Analyze site usage (anonymously)\n- Comply with our legal obligations\n\nWe do not sell, rent, or share your personal data with third parties for commercial purposes."
+      },
+      "dataStorage": {
+        "title": "5. Data Storage and Security",
+        "content": "Your data is stored in Switzerland on secure servers. We implement appropriate technical and organizational measures to protect your data against unauthorized access, modification, disclosure, or destruction.\n\nRetention period:\n- Contact messages: 3 years after the last exchange\n- Analytics data: 2 years (anonymized)"
+      },
+      "cookies": {
+        "title": "6. Cookies and Similar Technologies",
+        "content": "Our site does NOT use cookies. We use Umami Analytics, a privacy-friendly analytics solution that operates without cookies and automatically anonymizes all collected data."
+      },
+      "userRights": {
+        "title": "7. Your Rights",
+        "content": "In accordance with FADP and GDPR, you have the following rights:\n- **Right of access**: obtain a copy of your personal data\n- **Right to rectification**: correct your inaccurate data\n- **Right to erasure**: request deletion of your data\n- **Right to restriction**: limit the processing of your data\n- **Right to object**: object to the processing of your data\n- **Right to portability**: receive your data in a structured format\n\nTo exercise these rights, contact us at info@origin-studio.ch"
+      },
+      "thirdPartyServices": {
+        "title": "8. Third-Party Services",
+        "content": "We use the following third-party services:\n\n**Umami Analytics**:\n- Hosting: Self Hosted\n- Purpose: Anonymous web traffic analysis\n- Data collected: Pages visited, device, browser (anonymized)\n- Privacy policy: https://umami.is/privacy\n\n**Web hosting**:\n- Provider: Infomaniak (Switzerland)\n- Location: Geneva, Switzerland\n- Privacy policy: https://www.infomaniak.com/en/legal/privacy"
+      },
+      "internationalTransfers": {
+        "title": "9. International Transfers",
+        "content": "Your data is stored and processed in Switzerland. We do not transfer your data outside Switzerland or the European Economic Area unless necessary to provide our services and with appropriate safeguards."
+      },
+      "minors": {
+        "title": "10. Minors",
+        "content": "Our site is not intended for persons under 16 years of age. We do not knowingly collect personal data from minors. If you believe a minor has provided us with data, please contact us."
+      },
+      "modifications": {
+        "title": "11. Policy Modifications",
+        "content": "We may update this policy from time to time. The updated version will be indicated by the \"Last updated\" date at the top of this page. We encourage you to regularly review this policy."
+      },
+      "contact": {
+        "title": "12. Contact",
+        "content": "For any questions regarding this policy or to exercise your rights:\nEmail: info@origin-studio.ch\nPhone: +41 79 176 39 92\nDiscord: https://discord.gg/6khXbmbJF9"
+      }
+    }
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: November 17, 2025",
+    "sections": {
+      "introduction": {
+        "title": "1. Good news: we don't use cookies!",
+        "content": "At Origin Studio, we've made the deliberate choice not to use cookies on our website. We believe in a privacy-respecting approach and have implemented alternative solutions to analyze our site usage without compromising your privacy."
+      },
+      "whatAreCookies": {
+        "title": "2. What is a cookie?",
+        "content": "A cookie is a small text file that a website stores on your computer or mobile device when you visit it. Cookies allow the site to remember your actions and preferences over a period of time.\n\nCommon types of cookies:\n- **Essential cookies**: necessary for site operation\n- **Performance cookies**: analyze site usage\n- **Marketing cookies**: track your online activity\n- **Third-party cookies**: placed by external services"
+      },
+      "ourApproach": {
+        "title": "3. Our cookie-free approach",
+        "content": "Instead of using cookies, we've opted for **Umami Analytics**, a modern and privacy-friendly web analytics solution that:\n\n✅ Works without cookies\n✅ Automatically anonymizes all data\n✅ Does not track individual users\n✅ Does not share data with third parties\n✅ Is GDPR-compliant without requiring a consent banner\n✅ Respects browser \"Do Not Track\" settings"
+      },
+      "whatWeCollect": {
+        "title": "4. What we collect (without cookies)",
+        "content": "Through Umami Analytics, we only collect aggregated and anonymous data:\n\n- Pages visited\n- Visit duration\n- Country of origin (based on anonymized IP address)\n- Device type (computer, mobile, tablet)\n- Browser type\n- Operating system\n\nThis data helps us understand how our site is used and improve it, while fully respecting your privacy."
+      },
+      "localStorage": {
+        "title": "5. Local Storage",
+        "content": "Our site may use browser local storage (localStorage) to improve your experience, for example to remember your language preferences. This data is stored only on your device and is never transmitted to our servers."
+      },
+      "thirdParty": {
+        "title": "6. Third-Party Services",
+        "content": "We do not integrate third-party services that use cookies (such as Google Analytics, Facebook Pixel, etc.). The only external services are:\n\n- **Umami Analytics**: Cookie-free analytics\n- **Infomaniak**: Web hosting in Switzerland"
+      },
+      "browserSettings": {
+        "title": "7. Browser Settings",
+        "content": "Even though we don't use cookies, you can configure your browser to block all cookies if you wish. Here's how:\n\n**Chrome**: Settings > Privacy and security > Cookies\n**Firefox**: Options > Privacy and security > Cookies\n**Safari**: Preferences > Privacy > Cookies\n**Edge**: Settings > Privacy > Cookies"
+      },
+      "doNotTrack": {
+        "title": "8. Do Not Track",
+        "content": "We respect your browser's \"Do Not Track\" (DNT) signal. If you have enabled DNT, Umami Analytics will not collect any analytics data from your visit."
+      },
+      "modifications": {
+        "title": "9. Modifications to this Policy",
+        "content": "If we decide to use cookies in the future, we will update this policy and clearly inform you. We will always continue to favor privacy-friendly solutions."
+      },
+      "contact": {
+        "title": "10. Questions?",
+        "content": "If you have any questions about our cookie policy or our approach to privacy:\n\nEmail: info@origin-studio.ch\nPhone: +41 79 176 39 92\nDiscord: https://discord.gg/6khXbmbJF9"
+      }
+    }
+  }
+}

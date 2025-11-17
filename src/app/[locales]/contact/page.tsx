@@ -2,9 +2,33 @@ import { getDictionary } from "@/lib/i18n/get-dictionnary";
 import HeroPage from "@/components/HeroPage";
 import SimpleContactCard from "@/components/SimpleContactCard";
 import ContactForm from "@/components/ContactForm";
-import SectionTitle from "@/components/SectionTitle";
-import SectionSubtitle from "@/components/SectionSubtitle";
-import { Button } from "@/components/ui/button";
+import CTA from "@/components/CTA";
+import type { Metadata } from "next";
+
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: Promise<{ locales: 'fr' | 'en' | 'de' }> 
+}): Promise<Metadata> {
+  const { locales } = await params;
+  const dictionary = await getDictionary(locales);
+  const domain = "https://origin-studio.ch";
+  
+  return {
+    openGraph: {
+      images: [
+        {
+          url: `${domain}/api/og?title=${encodeURIComponent(dictionary.contact.title)}&description=${encodeURIComponent(dictionary.contact.subtitle)}`,
+          width: 1200,
+          height: 630,
+        }
+      ],
+    },
+    twitter: {
+      images: [`${domain}/api/og?title=${encodeURIComponent(dictionary.contact.title)}&description=${encodeURIComponent(dictionary.contact.subtitle)}`],
+    },
+  };
+}
 
 export default async function Contact({
   params,
@@ -14,6 +38,7 @@ export default async function Contact({
   const { locales } = await params;
   const dictionary = await getDictionary(locales);
   const contact = dictionary.contact;
+  const cta = dictionary.cta;
 
   return (
     <main className="flex flex-col items-center">
@@ -90,17 +115,12 @@ export default async function Contact({
       </section> */}
 
       {/* CTA Section */}
-      <section className="w-full flex flex-col items-center justify-center py-[25vh] px-4">
-        <div className="max-w-4xl text-center">
-          <SectionTitle className="mb-6">{contact.cta.title}</SectionTitle>
-          <SectionSubtitle className="mb-8 leading-relaxed">
-            {contact.cta.description}
-          </SectionSubtitle>
-          <Button variant="secondary" size="lg" className="mt-4">
-            {contact.cta.button}
-          </Button>
-        </div>
-      </section>
+      <CTA
+        title={cta.contact.title}
+        description={cta.contact.description}
+        primaryButton={{ text: cta.contact.primaryButton, href: "https://discord.gg/6khXbmbJF9" }}
+        discordOnly={true}
+      />
     </main>
   );
 }

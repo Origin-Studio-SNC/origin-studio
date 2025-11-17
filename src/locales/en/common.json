@@ -80,9 +80,31 @@
     "testing": "Testing",
     "deployment": "Deployment & Follow-up"
   },
-  "finalCTA": {
-    "title": "Tell us about your project. We take the time to talk, even if it's just an idea.",
-    "button": "Join our Discord"
+  
+  "cta": {
+    "home": {
+      "title": "Ready to bring your project to life?",
+      "description": "Join our Discord to discuss your ideas or contact us directly. We're here to turn your vision into reality.",
+      "primaryButton": "Join Discord",
+      "secondaryButton": "Contact us"
+    },
+    "about": {
+      "title": "Let's work together",
+      "description": "Have a project in mind? Let's talk about it! Whether on Discord or by email, we're here to listen.",
+      "primaryButton": "Join Discord",
+      "secondaryButton": "Contact us"
+    },
+    "projects": {
+      "title": "Your project could be next",
+      "description": "Inspired by our work? Let's talk about your idea and create something exceptional together.",
+      "primaryButton": "Join Discord",
+      "secondaryButton": "Start a project"
+    },
+    "contact": {
+      "title": "Prefer to chat directly with us?",
+      "description": "Join our Discord to connect quickly and easily with our team.",
+      "primaryButton": "Join our Discord"
+    }
   },
   "contact": {
     "title": "Let's talk about your project",
@@ -138,9 +160,9 @@
       }
     },
     "cta": {
-      "title": "Prefer a call?",
-      "description": "Let's schedule a conversation to discuss your idea.",
-      "button": "Schedule a call"
+      "title": "Prefer to chat directly with us?",
+      "description": "Join our Discord to connect quickly and easily with our team.",
+      "button": "Join our Discord"
     }
   },
   "about": {

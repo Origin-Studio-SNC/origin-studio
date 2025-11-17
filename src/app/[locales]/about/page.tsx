@@ -1,12 +1,37 @@
 import { getDictionary } from "@/lib/i18n/get-dictionnary";
-import { Button } from "@/components/ui/button";
 import TeamCard from "@/components/TeamCard";
 import HeroPage from "@/components/HeroPage";
 import FeatureCardsContainer from "@/components/FeatureCardsContainer";
 import SectionTitle from "@/components/SectionTitle";
 import SectionSubtitle from "@/components/SectionSubtitle";
+import CTA from "@/components/CTA";
+import type { Metadata } from "next";
 import { ShieldCheckIcon, StarIcon, HandshakeIcon } from "lucide-react";
-import Link from "next/link";
+
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: Promise<{ locales: 'fr' | 'en' | 'de' }> 
+}): Promise<Metadata> {
+  const { locales } = await params;
+  const dictionary = await getDictionary(locales);
+  const domain = "https://origin-studio.ch";
+  
+  return {
+    openGraph: {
+      images: [
+        {
+          url: `${domain}/api/og?title=${encodeURIComponent(dictionary.about.title)}&description=${encodeURIComponent(dictionary.about.subtitle)}`,
+          width: 1200,
+          height: 630,
+        }
+      ],
+    },
+    twitter: {
+      images: [`${domain}/api/og?title=${encodeURIComponent(dictionary.about.title)}&description=${encodeURIComponent(dictionary.about.subtitle)}`],
+    },
+  };
+}
 
 export default async function About({
   params,
@@ -19,6 +44,7 @@ export default async function About({
   // Fonction pour récupérer les traductions en fonction de la locale
   const dictionary = await getDictionary(locales);
   const about = dictionary.about;
+  const cta = dictionary.cta;
 
   const valuesFeatures = [
     {
@@ -127,21 +153,12 @@ export default async function About({
       </section>
 
       {/* CTA Section */}
-      <section className="w-full flex flex-col items-center justify-center py-[25vh] px-4">
-        <div className="max-w-4xl text-center">
-          <SectionTitle className="mb-6">
-            {about.cta.title}
-          </SectionTitle>
-          <SectionSubtitle className="mb-8 leading-relaxed">
-            {about.cta.description}
-          </SectionSubtitle>
-          <Link href="/contact">
-            <Button variant="secondary" size="lg" className="mt-4">
-              {about.cta.button}
-            </Button>
-          </Link>
-        </div>
-      </section>
+      <CTA
+        title={cta.about.title}
+        description={cta.about.description}
+        primaryButton={{ text: cta.about.primaryButton, href: "https://discord.gg/6khXbmbJF9" }}
+        secondaryButton={{ text: cta.about.secondaryButton, href: `/${locales}/contact` }}
+      />
     </main>
   );
 }

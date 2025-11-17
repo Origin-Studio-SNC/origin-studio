@@ -65,16 +65,11 @@ export default function FooterFiveColsLogoSubFooter({ dictionary }: { dictionary
                         {dictionary.aboutUs.aboutUs}
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="#" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
                         {dictionary.aboutUs.careers}
                       </a>
-                    </li>
-                    <li>
-                      <a href="#" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        {dictionary.aboutUs.blog}
-                      </a>
-                    </li>
+                    </li> */}
                     <li>
                       <Link href={`/${locale}/contact`} className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
                         {dictionary.aboutUs.contact}
@@ -93,11 +88,11 @@ export default function FooterFiveColsLogoSubFooter({ dictionary }: { dictionary
                         {dictionary.contact.title}
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="#" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
                         {dictionary.contact.support}
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a href="https://discord.gg/6khXbmbJF9" target="_blank" rel="noopener noreferrer" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
                         Discord
@@ -121,19 +116,19 @@ export default function FooterFiveColsLogoSubFooter({ dictionary }: { dictionary
                 <h3 className="sr-only" id="subfooter-links-3-sub">Get in touch</h3>
                 <ul className="flex items-center gap-4">
                   <li>
-                    <a href="#" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                    <Link href={`/${locale}/terms`} className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
                       T&C
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                    <Link href={`/${locale}/privacy`} className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
                       Privacy
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                    <Link href={`/${locale}/cookies`} className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
                       Cookies
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>

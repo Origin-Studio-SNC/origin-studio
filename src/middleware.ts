@@ -57,6 +57,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!_next|api|favicon.ico|icon.svg|img|fonts).*)',
+    '/((?!_next|api|favicon.ico|icon.svg|img|fonts|.*\\.json).*)',
   ],
 };

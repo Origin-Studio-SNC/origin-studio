@@ -62,10 +62,33 @@ export type TeamMiniTranslations = {
   };
 };
 
-export type FinalCTATranslations = {
-  title: string;
-  button: string;
+export type CTATranslations = {
+  home: {
+    title: string;
+    description: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
+  about: {
+    title: string;
+    description: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
+  projects: {
+    title: string;
+    description: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
+  contact: {
+    title: string;
+    description: string;
+    primaryButton: string;
+  };
 };
+
+
 
 export interface ContactTranslations {
   title: string;
@@ -330,5 +353,34 @@ export type ServicesTranslations = {
     description: string;
     primaryButton: string;
     secondaryButton: string;
+  };
+};
+
+export type LegalSection = {
+  title: string;
+  content: string;
+};
+
+export type LegalTranslations = {
+  terms: {
+    title: string;
+    lastUpdated: string;
+    sections: {
+      [key: string]: LegalSection;
+    };
+  };
+  privacy: {
+    title: string;
+    lastUpdated: string;
+    sections: {
+      [key: string]: LegalSection;
+    };
+  };
+  cookies: {
+    title: string;
+    lastUpdated: string;
+    sections: {
+      [key: string]: LegalSection;
+    };
   };
 };
