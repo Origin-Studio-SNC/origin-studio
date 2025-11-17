@@ -248,7 +248,7 @@ export default async function Services({
             {services.cta.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="https://discord.gg/6khXbmbJF9" target="_blank" rel="noopener noreferrer">
+            <Link href="https://discord.gg/6khXbmbJF9" target="_blank" rel="noopener noreferrer" className="mx-auto">
               <Button variant="secondary" size="lg" className="bg-[#5865F2] hover:bg-[#4752C4] flex items-center gap-2">
                 <svg width="20" height="20" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clipPath="url(#clip0)">
