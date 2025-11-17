@@ -1,0 +1,273 @@
+{
+  "title": "Our Services",
+  "subtitle": "Tailored digital solutions for your business",
+  "intro": "From idea to implementation, we support you in creating high-performance, secure and scalable digital solutions.",
+  
+  "services": {
+    "title": "Our Services",
+    "description": "Solutions adapted to your needs, developed with expertise and passion.",
+    "items": [
+      {
+        "id": "web-development",
+        "title": "Web Development & Applications",
+        "shortDescription": "Modern and high-performance websites and applications",
+        "description": "We create custom websites and applications, optimized for performance and user experience. From showcase sites to complex business applications, we master the entire development chain.",
+        "features": [
+          "Modern and responsive showcase sites",
+          "Custom web applications",
+          "Progressive Web Apps (PWA)",
+          "E-commerce and booking platforms",
+          "Dashboards and administration interfaces"
+        ]
+      },
+      {
+        "id": "ai-solutions",
+        "title": "Artificial Intelligence & Private LLMs",
+        "shortDescription": "Secure and personalized AI solutions",
+        "description": "We integrate artificial intelligence into your business processes with a focus on privacy and security. Private hosting of your AI models in Switzerland for complete data sovereignty.",
+        "features": [
+          "Integration of LLMs in your processes",
+          "Personalized intelligent chatbots",
+          "AI-powered data analysis",
+          "Automation solutions",
+          "Private and secure hosting in Switzerland"
+        ]
+      },
+      {
+        "id": "infrastructure",
+        "title": "Secure Solutions & Infrastructure",
+        "shortDescription": "Swiss hosting and secure architecture",
+        "description": "We design and implement robust and secure infrastructures, hosted in Switzerland. Guaranteed GDPR compliance and optimal data protection.",
+        "features": [
+          "Responsible Swiss hosting",
+          "Secure cloud architecture",
+          "GDPR compliance",
+          "Security audits",
+          "Data backup and recovery"
+        ]
+      },
+      {
+        "id": "design",
+        "title": "UX/UI Design",
+        "shortDescription": "Modern and intuitive interfaces",
+        "description": "We create elegant and intuitive interfaces that place the user at the heart of the experience. Design system, prototyping and user testing to guarantee an optimal experience.",
+        "features": [
+          "Modern interface design",
+          "Prototyping and wireframing",
+          "Consistent visual identity",
+          "User testing",
+          "Scalable design system"
+        ]
+      },
+      {
+        "id": "maintenance",
+        "title": "Maintenance & Support",
+        "shortDescription": "Continuous and evolving support",
+        "description": "We ensure the maintenance and evolution of your digital solutions over the long term. Responsive support, regular updates and personalized assistance.",
+        "features": [
+          "Continuous technical support",
+          "Updates and evolutions",
+          "Monitoring and optimization",
+          "Team training",
+          "Fast technical assistance"
+        ]
+      },
+      {
+        "id": "consulting",
+        "title": "Consulting & Digital Strategy",
+        "shortDescription": "Strategic support and expertise",
+        "description": "We support you in your digital transformation with strategic advice adapted to your objectives. Audit, technology choices and project roadmap.",
+        "features": [
+          "Audit of your digital presence",
+          "Digital transformation consulting",
+          "Adapted technology choices",
+          "Project roadmap",
+          "Personalized support"
+        ]
+      }
+    ]
+  },
+
+  "process": {
+    "title": "Our Process",
+    "description": "Structured and transparent support, from idea to deployment.",
+    "durationLabel": "Duration:",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Discovery",
+        "description": "We analyze your needs, objectives and context to define the best approach together.",
+        "duration": "1-2 weeks"
+      },
+      {
+        "number": "02",
+        "title": "Quote & Planning",
+        "description": "Detailed proposal with schedule, budget and project milestones. Complete transparency on costs and deadlines.",
+        "duration": "3-5 days"
+      },
+      {
+        "number": "03",
+        "title": "Design",
+        "description": "Interface design, technical architecture and mockup validation before development.",
+        "duration": "2-4 weeks"
+      },
+      {
+        "number": "04",
+        "title": "Development",
+        "description": "Iterative development with regular checkpoints. You follow progress in real time and validate at each stage.",
+        "duration": "Variable"
+      },
+      {
+        "number": "05",
+        "title": "Testing & Validation",
+        "description": "Functional tests, performance tests and user tests to guarantee optimal quality.",
+        "duration": "1-2 weeks"
+      },
+      {
+        "number": "06",
+        "title": "Deployment & Follow-up",
+        "description": "Launch, team training and ongoing support. We stay by your side after launch.",
+        "duration": "Continuous"
+      }
+    ]
+  },
+
+  "technologies": {
+    "title": "Technologies & Technical Stack",
+    "description": "We use modern, reliable and high-performance technologies to create sustainable solutions.",
+    "categories": [
+      {
+        "name": "Frontend",
+        "items": ["React", "Next.js", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "Backend",
+        "items": ["Node.js", "Python", "PostgreSQL", "MongoDB", "n8n"]
+      },
+      {
+        "name": "Artificial Intelligence",
+        "items": ["OpenAI", "LangChain", "Hugging Face", "TensorFlow"]
+      },
+      {
+        "name": "Infrastructure",
+        "items": ["Docker", "AWS", "Azure", "Vercel"]
+      },
+      {
+        "name": "Tools",
+        "items": ["Git", "GitHub", "Figma", "VS Code"]
+      }
+    ]
+  },
+
+  "packages": {
+    "title": "Our Packages",
+    "description": "Solutions tailored to every ambition, like our Swiss peaks.",
+    "bestOffer": "BEST OFFER",
+    "starter": {
+      "name": "Salève",
+      "mountainInfo": "Geneva, 1379m",
+      "mountainDescription": "Geneva's balcony, between France and Switzerland",
+      "description": "Ideal to start your online presence",
+      "price": "From CHF 3,000",
+      "features": [
+        "Responsive showcase site",
+        "Up to 5 pages",
+        "Modern and personalized design",
+        "Basic SEO optimization",
+        "Swiss hosting included (1 year)",
+        "3 months support"
+      ],
+      "cta": "Request a quote"
+    },
+    "business": {
+      "name": "Teysachaux",
+      "mountainInfo": "Fribourg, 2024m",
+      "mountainDescription": "Fribourg Prealps, panoramic view of the Alps",
+      "description": "For more ambitious projects",
+      "price": "From CHF 8,000",
+      "features": [
+        "Custom web application",
+        "Administration interface (CMS)",
+        "API integrations",
+        "Database",
+        "Advanced optimization",
+        "Swiss hosting included (1 year)",
+        "6 months support"
+      ],
+      "cta": "Let's discuss your project",
+      "highlighted": true
+    },
+    "enterprise": {
+      "name": "Diablerets",
+      "mountainInfo": "Vaud, 3210m",
+      "mountainDescription": "Iconic summit of the Vaud Alps",
+      "description": "Custom solutions and complete support",
+      "price": "On quote",
+      "features": [
+        "Complex and scalable architecture",
+        "Personalized AI integration",
+        "Dedicated infrastructure",
+        "Advanced security",
+        "Audit and strategic consulting",
+        "Unlimited priority support"
+      ],
+      "cta": "Schedule a call"
+    }
+  },
+
+  "useCases": {
+    "title": "Use Cases",
+    "description": "Some examples of projects we can create together",
+    "items": [
+      {
+        "question": "Do you want a chatbot that answers your customers 24/7?",
+        "answer": "We create personalized AI assistants that understand your business and processes."
+      },
+      {
+        "question": "Do you need to analyze thousands of documents?",
+        "answer": "Our AI solutions can extract, analyze and structure information automatically."
+      },
+      {
+        "question": "Is your current site slow and not secure?",
+        "answer": "We modernize your infrastructure with high-performance and secure technologies."
+      },
+      {
+        "question": "Do you want to automate repetitive tasks?",
+        "answer": "We develop custom automation solutions to save time."
+      }
+    ]
+  },
+
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What are your delivery times?",
+        "answer": "Deadlines vary depending on project complexity. A showcase site typically takes 4-6 weeks, a web application 2-4 months. We establish a detailed schedule during the quote."
+      },
+      {
+        "question": "Do you offer maintenance after launch?",
+        "answer": "Yes, we offer maintenance contracts including technical support, updates, monitoring and functional evolutions."
+      },
+      {
+        "question": "Do you work with limited budgets?",
+        "answer": "We adapt to your budget by prioritizing essential features. Our Starter package starts at CHF 3,000 for a professional showcase site."
+      },
+      {
+        "question": "Where do you host projects?",
+        "answer": "All our projects are hosted in Switzerland with environmentally friendly infrastructures compliant with the highest security standards (GDPR)."
+      },
+      {
+        "question": "Can I modify my site myself after delivery?",
+        "answer": "Yes, we integrate a content management system (CMS) adapted to your needs and train your teams on its use."
+      }
+    ]
+  },
+
+  "cta": {
+    "title": "Ready to start your project?",
+    "description": "Let's discuss your needs and find the solution that suits you together. First exchange without commitment.",
+    "primaryButton": "Join our Discord",
+    "secondaryButton": "Contact us"
+  }
+}

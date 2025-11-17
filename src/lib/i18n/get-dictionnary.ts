@@ -1,13 +1,18 @@
-import fr from '@/locales/fr/common.json';
-import en from '@/locales/en/common.json';
+import frCommon from '@/locales/fr/common.json';
+import enCommon from '@/locales/en/common.json';
+import deCommon from '@/locales/de/common.json';
+import frServices from '@/locales/fr/services.json';
+import enServices from '@/locales/en/services.json';
+import deServices from '@/locales/de/services.json';
 import { Dictionary } from '@/types/dictionary';
 
-const dictionaries: Record<'fr' | 'en', Dictionary> = {
-  fr,
-  en,
+const dictionaries: Record<'fr' | 'en' | 'de', Dictionary> = {
+  fr: { ...frCommon, services: frServices },
+  en: { ...enCommon, services: enServices },
+  de: { ...deCommon, services: deServices },
 };
 
 // Fonction qui retourne le dictionnaire correspondant à la locale demandée
-export const getDictionary = async (locale: 'fr' | 'en'): Promise<Dictionary> => {
+export const getDictionary = async (locale: 'fr' | 'en' | 'de'): Promise<Dictionary> => {
   return dictionaries[locale];
 };

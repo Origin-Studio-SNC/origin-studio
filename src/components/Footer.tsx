@@ -1,9 +1,12 @@
 "use client"
 
-import { MessageSquareCodeIcon } from "lucide-react";
 import { useParams } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
+import { FooterTranslations } from "@/types/translations";
 
-export default function FooterFiveColsLogoSubFooter() {
+
+export default function FooterFiveColsLogoSubFooter({ dictionary }: { dictionary: FooterTranslations }) {
     const params = useParams();
     const locale = params.locales as string;
     return (
@@ -15,13 +18,10 @@ export default function FooterFiveColsLogoSubFooter() {
               {/* Logo and description */}
               <div className="flex-1 max-w-md">
                 <div className="flex items-center gap-4 mb-4">
-                  <MessageSquareCodeIcon className="w-10 h-10 text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-full p-2" />
-                  <h1 className="text-2xl text-white font-bold">Logo</h1>
+                  <Image src="/img/logo_origin_full.svg" alt="Logo" width={100} height={40} className="w-30 h-auto" />
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+                  {dictionary.description}
                 </p>
               </div>
 
@@ -29,78 +29,78 @@ export default function FooterFiveColsLogoSubFooter() {
               <div className="flex flex-wrap justify-between gap-8 lg:gap-12">
                 <nav className="min-w-[160px]" aria-labelledby="footer-product-5-logo">
                   <h3 className="mb-6 text-base font-semibold text-neutral-200" id="footer-product-5-logo">
-                    Services
+                    {dictionary.services.title}
                   </h3>
                   <ul className="space-y-2">
                     <li>
-                      <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Features
-                      </a>
+                      <Link href={`/${locale}`} className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                        {dictionary.services.features}
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Customers
-                      </a>
+                      <Link href={`/${locale}/projects`} className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                        {dictionary.services.customers}
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Why us?
-                      </a>
+                      <Link href={`/${locale}/about`} className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                        {dictionary.services.whyUs}
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Pricing
-                      </a>
+                      <Link href={`/${locale}/prestations`} className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                        {dictionary.services.pricing}
+                      </Link>
                     </li>
                   </ul>
                 </nav>
 
                 <nav className="min-w-[160px]" aria-labelledby="footer-about-5-logo">
                   <h3 className="mb-6 text-base font-semibold text-neutral-200" id="footer-about-5-logo">
-                    About us
+                    {dictionary.aboutUs.title}
                   </h3>
                   <ul className="space-y-2">
                     <li>
-                      <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        About us
+                      <Link href={`/${locale}/about`} className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                        {dictionary.aboutUs.aboutUs}
+                      </Link>
+                    </li>
+                    <li>
+                      <a href="#" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                        {dictionary.aboutUs.careers}
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Careers
+                      <a href="#" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                        {dictionary.aboutUs.blog}
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Leadership
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Blog
-                      </a>
+                      <Link href={`/${locale}/contact`} className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                        {dictionary.aboutUs.contact}
+                      </Link>
                     </li>
                   </ul>
                 </nav>
 
                 <nav className="min-w-[160px]" aria-labelledby="footer-get-in-touch-5-logo">
                   <h3 className="mb-6 text-base font-bold text-neutral-200" id="footer-get-in-touch-5-logo">
-                    Contact
+                    {dictionary.contact.title}
                   </h3>
                   <ul className="space-y-2">
                     <li>
-                      <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Contact
+                      <Link href={`/${locale}/contact`} className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                        {dictionary.contact.title}
+                      </Link>
+                    </li>
+                    <li>
+                      <a href="#" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                        {dictionary.contact.support}
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Support
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
-                        Partners
+                      <a href="https://discord.gg/6khXbmbJF9" target="_blank" rel="noopener noreferrer" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                        Discord
                       </a>
                     </li>
                   </ul>
@@ -115,23 +115,23 @@ export default function FooterFiveColsLogoSubFooter() {
           <div className="container px-6 mx-auto">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
               <div>
-                © {new Date().getFullYear()} Brand. {locale === 'en' ? 'All rights reserved' : 'Tous droits réservés'}
+                © {new Date().getFullYear()} Origin Studio. {locale === 'en' ? 'All rights reserved' : 'Tous droits réservés'}
               </div>
               <nav aria-labelledby="subfooter-links-3-sub">
                 <h3 className="sr-only" id="subfooter-links-3-sub">Get in touch</h3>
                 <ul className="flex items-center gap-4">
                   <li>
-                    <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                    <a href="#" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
                       T&C
                     </a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                    <a href="#" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
                       Privacy
                     </a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
+                    <a href="#" className="transition-colors duration-300 hover:text-neutral-50 focus:text-neutral-50">
                       Cookies
                     </a>
                   </li>

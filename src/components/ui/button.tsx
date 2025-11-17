@@ -16,7 +16,7 @@ const buttonVariants = cva(
         outline:
           "h-9 border border-neutral-700 bg-neutral-950 shadow-xs rounded-full hover:bg-neutral-900",
         secondary:
-          "h-9 bg-[linear-gradient(90deg,var(--color-accent-blue)_0%,var(--color-accent-violet)_100%)] shadow-xs rounded-full hover:opacity-80",
+          "h-9 bg-[linear-gradient(90deg,#ffffff_0%,#f2f4f3_100%)] text-black shadow-xs rounded-full hover:opacity-80",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",

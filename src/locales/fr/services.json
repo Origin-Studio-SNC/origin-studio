@@ -1,0 +1,273 @@
+{
+  "title": "Nos Prestations",
+  "subtitle": "Des solutions digitales sur mesure pour votre entreprise",
+  "intro": "De l'idée à la réalisation, nous vous accompagnons dans la création de solutions digitales performantes, sécurisées et évolutives.",
+  
+  "services": {
+    "title": "Nos Services",
+    "description": "Des solutions adaptées à vos besoins, développées avec expertise et passion.",
+    "items": [
+      {
+        "id": "web-development",
+        "title": "Développement Web & Applications",
+        "shortDescription": "Sites et applications web modernes et performants",
+        "description": "Nous créons des sites web et applications sur mesure, optimisés pour la performance et l'expérience utilisateur. Du site vitrine à l'application métier complexe, nous maîtrisons l'ensemble de la chaîne de développement.",
+        "features": [
+          "Sites vitrines modernes et responsive",
+          "Applications web sur mesure",
+          "Progressive Web Apps (PWA)",
+          "E-commerce et plateformes de réservation",
+          "Tableaux de bord et interfaces d'administration"
+        ]
+      },
+      {
+        "id": "ai-solutions",
+        "title": "Intelligence Artificielle & LLMs Privés",
+        "shortDescription": "Solutions IA sécurisées et personnalisées",
+        "description": "Nous intégrons l'intelligence artificielle dans vos processus métier avec un accent sur la confidentialité et la sécurité. Hébergement privé de vos modèles IA en Suisse pour une souveraineté totale de vos données.",
+        "features": [
+          "Intégration de LLMs dans vos processus",
+          "Chatbots intelligents personnalisés",
+          "Analyse de données avec IA",
+          "Solutions d'automatisation",
+          "Hébergement privé et sécurisé en Suisse"
+        ]
+      },
+      {
+        "id": "infrastructure",
+        "title": "Solutions Sécurisées & Infrastructure",
+        "shortDescription": "Hébergement suisse et architecture sécurisée",
+        "description": "Nous concevons et mettons en place des infrastructures robustes et sécurisées, hébergées en Suisse. Conformité RGPD garantie et protection optimale de vos données.",
+        "features": [
+          "Hébergement suisse responsable",
+          "Architecture cloud sécurisée",
+          "Mise en conformité RGPD",
+          "Audits de sécurité",
+          "Sauvegarde et récupération de données"
+        ]
+      },
+      {
+        "id": "design",
+        "title": "UX/UI Design",
+        "shortDescription": "Interfaces modernes et intuitives",
+        "description": "Nous créons des interfaces élégantes et intuitives qui placent l'utilisateur au cœur de l'expérience. Design system, prototypage et tests utilisateurs pour garantir une expérience optimale.",
+        "features": [
+          "Design d'interfaces modernes",
+          "Prototypage et wireframing",
+          "Identité visuelle cohérente",
+          "Tests utilisateurs",
+          "Design system évolutif"
+        ]
+      },
+      {
+        "id": "maintenance",
+        "title": "Maintenance & Support",
+        "shortDescription": "Accompagnement continu et évolutif",
+        "description": "Nous assurons la maintenance et l'évolution de vos solutions digitales sur le long terme. Support réactif, mises à jour régulières et accompagnement personnalisé.",
+        "features": [
+          "Support technique continu",
+          "Mises à jour et évolutions",
+          "Monitoring et optimisation",
+          "Formation de vos équipes",
+          "Assistance technique rapide"
+        ]
+      },
+      {
+        "id": "consulting",
+        "title": "Conseil & Stratégie Digitale",
+        "shortDescription": "Accompagnement stratégique et expertise",
+        "description": "Nous vous accompagnons dans votre transformation digitale avec des conseils stratégiques adaptés à vos objectifs. Audit, choix technologiques et feuille de route projet.",
+        "features": [
+          "Audit de votre présence digitale",
+          "Conseil en transformation numérique",
+          "Choix technologiques adaptés",
+          "Feuille de route projet",
+          "Accompagnement personnalisé"
+        ]
+      }
+    ]
+  },
+
+  "process": {
+    "title": "Notre Processus",
+    "description": "Un accompagnement structuré et transparent, de l'idée au déploiement.",
+    "durationLabel": "Durée :",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Découverte",
+        "description": "Nous analysons vos besoins, vos objectifs et votre contexte pour définir ensemble la meilleure approche.",
+        "duration": "1-2 semaines"
+      },
+      {
+        "number": "02",
+        "title": "Devis & Planification",
+        "description": "Proposition détaillée avec planning, budget et jalons du projet. Transparence totale sur les coûts et les délais.",
+        "duration": "3-5 jours"
+      },
+      {
+        "number": "03",
+        "title": "Conception",
+        "description": "Design des interfaces, architecture technique et validation des maquettes avant le développement.",
+        "duration": "2-4 semaines"
+      },
+      {
+        "number": "04",
+        "title": "Développement",
+        "description": "Développement itératif avec points réguliers. Vous suivez l'avancement en temps réel et validez à chaque étape.",
+        "duration": "Variable"
+      },
+      {
+        "number": "05",
+        "title": "Tests & Validation",
+        "description": "Tests fonctionnels, tests de performance et tests utilisateurs pour garantir une qualité optimale.",
+        "duration": "1-2 semaines"
+      },
+      {
+        "number": "06",
+        "title": "Déploiement & Suivi",
+        "description": "Mise en ligne, formation de vos équipes et support continu. Nous restons à vos côtés après le lancement.",
+        "duration": "Continu"
+      }
+    ]
+  },
+
+  "technologies": {
+    "title": "Technologies & Stack Technique",
+    "description": "Nous utilisons des technologies modernes, fiables et performantes pour créer des solutions durables.",
+    "categories": [
+      {
+        "name": "Frontend",
+        "items": ["React", "Next.js", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "Backend",
+        "items": ["Node.js", "Python", "PostgreSQL", "MongoDB", "n8n"]
+      },
+      {
+        "name": "Intelligence Artificielle",
+        "items": ["OpenAI", "LangChain", "Hugging Face", "TensorFlow"]
+      },
+      {
+        "name": "Infrastructure",
+        "items": ["Docker", "AWS", "Azure", "Vercel"]
+      },
+      {
+        "name": "Outils",
+        "items": ["Git", "GitHub", "Figma", "VS Code"]
+      }
+    ]
+  },
+
+  "packages": {
+    "title": "Nos Formules",
+    "description": "Des solutions adaptées à chaque ambition, comme nos sommets suisses.",
+    "bestOffer": "MEILLEURE OFFRE",
+    "starter": {
+      "name": "Salève",
+      "mountainInfo": "Genève, 1379m",
+      "mountainDescription": "Le balcon de Genève, entre France et Suisse",
+      "description": "Idéal pour démarrer votre présence en ligne",
+      "price": "À partir de CHF 3'000",
+      "features": [
+        "Site vitrine responsive",
+        "Jusqu'à 5 pages",
+        "Design moderne et personnalisé",
+        "Optimisation SEO de base",
+        "Hébergement suisse inclus (1 an)",
+        "Support 3 mois"
+      ],
+      "cta": "Demander un devis"
+    },
+    "business": {
+      "name": "Teysachaux",
+      "mountainInfo": "Fribourg, 2024m",
+      "mountainDescription": "Préalpes fribourgeoises, vue panoramique sur les Alpes",
+      "description": "Pour les projets plus ambitieux",
+      "price": "À partir de CHF 8'000",
+      "features": [
+        "Application web sur mesure",
+        "Interface d'administration (CMS)",
+        "Intégrations API",
+        "Base de données",
+        "Optimisation avancée",
+        "Hébergement suisse inclus (1 an)",
+        "Support 6 mois"
+      ],
+      "cta": "Discutons de votre projet",
+      "highlighted": true
+    },
+    "enterprise": {
+      "name": "Diablerets",
+      "mountainInfo": "Vaud, 3210m",
+      "mountainDescription": "Sommet emblématique des Alpes vaudoises",
+      "description": "Solutions sur mesure et accompagnement complet",
+      "price": "Sur devis",
+      "features": [
+        "Architecture complexe et scalable",
+        "Intégration IA personnalisée",
+        "Infrastructure dédiée",
+        "Sécurité avancée",
+        "Audit et conseil stratégique",
+        "Support prioritaire illimité"
+      ],
+      "cta": "Planifier un appel"
+    }
+  },
+
+  "useCases": {
+    "title": "Cas d'Usage",
+    "description": "Quelques exemples de projets que nous pouvons réaliser ensemble",
+    "items": [
+      {
+        "question": "Vous voulez un chatbot qui répond à vos clients 24/7 ?",
+        "answer": "Nous créons des assistants IA personnalisés qui comprennent votre métier et vos processus."
+      },
+      {
+        "question": "Vous avez besoin d'analyser des milliers de documents ?",
+        "answer": "Nos solutions IA peuvent extraire, analyser et structurer l'information automatiquement."
+      },
+      {
+        "question": "Votre site actuel est lent et pas sécurisé ?",
+        "answer": "Nous modernisons votre infrastructure avec des technologies performantes et sécurisées."
+      },
+      {
+        "question": "Vous voulez automatiser des tâches répétitives ?",
+        "answer": "Nous développons des solutions d'automatisation sur mesure pour gagner du temps."
+      }
+    ]
+  },
+
+  "faq": {
+    "title": "Questions Fréquentes",
+    "items": [
+      {
+        "question": "Quels sont vos délais de réalisation ?",
+        "answer": "Les délais varient selon la complexité du projet. Un site vitrine prend généralement 4-6 semaines, une application web 2-4 mois. Nous établissons un planning détaillé lors du devis."
+      },
+      {
+        "question": "Proposez-vous la maintenance après le lancement ?",
+        "answer": "Oui, nous proposons des contrats de maintenance incluant support technique, mises à jour, monitoring et évolutions fonctionnelles."
+      },
+      {
+        "question": "Travaillez-vous avec des budgets limités ?",
+        "answer": "Nous nous adaptons à votre budget en priorisant les fonctionnalités essentielles. Notre formule Starter démarre à CHF 3'000 pour un site vitrine professionnel."
+      },
+      {
+        "question": "Où hébergez-vous les projets ?",
+        "answer": "Tous nos projets sont hébergés en Suisse avec des infrastructures respectueuses de l'environnement et conformes aux standards de sécurité les plus élevés (RGPD)."
+      },
+      {
+        "question": "Puis-je modifier mon site moi-même après la livraison ?",
+        "answer": "Oui, nous intégrons un système de gestion de contenu (CMS) adapté à vos besoins et formons vos équipes à son utilisation."
+      }
+    ]
+  },
+
+  "cta": {
+    "title": "Prêt à démarrer votre projet ?",
+    "description": "Discutons de vos besoins et trouvons ensemble la solution qui vous convient. Premier échange sans engagement.",
+    "primaryButton": "Rejoindre le Discord",
+    "secondaryButton": "Nous contacter"
+  }
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { CustomLink } from "./CustomLink";
 import { Dictionary } from "@/types/dictionary";
 
@@ -12,9 +12,12 @@ type NavTranslations = {
   contact: string;
 };
 
-export function MobileNavbar({ dictionary }: { dictionary: Dictionary }) {
+export function MobileNavbar({ dictionary, isToggleOpen, setIsToggleOpen }: { 
+  dictionary: Dictionary;
+  isToggleOpen: boolean;
+  setIsToggleOpen: (open: boolean) => void;
+}) {
   const nav = dictionary.nav as NavTranslations;
-  const [isToggleOpen, setIsToggleOpen] = useState(false);
 
   return (
     <div className="xl:hidden">
@@ -47,11 +50,11 @@ export function MobileNavbar({ dictionary }: { dictionary: Dictionary }) {
       </button>
 
       <div
-        className={`fixed left-0 top-[70px] z-50 h-[calc(100vh-80px)] w-full overflow-hidden overflow-y-auto bg-zinc-950 px-8 pb-12 pt-8 font-medium transition-[opacity,visibility] duration-300 ${
+        className={`fixed left-0 top-[70px] z-50 h-[calc(100vh-80px)] w-full overflow-hidden overflow-y-auto bg-black px-8 pb-12 pt-8 font-medium transition-[opacity,visibility] duration-300 ${
           isToggleOpen ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
-        <nav className="flex flex-col items-center gap-8 text-lg">
+        <nav className="flex flex-col items-center gap-8 text-lg" onClick={() => setIsToggleOpen(false)}>
           <CustomLink href="/" label={nav.home} />
           <CustomLink href="/prestations" label={nav.prestations} />
           <CustomLink href="/about" label={nav.about} />

@@ -8,7 +8,7 @@ export default function ProcessCard({ title, description, number }: ProcessCardP
     return (
       <>
         <div className="flex flex-col items-center lg:items-start justify-center gap-4 lg:flex-row">
-          <div className="mt-2 inline-flex items-center justify-center w-10 h-10 text-lg text-white rounded-full bg-gradient-to-r from-blue-500 to-purple-500">
+          <div className="mt-2 inline-flex items-center justify-center w-10 h-10 min-w-10 min-h-10 text-lg text-white rounded-full bg-[var(--color-accent-violet)] flex-shrink-0 select-none">
             {number}
           </div>
           <div className="flex w-full min-w-0 flex-col items-center lg:items-start justify-center gap-0 text-base">
