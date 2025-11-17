@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import MouseScrollIndicator from "./MouseScrollIndicator";
 
 interface HeroPageProps {
   title: string;
@@ -25,7 +26,7 @@ export default function HeroPage({ title, subtitle, intro }: HeroPageProps) {
         }}
         className="z-30 flex flex-col justify-center items-center gap-6"
       >
-        <motion.h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300 mb-6">
+        <motion.h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300 mb-4 p-2">
           {title}
         </motion.h1>
         <motion.p className="text-xl md:text-2xl text-neutral-300 mb-8 max-w-3xl">
@@ -37,6 +38,7 @@ export default function HeroPage({ title, subtitle, intro }: HeroPageProps) {
           </motion.p>
         )}
       </motion.div>
+      <MouseScrollIndicator />
     </section>
   );
 }

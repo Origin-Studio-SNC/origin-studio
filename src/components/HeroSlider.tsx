@@ -36,14 +36,14 @@ export function HeroSlider({ dictionary }: { dictionary: Dictionary }) {
         }}
         className="z-30 flex flex-col justify-center items-center gap-10"
       >
-        <motion.p className="font-bold text-3xl max-w-4xl px-4 md:text-5xl lg:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300 py-4">
+        <motion.p className="font-bold text-3xl max-w-4xl px-4 md:text-5xl lg:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300 py-2">
           {hero.title}
         </motion.p>
         <motion.p className="text-center max-w-2xl text-xl font-medium text-neutral-200 text-shadow-lg">
           {hero.description}
           {/* <TextType text={hero.description} /> */}
         </motion.p>
-        <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
           <Link href={`/${currentLocale}/prestations`}>
             <Button variant="secondary" size="lg" className="mt-4">
               {hero.servicesButton}
