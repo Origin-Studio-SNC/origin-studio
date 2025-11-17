@@ -1,8 +1,35 @@
 import HeroPage from "@/components/HeroPage";
 import ProjectCard from "@/components/ProjectCard";
 import PinnedProjectsSlider from "@/components/PinnedProjectsSlider";
+import CTA from "@/components/CTA";
 import { getDictionary } from "@/lib/i18n/get-dictionnary";
 import { ProjectsData } from "@/types/project";
+import type { Metadata } from "next";
+
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: Promise<{ locales: 'fr' | 'en' | 'de' }> 
+}): Promise<Metadata> {
+  const { locales } = await params;
+  const dictionary = await getDictionary(locales);
+  const domain = "https://origin-studio.ch";
+  
+  return {
+    openGraph: {
+      images: [
+        {
+          url: `${domain}/api/og?title=${encodeURIComponent(dictionary.projects.title)}&description=${encodeURIComponent(dictionary.projects.description)}`,
+          width: 1200,
+          height: 630,
+        }
+      ],
+    },
+    twitter: {
+      images: [`${domain}/api/og?title=${encodeURIComponent(dictionary.projects.title)}&description=${encodeURIComponent(dictionary.projects.description)}`],
+    },
+  };
+}
 
 async function getProjects(): Promise<ProjectsData> {
   try {
@@ -44,6 +71,7 @@ export default async function Projects({
   // Fonction pour récupérer les traductions en fonction de la locale
   const dictionary = await getDictionary(locales);
   const translations = dictionary.projects;
+  const cta = dictionary.cta;
 
   // Récupération des projets depuis le fichier JSON
   const projectsData = await getProjects();
@@ -90,6 +118,14 @@ export default async function Projects({
           </div>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <CTA
+        title={cta.projects.title}
+        description={cta.projects.description}
+        primaryButton={{ text: cta.projects.primaryButton, href: "https://discord.gg/6khXbmbJF9" }}
+        secondaryButton={{ text: cta.projects.secondaryButton, href: `/${locales}/contact` }}
+      />
     </main>
   );
 }

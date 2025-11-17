@@ -6,21 +6,47 @@ import ProcessTimeline from "@/components/ProcessTimeline";
 import IdentitySection from "@/components/IdentitySection";
 import StrengthCard from "@/components/StrengthCard";
 import TeamMemberMini from "@/components/TeamMemberMini";
-import FinalCTA from "@/components/FinalCTA";
+import CTA from "@/components/CTA";
 import TestimonialCard from "@/components/TestimonialCard";
 import TechStackIcons from "@/components/TechStackIcons";
 import SectionTitle from "@/components/SectionTitle";
 import SectionSubtitle from "@/components/SectionSubtitle";
+import type { Metadata } from "next";
 import {
   FeaturesTranslations,
   ProcessTranslations,
   IdentityTranslations,
   StrengthsTranslations,
   TeamMiniTranslations,
-  FinalCTATranslations,
   TestimonialsTranslations,
   TechStackTranslations
 } from "@/types/translations";
+
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: Promise<{ locales: 'fr' | 'en' | 'de' }> 
+}): Promise<Metadata> {
+  const { locales } = await params;
+  const dictionary = await getDictionary(locales);
+  const domain = "https://origin-studio.ch";
+  
+  return {
+    openGraph: {
+      images: [
+        {
+          url: `${domain}/api/og?title=${encodeURIComponent(dictionary.hero.title)}&description=${encodeURIComponent(dictionary.hero.description)}`,
+          width: 1200,
+          height: 630,
+        }
+      ],
+    },
+    twitter: {
+      images: [`${domain}/api/og?title=${encodeURIComponent(dictionary.hero.title)}&description=${encodeURIComponent(dictionary.hero.description)}`],
+    },
+  };
+}
+
 export default async function Home({
   params,
 }: {
@@ -36,9 +62,9 @@ export default async function Home({
   const identity = dictionary.identity as IdentityTranslations;
   const strengths = dictionary.strengths as StrengthsTranslations;
   const teamMini = dictionary.teamMini as TeamMiniTranslations;
-  const finalCTA = dictionary.finalCTA as FinalCTATranslations;
   const testimonials = dictionary.testimonials as TestimonialsTranslations;
   const techStack = dictionary.techStack as TechStackTranslations;
+  const cta = dictionary.cta;
   
   // Services cards avec 4 catégories
   const featureCards = [
@@ -200,7 +226,12 @@ export default async function Home({
 
       {/* Final CTA - Respiration légère avant le CTA final */}
       <div className="py-8 md:py-12" />
-      <FinalCTA title={finalCTA.title} buttonText={finalCTA.button} locale={locales} />
+      <CTA
+        title={cta.home.title}
+        description={cta.home.description}
+        primaryButton={{ text: cta.home.primaryButton, href: "https://discord.gg/6khXbmbJF9" }}
+        secondaryButton={{ text: cta.home.secondaryButton, href: `/${locales}/contact` }}
+      />
     </main>
   );
 }

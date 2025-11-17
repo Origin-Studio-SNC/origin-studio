@@ -80,9 +80,31 @@
     "testing": "Test",
     "deployment": "Bereitstellung & Betreuung"
   },
-  "finalCTA": {
-    "title": "Erzählen Sie uns von Ihrem Projekt. Wir nehmen uns Zeit für ein Gespräch, auch wenn es nur eine Idee ist.",
-    "button": "Tritt unserem Discord bei"
+  
+  "cta": {
+    "home": {
+      "title": "Bereit, Ihr Projekt zum Leben zu erwecken?",
+      "description": "Treten Sie unserem Discord bei, um über Ihre Ideen zu sprechen, oder kontaktieren Sie uns direkt. Wir sind hier, um Ihre Vision Wirklichkeit werden zu lassen.",
+      "primaryButton": "Discord beitreten",
+      "secondaryButton": "Kontakt aufnehmen"
+    },
+    "about": {
+      "title": "Lassen Sie uns zusammenarbeiten",
+      "description": "Haben Sie ein Projekt im Kopf? Lassen Sie uns darüber sprechen! Ob auf Discord oder per E-Mail, wir hören Ihnen zu.",
+      "primaryButton": "Discord beitreten",
+      "secondaryButton": "Kontakt aufnehmen"
+    },
+    "projects": {
+      "title": "Ihr Projekt könnte das nächste sein",
+      "description": "Von unserer Arbeit inspiriert? Lassen Sie uns über Ihre Idee sprechen und gemeinsam etwas Außergewöhnliches schaffen.",
+      "primaryButton": "Discord beitreten",
+      "secondaryButton": "Projekt starten"
+    },
+    "contact": {
+      "title": "Möchten Sie direkt mit uns sprechen?",
+      "description": "Treten Sie unserem Discord bei, um schnell und einfach mit unserem Team zu kommunizieren.",
+      "primaryButton": "Discord beitreten"
+    }
   },
   "contact": {
     "title": "Lassen Sie uns über Ihr Projekt sprechen",
@@ -138,9 +160,9 @@
       }
     },
     "cta": {
-      "title": "Bevorzugen Sie einen Anruf?",
-      "description": "Lassen Sie uns ein Gespräch vereinbaren, um über Ihre Idee zu sprechen.",
-      "button": "Gespräch vereinbaren"
+      "title": "Möchten Sie direkt mit uns sprechen?",
+      "description": "Treten Sie unserem Discord bei, um schnell und einfach mit unserem Team zu kommunizieren.",
+      "button": "Discord beitreten"
     }
   },
   "about": {

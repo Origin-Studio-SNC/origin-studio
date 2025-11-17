@@ -59,7 +59,7 @@ export async function generateMetadata({
       siteName: 'Origin Studio',
       images: [
         {
-          url: `${domain}/og.png`,
+          url: `${domain}/api/og?title=${encodeURIComponent(title)}&description=${encodeURIComponent(description)}`,
           width: 1200,
           height: 630,
           alt: title,
@@ -72,7 +72,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: [`${domain}/og.png`],
+      images: [`${domain}/api/og?title=${encodeURIComponent(title)}&description=${encodeURIComponent(description)}`],
       creator: '@OriginStudio',
     },
 
