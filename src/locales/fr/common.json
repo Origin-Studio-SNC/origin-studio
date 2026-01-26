@@ -51,7 +51,9 @@
   },
   "testimonials": {
     "title": "Ils nous font confiance",
-    "placeholder": "Nos premiers projets sont en cours. Témoignages à venir très prochainement."
+    "placeholder": "Nos premiers projets sont en cours. Témoignages à venir très prochainement.",
+    "showMore": "Voir plus",
+    "showLess": "Voir moins"
   },
   "techStack": {
     "title": "Technologies & services que nous maîtrisons",

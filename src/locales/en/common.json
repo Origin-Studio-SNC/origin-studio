@@ -51,7 +51,9 @@
   },
   "testimonials": {
     "title": "They trust us",
-    "placeholder": "Our first projects are underway. Testimonials coming very soon."
+    "placeholder": "Our first projects are underway. Testimonials coming very soon.",
+    "showMore": "Show more",
+    "showLess": "Show less"
   },
   "techStack": {
     "title": "Technologies & services we master",

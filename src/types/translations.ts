@@ -153,6 +153,8 @@ export interface ContactTranslations {
 export type TestimonialsTranslations = {
   title: string;
   placeholder: string;
+  showMore: string;
+  showLess: string;
 };
 
 export type TechStackTranslations = {

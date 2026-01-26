@@ -51,7 +51,9 @@
   },
   "testimonials": {
     "title": "Sie vertrauen uns",
-    "placeholder": "Unsere ersten Projekte sind im Gange. Testimonials kommen sehr bald."
+    "placeholder": "Unsere ersten Projekte sind im Gange. Testimonials kommen sehr bald.",
+    "showMore": "Mehr sehen",
+    "showLess": "Weniger sehen"
   },
   "techStack": {
     "title": "Technologien & Services, die wir beherrschen",

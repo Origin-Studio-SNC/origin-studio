@@ -1,12 +1,13 @@
 "use client";
 
-import { motion } from "framer-motion";
-import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import MouseScrollIndicator from "./MouseScrollIndicator";
 import { Dictionary } from "@/types/dictionary";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 type HeroTranslations = {
   title: string;
@@ -19,6 +20,24 @@ export function HeroSlider({ dictionary }: { dictionary: Dictionary }) {
   const hero = dictionary.hero as HeroTranslations;
   const pathname = usePathname();
   const currentLocale = pathname.match(/^\/(fr|en|de)(?=\/|$)/)?.[1] || 'fr';
+  const [showLogo, setShowLogo] = useState(true);
+  
+  useEffect(() => {
+    // Première transition après 2 secondes
+    const firstTimeout = setTimeout(() => {
+      setShowLogo(false);
+    }, 2000);
+
+    // Ensuite, alternance toutes les 5 secondes
+    const interval = setInterval(() => {
+      setShowLogo((prev) => !prev);
+    }, 5000);
+
+    return () => {
+      clearTimeout(firstTimeout);
+      clearInterval(interval);
+    };
+  }, []);
   
   return (
     <div className="min-h-screen overflow-hidden h-full w-full relative flex items-center justify-center">
@@ -36,9 +55,46 @@ export function HeroSlider({ dictionary }: { dictionary: Dictionary }) {
         }}
         className="z-30 flex flex-col justify-center items-center gap-10"
       >
-        <motion.p className="font-bold text-3xl max-w-4xl px-4 md:text-5xl lg:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300 py-2">
-          {hero.title}
-        </motion.p>
+        <div className="relative w-full min-h-[200px] md:min-h-[250px] lg:min-h-[300px] flex items-center justify-center" style={{ perspective: "1000px" }}>
+          <AnimatePresence mode="wait">
+            {showLogo ? (
+              <motion.div
+                key="logo"
+                initial={{ rotateX: -90, opacity: 0 }}
+                animate={{ rotateX: 0, opacity: 1 }}
+                exit={{ rotateX: 90, opacity: 0 }}
+                transition={{ 
+                  duration: 0.8,
+                  ease: "easeInOut"
+                }}
+                className="absolute"
+              >
+                <Image
+                  src="/img/logo_origin_full.svg"
+                  alt="Origin Studio Logo"
+                  width={300}
+                  height={100}
+                  priority
+                  className="w-64 md:w-80 lg:w-96 h-auto"
+                />
+              </motion.div>
+            ) : (
+              <motion.p
+                key="title"
+                initial={{ rotateX: -90, opacity: 0 }}
+                animate={{ rotateX: 0, opacity: 1 }}
+                exit={{ rotateX: 90, opacity: 0 }}
+                transition={{ 
+                  duration: 0.8,
+                  ease: "easeInOut"
+                }}
+                className="absolute font-bold text-3xl max-w-4xl px-4 md:text-5xl lg:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300 py-2"
+              >
+                {hero.title}
+              </motion.p>
+            )}
+          </AnimatePresence>
+        </div>
         <motion.p className="text-center max-w-2xl text-xl font-medium text-neutral-200 text-shadow-lg">
           {hero.description}
           {/* <TextType text={hero.description} /> */}

@@ -1,0 +1,35 @@
+{
+  "_README": {
+    "_notice": "Ce fichier contient les témoignages clients affichés sur le site",
+    "_instructions": [
+      "1. 'name': IMPORTANT - Par sécurité, utiliser UNIQUEMENT Prénom + initiale (ex: 'Michael J.' pas 'Michael Jackson')",
+      "   → Format: Prénom + espace + première lettre du nom + point",
+      "   → La fonction formatName() existe en double sécurité au cas où",
+      "2. 'id': Identifiant unique en minuscules avec tirets (ex: 'michael-j')",
+      "3. 'company': Nom de l'entreprise ou 'Privé' si personnel (optionnel)",
+      "4. 'rating': Note sur 5 (1-5)",
+      "5. 'text': Le témoignage complet",
+      "6. 'image': Nom du fichier photo dans /public/img/testimonials/",
+      "   → Format: prenom_i.webp (ex: michael_j.webp pour Michael J.)",
+      "   → Si pas de photo, laisser vide ou ne pas mettre, placeholder s'affichera"
+    ]
+  },
+  "testimonials": [
+    {
+      "id": "joel-d",
+      "name": "Joel D.",
+      "company": "",
+      "rating": 5,
+      "text": "Excellent travail, professionnel, efficace, créatif, nous recommandons à 200% ! Pour la création de notre site de mariage, ma fiancée et moi-même avons contacté un des développeur de Origin Studio, Thoma, qui nous a fait un travail d'orfèvre. Après un court appel avec Thoma pour définir nos envies, nous avions plus qu'à insérer nos données/envies très simplement sur une page de travail partagé avec lui (malin et simple) et le site a pu être créer très rapidement. Nos besoins ont été compris avec grande facilité. Le site a rapidement été créé. La communication était facile. Résultat: un site qui nous plaît et qui semble s'être mis en place, sans ressentir trop d'effort. Bravo et merci à l'équipe Origin Studio !",
+      "image": "joel_d.webp"
+    },
+    {
+      "id": "samuel-v",
+      "name": "Samuel V.",
+      "company": "Azaph et Christus Rex",
+      "rating": 5,
+      "text": "Service irréprochable. Nous avons été accompagné de À à Z sur le processus de création de notre site avec de nombreux conseils tout en respectant nos envies. Nous avons désormais un site internet qui correspond à l’image que nous souhaitions avoir. Mention spéciale à la qualité relationnelle qui nous a enchanté. Merci Origin Studio",
+      "image": "samuel_v.webp"
+    }
+  ]
+}

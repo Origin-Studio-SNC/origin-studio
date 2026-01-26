@@ -7,11 +7,12 @@ import IdentitySection from "@/components/IdentitySection";
 import StrengthCard from "@/components/StrengthCard";
 import TeamMemberMini from "@/components/TeamMemberMini";
 import CTA from "@/components/CTA";
-import TestimonialCard from "@/components/TestimonialCard";
+import TestimonialsSlider from "@/components/TestimonialsSlider";
 import TechStackIcons from "@/components/TechStackIcons";
 import SectionTitle from "@/components/SectionTitle";
 import SectionSubtitle from "@/components/SectionSubtitle";
 import type { Metadata } from "next";
+import type { Testimonial } from "@/types/testimonial";
 import {
   FeaturesTranslations,
   ProcessTranslations,
@@ -21,6 +22,8 @@ import {
   TestimonialsTranslations,
   TechStackTranslations
 } from "@/types/translations";
+import { promises as fs } from 'fs';
+import path from 'path';
 
 export async function generateMetadata({ 
   params 
@@ -58,13 +61,18 @@ export default async function Home({
   // Fonction pour récupérer les traductions en fonction de la locale
   const dictionary = await getDictionary(locales);
   const features = dictionary.features as FeaturesTranslations;
-  const process = dictionary.process as ProcessTranslations;
+  const processTranslations = dictionary.process as ProcessTranslations;
   const identity = dictionary.identity as IdentityTranslations;
   const strengths = dictionary.strengths as StrengthsTranslations;
   const teamMini = dictionary.teamMini as TeamMiniTranslations;
   const testimonials = dictionary.testimonials as TestimonialsTranslations;
   const techStack = dictionary.techStack as TechStackTranslations;
   const cta = dictionary.cta;
+
+  // Charger les testimonials depuis le fichier JSON
+  const testimonialsFile = path.join(process.cwd(), 'public', 'testimonials.json');
+  const testimonialsFileContent = JSON.parse(await fs.readFile(testimonialsFile, 'utf8'));
+  const testimonialsData: Testimonial[] = testimonialsFileContent.testimonials || testimonialsFileContent;
   
   // Services cards avec 4 catégories
   const featureCards = [
@@ -96,12 +104,12 @@ export default async function Home({
 
   // Process steps pour la timeline
   const processSteps = [
-    { label: process.discovery },
-    { label: process.quote },
-    { label: process.design },
-    { label: process.development },
-    { label: process.testing },
-    { label: process.deployment },
+    { label: processTranslations.discovery },
+    { label: processTranslations.quote },
+    { label: processTranslations.design },
+    { label: processTranslations.development },
+    { label: processTranslations.testing },
+    { label: processTranslations.deployment },
   ];
 
   return (
@@ -145,17 +153,19 @@ export default async function Home({
 
       {/* Testimonials Section - Espacement modéré */}
       <div className="py-10 md:py-16" />
-      <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4">
-        <div className="max-w-5xl w-full">
+      <section className="w-full flex flex-col items-center justify-center py-16 md:py-20">
+        <div className="max-w-7xl w-full px-4">
           <SectionTitle className="mb-12 md:mb-14">
             {testimonials.title}
           </SectionTitle>
-          <div className="max-w-2xl mx-auto">
-            <TestimonialCard
-              text={testimonials.placeholder}
-              index={0}
-            />
-          </div>
+        </div>
+        <div className="w-full">
+          <TestimonialsSlider
+            testimonials={testimonialsData}
+            showMoreText={testimonials.showMore}
+            showLessText={testimonials.showLess}
+            size="default"
+          />
         </div>
       </section>
 
@@ -215,10 +225,10 @@ export default async function Home({
       <section className="w-full flex flex-col items-center justify-center py-16 md:py-20 px-4">
         <div className="max-w-7xl w-full">
           <SectionTitle className="mb-5">
-            {process.title}
+            {processTranslations.title}
           </SectionTitle>
           <SectionSubtitle className="mb-14 md:mb-16">
-            {process.description}
+            {processTranslations.description}
           </SectionSubtitle>
           <ProcessTimeline steps={processSteps} />
         </div>
