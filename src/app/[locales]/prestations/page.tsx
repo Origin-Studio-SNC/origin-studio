@@ -148,42 +148,53 @@ export default async function Services({
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-            <PricingCard
-              name={services.packages.starter.name}
-              mountainInfo={services.packages.starter.mountainInfo}
-              mountainDescription={services.packages.starter.mountainDescription}
-              description={services.packages.starter.description}
-              price={services.packages.starter.price}
-              features={services.packages.starter.features}
-              cta={services.packages.starter.cta}
-              serviceId="starter"
-              index={0}
-            />
-            <PricingCard
-              name={services.packages.business.name}
-              mountainInfo={services.packages.business.mountainInfo}
-              mountainDescription={services.packages.business.mountainDescription}
-              description={services.packages.business.description}
-              price={services.packages.business.price}
-              features={services.packages.business.features}
-              cta={services.packages.business.cta}
-              highlighted={true}
-              bestOffer={services.packages.bestOffer}
-              serviceId="business"
-              index={1}
-            />
-            <PricingCard
-              name={services.packages.enterprise.name}
-              mountainInfo={services.packages.enterprise.mountainInfo}
-              mountainDescription={services.packages.enterprise.mountainDescription}
-              description={services.packages.enterprise.description}
-              price={services.packages.enterprise.price}
-              features={services.packages.enterprise.features}
-              cta={services.packages.enterprise.cta}
-              serviceId="enterprise"
-              index={2}
-            />
+          {/* Categories */}
+          <div className="space-y-24">
+            {services.packages.categories.map((category, categoryIndex) => (
+              <div key={category.id} className="w-full">
+                {/* Category Header */}
+                <div className="text-center mb-12">
+                  {category.badge && (
+                    <div className="inline-block bg-[var(--color-accent-violet)] text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                      {category.badge}
+                    </div>
+                  )}
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                    {category.title}
+                  </h3>
+                  <p className="text-neutral-400 max-w-2xl mx-auto">
+                    {category.description}
+                  </p>
+                </div>
+
+                {/* Packages Grid */}
+                <div className={`grid gap-8 ${
+                  category.packages.length === 1 
+                    ? 'grid-cols-1 max-w-2xl mx-auto' 
+                    : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+                }`}>
+                  {category.packages.map((pkg, pkgIndex) => (
+                    <PricingCard
+                      key={pkgIndex}
+                      name={pkg.name}
+                      description={pkg.description}
+                      price={pkg.price}
+                      originalPrice={pkg.originalPrice}
+                      paymentOptions={pkg.paymentOptions}
+                      details={pkg.details}
+                      advantages={pkg.advantages}
+                      conditions={pkg.conditions}
+                      cta={pkg.cta}
+                      highlighted={pkg.highlighted}
+                      bestOffer={pkg.highlighted ? services.packages.bestOffer : undefined}
+                      serviceId={`${category.id}-${pkg.name.toLowerCase()}`}
+                      index={categoryIndex * 3 + pkgIndex}
+                      locale={locales}
+                    />
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

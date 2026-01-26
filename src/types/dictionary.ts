@@ -6,6 +6,7 @@ import {
   TeamMiniTranslations,
   CTATranslations,
   ContactTranslations,
+  ReviewTranslations,
   TestimonialsTranslations,
   TechStackTranslations,
   AboutTranslations,
@@ -40,6 +41,7 @@ export type Dictionary = {
   techStack: TechStackTranslations;
   cta: CTATranslations;
   contact: ContactTranslations;
+  review: ReviewTranslations;
   about: AboutTranslations;
   projects: ProjectsTranslations;
   notFound: NotFoundTranslations;

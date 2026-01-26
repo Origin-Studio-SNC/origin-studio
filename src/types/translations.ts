@@ -150,6 +150,61 @@ export interface ContactTranslations {
   };
 };
 
+export interface ReviewTranslations {
+  title: string;
+  subtitle: string;
+  infoTitle: string;
+  infoSubtitle: string;
+  whyReview: {
+    title: string;
+    description: string;
+  };
+  confirmation: {
+    title: string;
+    description: string;
+  };
+  form: {
+    intro: string;
+    firstName: string;
+    firstNamePlaceholder: string;
+    lastName: string;
+    lastNamePlaceholder: string;
+    company: string;
+    companyPlaceholder: string;
+    email: string;
+    emailPlaceholder: string;
+    rating: string;
+    ratingHint: string;
+    text: string;
+    textPlaceholder: string;
+    image: string;
+    imageHint: string;
+    consent: string;
+    savedInfo: string;
+    submit: string;
+    sending: string;
+    loading: string;
+    errors: {
+      firstNameRequired: string;
+      lastNameRequired: string;
+      emailRequired: string;
+      emailInvalid: string;
+      ratingRequired: string;
+      textRequired: string;
+      textMinLength: string;
+      imageSize: string;
+      imageType: string;
+      consentRequired: string;
+    };
+    messages: {
+      success: string;
+      errorGeneric: string;
+      errorValidation: string;
+      errorRateLimit: string;
+    };
+  };
+};
+
 export type TestimonialsTranslations = {
   title: string;
   placeholder: string;
@@ -306,34 +361,27 @@ export type ServicesTranslations = {
     title: string;
     description: string;
     bestOffer: string;
-    starter: {
-      name: string;
-      mountainInfo: string;
-      mountainDescription: string;
+    categories: Array<{
+      id: string;
+      title: string;
       description: string;
-      price: string;
-      features: string[];
-      cta: string;
-    };
-    business: {
-      name: string;
-      mountainInfo: string;
-      mountainDescription: string;
-      description: string;
-      price: string;
-      features: string[];
-      cta: string;
-      highlighted: boolean;
-    };
-    enterprise: {
-      name: string;
-      mountainInfo: string;
-      mountainDescription: string;
-      description: string;
-      price: string;
-      features: string[];
-      cta: string;
-    };
+      badge?: string;
+      packages: Array<{
+        name: string;
+        description: string;
+        price: string;
+        originalPrice?: string;
+        paymentOptions?: string;
+        highlighted?: boolean;
+        details: Array<{
+          label: string;
+          value: string;
+        }>;
+        advantages?: string[];
+        conditions?: string[];
+        cta: string;
+      }>;
+    }>;
   };
   useCases: {
     title: string;

@@ -161,58 +161,192 @@
 
   "packages": {
     "title": "Nos Formules",
-    "description": "Des solutions adaptées à chaque ambition, comme nos sommets suisses.",
+    "description": "Des solutions adaptées à vos besoins, à chaque étape de votre transformation digitale.",
     "bestOffer": "MEILLEURE OFFRE",
-    "starter": {
-      "name": "Salève",
-      "mountainInfo": "Genève, 1379m",
-      "mountainDescription": "Le balcon de Genève, entre France et Suisse",
-      "description": "Idéal pour démarrer votre présence en ligne",
-      "price": "À partir de CHF 3'000",
-      "features": [
-        "Site vitrine responsive",
-        "Jusqu'à 5 pages",
-        "Design moderne et personnalisé",
-        "Optimisation SEO de base",
-        "Hébergement suisse inclus (1 an)",
-        "Support 3 mois"
-      ],
-      "cta": "Demander un devis"
-    },
-    "business": {
-      "name": "Teysachaux",
-      "mountainInfo": "Fribourg, 2024m",
-      "mountainDescription": "Préalpes fribourgeoises, vue panoramique sur les Alpes",
-      "description": "Pour les projets plus ambitieux",
-      "price": "À partir de CHF 8'000",
-      "features": [
-        "Application web sur mesure",
-        "Interface d'administration (CMS)",
-        "Intégrations API",
-        "Base de données",
-        "Optimisation avancée",
-        "Hébergement suisse inclus (1 an)",
-        "Support 6 mois"
-      ],
-      "cta": "Discutons de votre projet",
-      "highlighted": true
-    },
-    "enterprise": {
-      "name": "Diablerets",
-      "mountainInfo": "Vaud, 3210m",
-      "mountainDescription": "Sommet emblématique des Alpes vaudoises",
-      "description": "Solutions sur mesure et accompagnement complet",
-      "price": "Sur devis",
-      "features": [
-        "Architecture complexe et scalable",
-        "Intégration IA personnalisée",
-        "Infrastructure dédiée",
-        "Sécurité avancée",
-        "Audit et conseil stratégique",
-        "Support prioritaire illimité"
-      ],
-      "cta": "Planifier un appel"
-    }
+    "categories": [
+      {
+        "id": "websites",
+        "title": "Sites Internet",
+        "description": "Vitrine professionnelle pour votre présence en ligne",
+        "packages": [
+          {
+            "name": "Essentiel",
+            "description": "Pour démarrer rapidement avec l'essentiel",
+            "price": "2'500 - 3'500 CHF",
+            "details": [
+              { "label": "Délai", "value": "2-3 semaines" },
+              { "label": "Pages", "value": "3-5 pages" },
+              { "label": "Design", "value": "Templates adaptés" },
+              { "label": "SEO", "value": "Basique" },
+              { "label": "Multilingue", "value": "—" },
+              { "label": "Support", "value": "1 mois" }
+            ],
+            "cta": "Demander un devis"
+          },
+          {
+            "name": "Performance",
+            "description": "Un site professionnel optimisé",
+            "price": "5'000 - 8'000 CHF",
+            "highlighted": true,
+            "details": [
+              { "label": "Délai", "value": "3-5 semaines" },
+              { "label": "Pages", "value": "6-10 pages" },
+              { "label": "Design", "value": "Design sur-mesure" },
+              { "label": "SEO", "value": "Avancé" },
+              { "label": "Multilingue", "value": "2 langues incluses" },
+              { "label": "Support", "value": "3 mois" }
+            ],
+            "cta": "Discutons de votre projet"
+          },
+          {
+            "name": "Sur-mesure",
+            "description": "Solution complète et personnalisée",
+            "price": "Sur devis",
+            "details": [
+              { "label": "Délai", "value": "6-10 semaines" },
+              { "label": "Pages", "value": "10+ pages" },
+              { "label": "Design", "value": "Design premium" },
+              { "label": "SEO", "value": "Stratégie complète" },
+              { "label": "Multilingue", "value": "Illimité" },
+              { "label": "Support", "value": "6 mois + prioritaire" }
+            ],
+            "cta": "Planifier un appel"
+          }
+        ]
+      },
+      {
+        "id": "apps",
+        "title": "Applications Web & Mobile",
+        "description": "Solutions applicatives modernes et performantes",
+        "packages": [
+          {
+            "name": "Starter",
+            "description": "Votre première application web",
+            "price": "8'000 - 12'000 CHF",
+            "details": [
+              { "label": "Délai", "value": "6-8 semaines" },
+              { "label": "Types", "value": "Web app responsive" },
+              { "label": "Dashboard", "value": "Basique" },
+              { "label": "Tests", "value": "Tests manuels" },
+              { "label": "Support", "value": "2 mois" }
+            ],
+            "cta": "Demander un devis"
+          },
+          {
+            "name": "Advanced",
+            "description": "Application complète et évolutive",
+            "price": "15'000 - 25'000 CHF",
+            "highlighted": true,
+            "details": [
+              { "label": "Délai", "value": "10-14 semaines" },
+              { "label": "Types", "value": "Web app + PWA" },
+              { "label": "Dashboard", "value": "Complet" },
+              { "label": "Tests", "value": "Tests auto unitaires" },
+              { "label": "Support", "value": "4 mois" }
+            ],
+            "cta": "Discutons de votre projet"
+          },
+          {
+            "name": "Enterprise",
+            "description": "Solution entreprise multi-plateforme",
+            "price": "Sur devis",
+            "details": [
+              { "label": "Délai", "value": "16 semaines +" },
+              { "label": "Types", "value": "Native multi-plateforme" },
+              { "label": "Dashboard", "value": "Entreprise" },
+              { "label": "Tests", "value": "Tests E2E complets" },
+              { "label": "Support", "value": "6 mois + prioritaire" }
+            ],
+            "cta": "Planifier un appel"
+          }
+        ]
+      },
+      {
+        "id": "ai",
+        "title": "Intelligence Artificielle & Automatisation",
+        "description": "Automatisez et optimisez vos processus métier",
+        "packages": [
+          {
+            "name": "Discovery",
+            "description": "Explorez le potentiel de l'IA",
+            "price": "2'000 - 4'000 CHF",
+            "details": [
+              { "label": "Délai", "value": "2-4 semaines" },
+              { "label": "Périmètre", "value": "1 cas d'usage" },
+              { "label": "Automatisation", "value": "1-2 workflows" },
+              { "label": "Monitoring", "value": "Logs basiques" },
+              { "label": "Support", "value": "1 mois" }
+            ],
+            "cta": "Demander un devis"
+          },
+          {
+            "name": "Optimization",
+            "description": "Intégration IA dans vos processus",
+            "price": "6'000 - 10'000 CHF",
+            "highlighted": true,
+            "details": [
+              { "label": "Délai", "value": "6-10 semaines" },
+              { "label": "Périmètre", "value": "2-3 cas d'usage" },
+              { "label": "Automatisation", "value": "3-6 workflows" },
+              { "label": "Monitoring", "value": "Dashboard metrics" },
+              { "label": "Support", "value": "3 mois" }
+            ],
+            "cta": "Discutons de votre projet"
+          },
+          {
+            "name": "Transformation",
+            "description": "Transformation complète de vos opérations",
+            "price": "Sur devis",
+            "details": [
+              { "label": "Délai", "value": "12 semaines +" },
+              { "label": "Périmètre", "value": "Stratégie complète" },
+              { "label": "Automatisation", "value": "Illimité" },
+              { "label": "Monitoring", "value": "Analytics avancées + alertes" },
+              { "label": "Support", "value": "6 mois + prioritaire" }
+            ],
+            "cta": "Planifier un appel"
+          }
+        ]
+      },
+      {
+        "id": "startup",
+        "title": "Offre Lancement Startup 🚀",
+        "description": "Spécialement conçue pour les nouvelles entreprises en Suisse",
+        "badge": "OFFRE SPÉCIALE",
+        "packages": [
+          {
+            "name": "Lancement",
+            "description": "Site professionnel à prix réduit pour démarrer",
+            "price": "1'600 CHF",
+            "originalPrice": "2'500 CHF",
+            "paymentOptions": "Payable en 4x sur 12 mois (400 CHF x 4)",
+            "highlighted": true,
+            "details": [
+              { "label": "Délai", "value": "2-3 semaines" },
+              { "label": "Pages", "value": "1 page (+270 CHF/page)" },
+              { "label": "Sections", "value": "6 sections (+60 CHF/section)" },
+              { "label": "Design", "value": "Templates adaptés professionnels" },
+              { "label": "SEO", "value": "Basique (mots-clés, meta tags)" },
+              { "label": "Multilingue", "value": "2 langues (FR + DE ou EN)" },
+              { "label": "Support", "value": "2 mois" },
+              { "label": "Hébergement", "value": "1ère année incluse" }
+            ],
+            "advantages": [
+              "Site professionnel à prix réduit pour démarrer votre activité",
+              "Présence en ligne rapide et efficace",
+              "Support technique pendant les premiers mois critiques",
+              "Possibilité d'évolution vers nos formules supérieures"
+            ],
+            "conditions": [
+              "Entreprise immatriculée en Suisse depuis moins de 12 mois",
+              "Logo \"Powered by Origin Studio\" visible en footer (discret mais cliquable)",
+              "Autorisation d'utiliser le projet comme référence portfolio"
+            ],
+            "cta": "Profiter de l'offre"
+          }
+        ]
+      }
+    ]
   },
 
   "useCases": {

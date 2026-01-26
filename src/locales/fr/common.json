@@ -221,6 +221,60 @@
       "button": "Planifier un échange"
     }
   },
+  "review": {
+    "title": "Partagez votre expérience",
+    "subtitle": "Votre avis compte et aide d'autres clients à nous connaître",
+    "infoTitle": "Pourquoi donner votre avis ?",
+    "infoSubtitle": "Nous valorisons chaque retour d'expérience et nous nous engageons à améliorer continuellement nos services.",
+    "whyReview": {
+      "title": "Votre avis est précieux",
+      "description": "En partageant votre expérience, vous aidez d'autres entreprises à prendre les bonnes décisions et nous permettez de nous améliorer continuellement."
+    },
+    "confirmation": {
+      "title": "Confirmation instantanée",
+      "description": "Vous recevrez un email de confirmation dès la réception de votre avis. Nous vous recontacterons si nous avons besoin de précisions."
+    },
+    "form": {
+      "intro": "Remplissez le formulaire ci-dessous pour partager votre expérience avec Origin Studio.",
+      "firstName": "Prénom",
+      "firstNamePlaceholder": "Jean",
+      "lastName": "Nom",
+      "lastNamePlaceholder": "Dupont",
+      "company": "Entreprise",
+      "companyPlaceholder": "Votre entreprise (optionnel)",
+      "email": "Adresse email",
+      "emailPlaceholder": "jean.dupont@exemple.ch",
+      "rating": "Note",
+      "ratingHint": "Cliquez sur les étoiles pour noter votre expérience",
+      "text": "Votre avis",
+      "textPlaceholder": "Partagez votre expérience avec Origin Studio...",
+      "image": "Photo (optionnel)",
+      "imageHint": "Ajoutez une photo de vous ou de votre équipe (max 20Mo)",
+      "consent": "J'accepte que mon prénom, mon nom et ma photo (si fournie) soient utilisés et publiés sur le site www.origin-studio.ch",
+      "savedInfo": "Vous ne savez pas quoi écrire ? Revenez plus tard, tout est automatiquement enregistré.",
+      "submit": "Envoyer mon avis",
+      "sending": "Envoi en cours...",
+      "loading": "Chargement...",
+      "errors": {
+        "firstNameRequired": "Le prénom est requis",
+        "lastNameRequired": "Le nom est requis",
+        "emailRequired": "L'adresse email est requise",
+        "emailInvalid": "L'adresse email n'est pas valide",
+        "ratingRequired": "Veuillez sélectionner une note",
+        "textRequired": "Veuillez partager votre avis",
+        "textMinLength": "Votre avis doit contenir au moins 20 caractères",
+        "imageSize": "L'image ne doit pas dépasser 20Mo",
+        "imageType": "Seules les images sont acceptées",
+        "consentRequired": "Vous devez accepter l'utilisation de vos informations pour publier votre avis"
+      },
+      "messages": {
+        "success": "Merci pour votre avis ! Nous vous avons envoyé un email de confirmation.",
+        "errorGeneric": "Une erreur s'est produite. Veuillez réessayer.",
+        "errorValidation": "Veuillez vérifier les champs du formulaire.",
+        "errorRateLimit": "Trop de tentatives. Veuillez patienter quelques minutes."
+      }
+    }
+  },
   "projects": {
     "title": "Nos Projets",
     "description": "Découvrez nos réalisations et les solutions que nous avons développées pour nos clients.",

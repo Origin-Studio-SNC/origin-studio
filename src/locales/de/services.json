@@ -161,58 +161,192 @@
 
   "packages": {
     "title": "Unsere Pakete",
-    "description": "Lösungen, die auf jeden Ehrgeiz zugeschnitten sind, wie unsere Schweizer Gipfel.",
+    "description": "Lösungen, die auf Ihre Bedürfnisse zugeschnitten sind, in jeder Phase Ihrer digitalen Transformation.",
     "bestOffer": "BESTES ANGEBOT",
-    "starter": {
-      "name": "Salève",
-      "mountainInfo": "Genf, 1379m",
-      "mountainDescription": "Der Balkon von Genf, zwischen Frankreich und der Schweiz",
-      "description": "Ideal um Ihre Online-Präsenz zu starten",
-      "price": "Ab CHF 3'000",
-      "features": [
-        "Responsive Website",
-        "Bis zu 5 Seiten",
-        "Modernes und personalisiertes Design",
-        "Basis-SEO-Optimierung",
-        "Schweizer Hosting inklusive (1 Jahr)",
-        "3 Monate Support"
-      ],
-      "cta": "Angebot anfordern"
-    },
-    "business": {
-      "name": "Teysachaux",
-      "mountainInfo": "Freiburg, 2024m",
-      "mountainDescription": "Freiburger Voralpen, Panoramablick auf die Alpen",
-      "description": "Für ehrgeizigere Projekte",
-      "price": "Ab CHF 8'000",
-      "features": [
-        "Maßgeschneiderte Webanwendung",
-        "Administrationsoberfläche (CMS)",
-        "API-Integrationen",
-        "Datenbank",
-        "Erweiterte Optimierung",
-        "Schweizer Hosting inklusive (1 Jahr)",
-        "6 Monate Support"
-      ],
-      "cta": "Lassen Sie uns über Ihr Projekt sprechen",
-      "highlighted": true
-    },
-    "enterprise": {
-      "name": "Diablerets",
-      "mountainInfo": "Waadt, 3210m",
-      "mountainDescription": "Emblematischer Gipfel der Waadtländer Alpen",
-      "description": "Maßgeschneiderte Lösungen und vollständige Begleitung",
-      "price": "Auf Anfrage",
-      "features": [
-        "Komplexe und skalierbare Architektur",
-        "Personalisierte KI-Integration",
-        "Dedizierte Infrastruktur",
-        "Erweiterte Sicherheit",
-        "Audit und strategische Beratung",
-        "Unbegrenzter Priority-Support"
-      ],
-      "cta": "Anruf planen"
-    }
+    "categories": [
+      {
+        "id": "websites",
+        "title": "Websites",
+        "description": "Professionelle Präsenz für Ihren Online-Auftritt",
+        "packages": [
+          {
+            "name": "Wesentlich",
+            "description": "Schneller Start mit dem Wesentlichen",
+            "price": "2'500 - 3'500 CHF",
+            "details": [
+              { "label": "Lieferung", "value": "2-3 Wochen" },
+              { "label": "Seiten", "value": "3-5 Seiten" },
+              { "label": "Design", "value": "Angepasste Vorlagen" },
+              { "label": "SEO", "value": "Basis" },
+              { "label": "Mehrsprachig", "value": "—" },
+              { "label": "Support", "value": "1 Monat" }
+            ],
+            "cta": "Angebot anfordern"
+          },
+          {
+            "name": "Leistung",
+            "description": "Eine optimierte professionelle Website",
+            "price": "5'000 - 8'000 CHF",
+            "highlighted": true,
+            "details": [
+              { "label": "Lieferung", "value": "3-5 Wochen" },
+              { "label": "Seiten", "value": "6-10 Seiten" },
+              { "label": "Design", "value": "Individuelles Design" },
+              { "label": "SEO", "value": "Erweitert" },
+              { "label": "Mehrsprachig", "value": "2 Sprachen inklusive" },
+              { "label": "Support", "value": "3 Monate" }
+            ],
+            "cta": "Lassen Sie uns über Ihr Projekt sprechen"
+          },
+          {
+            "name": "Maßgeschneidert",
+            "description": "Vollständige und personalisierte Lösung",
+            "price": "Auf Anfrage",
+            "details": [
+              { "label": "Lieferung", "value": "6-10 Wochen" },
+              { "label": "Seiten", "value": "10+ Seiten" },
+              { "label": "Design", "value": "Premium-Design" },
+              { "label": "SEO", "value": "Komplette Strategie" },
+              { "label": "Mehrsprachig", "value": "Unbegrenzt" },
+              { "label": "Support", "value": "6 Monate + Priorität" }
+            ],
+            "cta": "Anruf planen"
+          }
+        ]
+      },
+      {
+        "id": "apps",
+        "title": "Web- & Mobile-Anwendungen",
+        "description": "Moderne und leistungsstarke Anwendungslösungen",
+        "packages": [
+          {
+            "name": "Starter",
+            "description": "Ihre erste Webanwendung",
+            "price": "8'000 - 12'000 CHF",
+            "details": [
+              { "label": "Lieferung", "value": "6-8 Wochen" },
+              { "label": "Typen", "value": "Responsive Web-App" },
+              { "label": "Dashboard", "value": "Basis" },
+              { "label": "Tests", "value": "Manuelle Tests" },
+              { "label": "Support", "value": "2 Monate" }
+            ],
+            "cta": "Angebot anfordern"
+          },
+          {
+            "name": "Fortgeschritten",
+            "description": "Vollständige und skalierbare Anwendung",
+            "price": "15'000 - 25'000 CHF",
+            "highlighted": true,
+            "details": [
+              { "label": "Lieferung", "value": "10-14 Wochen" },
+              { "label": "Typen", "value": "Web-App + PWA" },
+              { "label": "Dashboard", "value": "Komplett" },
+              { "label": "Tests", "value": "Unit Auto-Tests" },
+              { "label": "Support", "value": "4 Monate" }
+            ],
+            "cta": "Lassen Sie uns über Ihr Projekt sprechen"
+          },
+          {
+            "name": "Unternehmen",
+            "description": "Multi-Plattform-Unternehmenslösung",
+            "price": "Auf Anfrage",
+            "details": [
+              { "label": "Lieferung", "value": "16 Wochen +" },
+              { "label": "Typen", "value": "Native Multi-Plattform" },
+              { "label": "Dashboard", "value": "Unternehmen" },
+              { "label": "Tests", "value": "Komplette E2E-Tests" },
+              { "label": "Support", "value": "6 Monate + Priorität" }
+            ],
+            "cta": "Anruf planen"
+          }
+        ]
+      },
+      {
+        "id": "ai",
+        "title": "Künstliche Intelligenz & Automatisierung",
+        "description": "Automatisieren und optimieren Sie Ihre Geschäftsprozesse",
+        "packages": [
+          {
+            "name": "Entdeckung",
+            "description": "Erkunden Sie das KI-Potenzial",
+            "price": "2'000 - 4'000 CHF",
+            "details": [
+              { "label": "Lieferung", "value": "2-4 Wochen" },
+              { "label": "Umfang", "value": "1 Anwendungsfall" },
+              { "label": "Automatisierung", "value": "1-2 Workflows" },
+              { "label": "Überwachung", "value": "Basis-Logs" },
+              { "label": "Support", "value": "1 Monat" }
+            ],
+            "cta": "Angebot anfordern"
+          },
+          {
+            "name": "Optimierung",
+            "description": "KI-Integration in Ihre Prozesse",
+            "price": "6'000 - 10'000 CHF",
+            "highlighted": true,
+            "details": [
+              { "label": "Lieferung", "value": "6-10 Wochen" },
+              { "label": "Umfang", "value": "2-3 Anwendungsfälle" },
+              { "label": "Automatisierung", "value": "3-6 Workflows" },
+              { "label": "Überwachung", "value": "Metriken-Dashboard" },
+              { "label": "Support", "value": "3 Monate" }
+            ],
+            "cta": "Lassen Sie uns über Ihr Projekt sprechen"
+          },
+          {
+            "name": "Transformation",
+            "description": "Vollständige Transformation Ihrer Operationen",
+            "price": "Auf Anfrage",
+            "details": [
+              { "label": "Lieferung", "value": "12 Wochen +" },
+              { "label": "Umfang", "value": "Komplette Strategie" },
+              { "label": "Automatisierung", "value": "Unbegrenzt" },
+              { "label": "Überwachung", "value": "Erweiterte Analysen + Warnungen" },
+              { "label": "Support", "value": "6 Monate + Priorität" }
+            ],
+            "cta": "Anruf planen"
+          }
+        ]
+      },
+      {
+        "id": "startup",
+        "title": "Startup-Launch-Angebot 🚀",
+        "description": "Speziell für neue Unternehmen in der Schweiz entwickelt",
+        "badge": "SONDERANGEBOT",
+        "packages": [
+          {
+            "name": "Launch",
+            "description": "Professionelle Website zu reduziertem Preis zum Start",
+            "price": "1'600 CHF",
+            "originalPrice": "2'500 CHF",
+            "paymentOptions": "Zahlbar in 4 Raten über 12 Monate (400 CHF x 4)",
+            "highlighted": true,
+            "details": [
+              { "label": "Lieferung", "value": "2-3 Wochen" },
+              { "label": "Seiten", "value": "1 Seite (+270 CHF/Seite)" },
+              { "label": "Abschnitte", "value": "6 Abschnitte (+60 CHF/Abschnitt)" },
+              { "label": "Design", "value": "Professionelle angepasste Vorlagen" },
+              { "label": "SEO", "value": "Basis (Keywords, Meta-Tags)" },
+              { "label": "Mehrsprachig", "value": "2 Sprachen (FR + DE oder EN)" },
+              { "label": "Support", "value": "2 Monate" },
+              { "label": "Hosting", "value": "1. Jahr inklusive" }
+            ],
+            "advantages": [
+              "Professionelle Website zu reduziertem Preis zum Start Ihrer Aktivität",
+              "Schnelle und effektive Online-Präsenz",
+              "Technischer Support während der kritischen ersten Monate",
+              "Möglichkeit zum Upgrade auf unsere höheren Pakete"
+            ],
+            "conditions": [
+              "Unternehmen in der Schweiz registriert seit weniger als 12 Monaten",
+              "\"Powered by Origin Studio\" Logo im Footer sichtbar (diskret aber klickbar)",
+              "Erlaubnis zur Nutzung des Projekts als Portfolio-Referenz"
+            ],
+            "cta": "Nutzen Sie das Angebot"
+          }
+        ]
+      }
+    ]
   },
 
   "useCases": {

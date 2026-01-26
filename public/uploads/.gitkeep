@@ -1,0 +1,15 @@
+# Dossier uploads
+
+Ce dossier contient les images téléchargées par les utilisateurs lors de la soumission d'avis.
+
+## Caractéristiques
+- Taille maximale : 20 Mo par image
+- Format : Tous les formats d'images
+- Nommage : UUID généré automatiquement
+- Gitignore : Les fichiers de ce dossier sont ignorés par Git (sauf ce fichier .gitkeep)
+
+## Sécurité
+- Les images sont validées côté serveur
+- Limite de taille stricte
+- Vérification du type MIME
+- Rate limiting pour éviter les abus
