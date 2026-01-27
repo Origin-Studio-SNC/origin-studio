@@ -20,34 +20,14 @@ function getLocale(request: NextRequest) {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   
-  // Images optimisées Next.js - cache très agressif
-  if (pathname.startsWith('/_next/image')) {
-    const response = NextResponse.next();
-    response.headers.set(
-      'Cache-Control',
-      'public, max-age=31536000, immutable'
-    );
-    return response;
-  }
-  
-  // Fichiers statiques - cache agressif (1 an)
+  // Exclure les fichiers statiques (images, etc.)
   if (pathname.match(/\.(png|jpg|jpeg|gif|webp|svg|ico|json|JPG|PNG|JPEG|GIF|WEBP|SVG)$/i)) {
-    const response = NextResponse.next();
-    response.headers.set(
-      'Cache-Control',
-      'public, max-age=31536000, immutable'
-    );
-    return response;
+    return;
   }
   
-  // Fichiers uploads - cache pour 1 semaine
+  // Exclure le dossier uploads
   if (pathname.startsWith('/uploads')) {
-    const response = NextResponse.next();
-    response.headers.set(
-      'Cache-Control',
-      'public, max-age=604800, s-maxage=604800'
-    );
-    return response;
+    return;
   }
   
   // Si on est à la racine, on redirige vers le français
@@ -60,18 +40,7 @@ export function middleware(request: NextRequest) {
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
 
-  if (pathnameHasLocale) {
-    // Ajouter headers de cache pour pages statiques
-    const response = NextResponse.next();
-    
-    // Cache public pour 1h, stale-while-revalidate pour 24h
-    response.headers.set(
-      'Cache-Control',
-      'public, s-maxage=3600, stale-while-revalidate=86400'
-    );
-    
-    return response;
-  }
+  if (pathnameHasLocale) return;
 
   // Si c'est une page 404, on essaie de deviner la locale depuis le referer ou les headers
   if (pathname === '/404') {

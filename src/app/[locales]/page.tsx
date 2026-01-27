@@ -33,9 +33,6 @@ const getTestimonials = cache(async (): Promise<Testimonial[]> => {
   return testimonialsFileContent.testimonials || testimonialsFileContent;
 });
 
-// ISR - Revalider la page toutes les heures
-export const revalidate = 3600;
-
 export async function generateMetadata({ 
   params 
 }: { 
