@@ -10,7 +10,13 @@ interface SpamShieldData {
   isReady: boolean;
 }
 
-export function useSpamShield() {
+interface UseSpamShieldOptions {
+  nonceEndpoint?: string;
+}
+
+export function useSpamShield(options: UseSpamShieldOptions = {}) {
+  const { nonceEndpoint = "/api/contact/nonce" } = options;
+  
   const [data, setData] = useState<SpamShieldData>({
     honeypot: "",
     honeypotName: "website_url", // Generic name that bots might fill
@@ -21,7 +27,7 @@ export function useSpamShield() {
 
   useEffect(() => {
     // Fetch nonce from server
-    fetch("/api/contact/nonce")
+    fetch(nonceEndpoint)
       .then((res) => res.json())
       .then((data) => {
         setData((prev) => ({ ...prev, nonce: data.nonce, isReady: true }));
@@ -30,7 +36,7 @@ export function useSpamShield() {
         // Silent fail - form will be rejected without nonce
         setData((prev) => ({ ...prev, isReady: true }));
       });
-  }, []);
+  }, [nonceEndpoint]);
 
   const validateSubmission = (): { valid: boolean; error?: string } => {
     // Check honeypot

@@ -51,7 +51,9 @@
   },
   "testimonials": {
     "title": "Sie vertrauen uns",
-    "placeholder": "Unsere ersten Projekte sind im Gange. Testimonials kommen sehr bald."
+    "placeholder": "Unsere ersten Projekte sind im Gange. Testimonials kommen sehr bald.",
+    "showMore": "Mehr sehen",
+    "showLess": "Weniger sehen"
   },
   "techStack": {
     "title": "Technologien & Services, die wir beherrschen",
@@ -163,6 +165,60 @@
       "title": "Möchten Sie direkt mit uns sprechen?",
       "description": "Treten Sie unserem Discord bei, um schnell und einfach mit unserem Team zu kommunizieren.",
       "button": "Discord beitreten"
+    }
+  },
+  "review": {
+    "title": "Teilen Sie Ihre Erfahrung",
+    "subtitle": "Ihr Feedback zählt und hilft anderen Kunden, uns kennenzulernen",
+    "infoTitle": "Warum eine Bewertung abgeben?",
+    "infoSubtitle": "Wir schätzen jedes Feedback und verpflichten uns, unsere Dienstleistungen kontinuierlich zu verbessern.",
+    "whyReview": {
+      "title": "Ihre Meinung ist wertvoll",
+      "description": "Indem Sie Ihre Erfahrung teilen, helfen Sie anderen Unternehmen, die richtigen Entscheidungen zu treffen und ermöglichen uns eine kontinuierliche Verbesserung."
+    },
+    "confirmation": {
+      "title": "Sofortige Bestätigung",
+      "description": "Sie erhalten eine Bestätigungs-E-Mail, sobald wir Ihre Bewertung erhalten haben. Wir werden uns bei Ihnen melden, falls wir Klarstellungen benötigen."
+    },
+    "form": {
+      "intro": "Füllen Sie das untenstehende Formular aus, um Ihre Erfahrung mit Origin Studio zu teilen.",
+      "firstName": "Vorname",
+      "firstNamePlaceholder": "Max",
+      "lastName": "Nachname",
+      "lastNamePlaceholder": "Mustermann",
+      "company": "Unternehmen",
+      "companyPlaceholder": "Ihr Unternehmen (optional)",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "max.mustermann@beispiel.ch",
+      "rating": "Bewertung",
+      "ratingHint": "Klicken Sie auf die Sterne, um Ihre Erfahrung zu bewerten",
+      "text": "Ihre Bewertung",
+      "textPlaceholder": "Teilen Sie Ihre Erfahrung mit Origin Studio...",
+      "image": "Foto (optional)",
+      "imageHint": "Fügen Sie ein Foto von sich oder Ihrem Team hinzu (max. 20MB)",
+      "consent": "Ich bin damit einverstanden, dass mein Vorname, mein Nachname und mein Foto (falls angegeben) auf der Website www.origin-studio.ch verwendet und veröffentlicht werden",
+      "savedInfo": "Sie wissen nicht, was Sie schreiben sollen? Kommen Sie später zurück, alles wird automatisch gespeichert.",
+      "submit": "Bewertung absenden",
+      "sending": "Wird gesendet...",
+      "loading": "Laden...",
+      "errors": {
+        "firstNameRequired": "Vorname ist erforderlich",
+        "lastNameRequired": "Nachname ist erforderlich",
+        "emailRequired": "E-Mail-Adresse ist erforderlich",
+        "emailInvalid": "E-Mail-Adresse ist nicht gültig",
+        "ratingRequired": "Bitte wählen Sie eine Bewertung",
+        "textRequired": "Bitte teilen Sie Ihre Bewertung",
+        "textMinLength": "Ihre Bewertung muss mindestens 20 Zeichen enthalten",
+        "imageSize": "Das Bild darf 20MB nicht überschreiten",
+        "imageType": "Es werden nur Bilder akzeptiert",
+        "consentRequired": "Sie müssen der Verwendung Ihrer Informationen zustimmen, um Ihre Bewertung zu veröffentlichen"
+      },
+      "messages": {
+        "success": "Vielen Dank für Ihre Bewertung! Wir haben Ihnen eine Bestätigungs-E-Mail gesendet.",
+        "errorGeneric": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+        "errorValidation": "Bitte überprüfen Sie die Formularfelder.",
+        "errorRateLimit": "Zu viele Versuche. Bitte warten Sie einige Minuten."
+      }
     }
   },
   "about": {

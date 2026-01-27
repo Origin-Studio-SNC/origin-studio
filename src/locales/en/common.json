@@ -51,7 +51,9 @@
   },
   "testimonials": {
     "title": "They trust us",
-    "placeholder": "Our first projects are underway. Testimonials coming very soon."
+    "placeholder": "Our first projects are underway. Testimonials coming very soon.",
+    "showMore": "Show more",
+    "showLess": "Show less"
   },
   "techStack": {
     "title": "Technologies & services we master",
@@ -163,6 +165,60 @@
       "title": "Prefer to chat directly with us?",
       "description": "Join our Discord to connect quickly and easily with our team.",
       "button": "Join our Discord"
+    }
+  },
+  "review": {
+    "title": "Share your experience",
+    "subtitle": "Your feedback matters and helps other clients get to know us",
+    "infoTitle": "Why leave a review?",
+    "infoSubtitle": "We value every piece of feedback and are committed to continuously improving our services.",
+    "whyReview": {
+      "title": "Your opinion is valuable",
+      "description": "By sharing your experience, you help other businesses make the right decisions and allow us to continuously improve."
+    },
+    "confirmation": {
+      "title": "Instant confirmation",
+      "description": "You will receive a confirmation email as soon as we receive your review. We will contact you if we need any clarification."
+    },
+    "form": {
+      "intro": "Fill out the form below to share your experience with Origin Studio.",
+      "firstName": "First name",
+      "firstNamePlaceholder": "John",
+      "lastName": "Last name",
+      "lastNamePlaceholder": "Doe",
+      "company": "Company",
+      "companyPlaceholder": "Your company (optional)",
+      "email": "Email address",
+      "emailPlaceholder": "john.doe@example.com",
+      "rating": "Rating",
+      "ratingHint": "Click on the stars to rate your experience",
+      "text": "Your review",
+      "textPlaceholder": "Share your experience with Origin Studio...",
+      "image": "Photo (optional)",
+      "imageHint": "Add a photo of you or your team (max 20MB)",
+      "consent": "I agree that my first name, last name, and photo (if provided) may be used and published on the website www.origin-studio.ch",
+      "savedInfo": "Don't know what to write? Come back later, everything is automatically saved.",
+      "submit": "Submit my review",
+      "sending": "Sending...",
+      "loading": "Loading...",
+      "errors": {
+        "firstNameRequired": "First name is required",
+        "lastNameRequired": "Last name is required",
+        "emailRequired": "Email address is required",
+        "emailInvalid": "Email address is not valid",
+        "ratingRequired": "Please select a rating",
+        "textRequired": "Please share your review",
+        "textMinLength": "Your review must contain at least 20 characters",
+        "imageSize": "Image must not exceed 20MB",
+        "imageType": "Only images are accepted",
+        "consentRequired": "You must agree to the use of your information to publish your review"
+      },
+      "messages": {
+        "success": "Thank you for your review! We have sent you a confirmation email.",
+        "errorGeneric": "An error occurred. Please try again.",
+        "errorValidation": "Please check the form fields.",
+        "errorRateLimit": "Too many attempts. Please wait a few minutes."
+      }
     }
   },
   "about": {
