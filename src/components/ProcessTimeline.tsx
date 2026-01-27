@@ -20,8 +20,8 @@ export default function ProcessTimeline({ steps }: ProcessTimelineProps) {
             key={index}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: index * 0.05 }}
+            viewport={{ once: true, margin: "-50px" }}
             className="flex flex-col items-center gap-4 flex-1 relative"
           >
             {/* Number Circle */}
@@ -49,8 +49,8 @@ export default function ProcessTimeline({ steps }: ProcessTimelineProps) {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: true, margin: "-50px" }}
               className="flex gap-6 items-start"
             >
               {/* Number Circle */}

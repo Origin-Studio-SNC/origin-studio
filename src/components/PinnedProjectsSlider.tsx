@@ -73,15 +73,22 @@ export default function PinnedProjectsSlider({ projects, translations }: PinnedP
               <div className="grid md:grid-cols-2 gap-0">
                 {/* Image */}
                 <div className="relative h-80 md:h-96 overflow-hidden">
-                  <motion.img
+                  <motion.div
                     key={currentProject.id}
-                    src={currentProject.image}
-                    alt={currentProject.title}
-                    className="w-full h-full object-cover"
+                    className="relative w-full h-full"
                     initial={{ scale: 1.1, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.6 }}
-                  />
+                  >
+                    <Image
+                      src={currentProject.image}
+                      alt={currentProject.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover"
+                      priority={currentIndex === 0}
+                    />
+                  </motion.div>
                   <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-transparent"></div>
                   
                   {/* Badges */}

@@ -72,9 +72,10 @@ export function HeroSlider({ dictionary }: { dictionary: Dictionary }) {
                 <Image
                   src="/img/logo_origin_full.svg"
                   alt="Origin Studio Logo"
-                  width={300}
-                  height={100}
+                  width={384}
+                  height={128}
                   priority
+                  sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
                   className="w-64 md:w-80 lg:w-96 h-auto"
                 />
               </motion.div>

@@ -24,6 +24,17 @@ import {
 } from "@/types/translations";
 import { promises as fs } from 'fs';
 import path from 'path';
+import { cache } from 'react';
+
+// Cache pour les testimonials - évite de relire le fichier à chaque requete
+const getTestimonials = cache(async (): Promise<Testimonial[]> => {
+  const testimonialsFile = path.join(process.cwd(), 'public', 'testimonials.json');
+  const testimonialsFileContent = JSON.parse(await fs.readFile(testimonialsFile, 'utf8'));
+  return testimonialsFileContent.testimonials || testimonialsFileContent;
+});
+
+// ISR - Revalider la page toutes les heures
+export const revalidate = 3600;
 
 export async function generateMetadata({ 
   params 
@@ -84,10 +95,8 @@ export default async function Home({
   const techStack = dictionary.techStack as TechStackTranslations;
   const cta = dictionary.cta;
 
-  // Charger les testimonials depuis le fichier JSON
-  const testimonialsFile = path.join(process.cwd(), 'public', 'testimonials.json');
-  const testimonialsFileContent = JSON.parse(await fs.readFile(testimonialsFile, 'utf8'));
-  const testimonialsData: Testimonial[] = testimonialsFileContent.testimonials || testimonialsFileContent;
+  // Charger les testimonials depuis la fonction cachée
+  const testimonialsData = await getTestimonials();
   
   // Services cards avec 4 catégories
   const featureCards = [

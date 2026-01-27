@@ -32,14 +32,9 @@ export default function TestimonialsSlider({
   const isInitialized = useRef(false);
   const resumeTimeout = useRef<NodeJS.Timeout | null>(null);
   
-  // TEMPORAIRE: Répéter 6 fois pour éviter de voir le début/fin avec seulement 2 avis
-  // TODO: Réduire à 3 répétitions quand on aura 5+ avis clients
+  // Répéter 2 fois pour l'effet de boucle infinie
   const duplicatedTestimonials = [
     ...testimonials, 
-    ...testimonials, 
-    ...testimonials,
-    ...testimonials,
-    ...testimonials,
     ...testimonials
   ];
   
@@ -48,10 +43,10 @@ export default function TestimonialsSlider({
   const gapWidth = 24;
   const totalWidth = testimonials.length * (cardWidth + gapWidth);
 
-  // Initialiser la position au milieu du deuxième set pour permettre le scroll dans les deux directions
+  // Initialiser la position pour l'effet de boucle
   useEffect(() => {
     if (!isInitialized.current) {
-      x.set(-totalWidth);
+      x.set(0);
       isInitialized.current = true;
       setIsMounted(true);
     }
@@ -100,10 +95,10 @@ export default function TestimonialsSlider({
       currentX -= movement;
     }
     
-    // Loop infini: gérer les trois sets
-    if (currentX <= -totalWidth * 2) {
-      currentX = -totalWidth;
-    } else if (currentX >= 0) {
+    // Loop infini avec 2 répétitions: reset quand on atteint la fin d'un set
+    if (currentX <= -totalWidth) {
+      currentX = 0;
+    } else if (currentX > 0) {
       currentX = -totalWidth;
     }
     
@@ -169,7 +164,7 @@ export default function TestimonialsSlider({
         className="flex gap-6"
         style={{ x }}
         drag="x"
-        dragConstraints={{ left: -totalWidth * 2.5, right: totalWidth * 0.5 }}
+        dragConstraints={{ left: -totalWidth - 200, right: 200 }}
         dragElastic={0.05}
         dragTransition={{ power: 0.2, timeConstant: 200 }}
         onDragStart={handleDragStart}

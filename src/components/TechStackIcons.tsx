@@ -71,7 +71,7 @@ export default function TechStackIcons({ title, subtitle }: TechStackIconsProps)
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ 
-            duration: 0.6,
+            duration: 0.4,
             ease: "easeOut"
           }}
           viewport={{ once: true, margin: "-50px" }}
@@ -99,8 +99,8 @@ export default function TechStackIcons({ title, subtitle }: TechStackIconsProps)
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ 
-                duration: 0.5, 
-                delay: index * 0.08,
+                duration: 0.3, 
+                delay: index * 0.04,
                 ease: "easeOut"
               }}
               viewport={{ once: true, margin: "-50px" }}
@@ -113,6 +113,7 @@ export default function TechStackIcons({ title, subtitle }: TechStackIconsProps)
                   src={tech.icon}
                   alt={tech.name}
                   fill
+                  sizes="48px"
                   className="object-contain"
                 />
               </div>
@@ -124,7 +125,7 @@ export default function TechStackIcons({ title, subtitle }: TechStackIconsProps)
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
           viewport={{ once: true }}
           className="text-center text-sm text-neutral-500 mt-8 italic"
         >
