@@ -21,16 +21,16 @@
         ]
       },
       {
-        "id": "ai-solutions",
-        "title": "Artificial Intelligence & Private LLMs",
-        "shortDescription": "Secure and personalized AI solutions",
-        "description": "We integrate artificial intelligence into your business processes with a focus on privacy and security. Private hosting of your AI models in Switzerland for complete data sovereignty.",
+        "id": "ai-automation",
+        "title": "Artificial Intelligence & Automation for SMEs",
+        "shortDescription": "Save time with AI and automation",
+        "description": "Free your teams from repetitive tasks with intelligent automation. We integrate secure and personalized AI solutions into your processes, with private hosting in Switzerland guaranteeing the confidentiality of your data.",
         "features": [
-          "Integration of LLMs in your processes",
-          "Personalized intelligent chatbots",
-          "AI-powered data analysis",
-          "Automation solutions",
-          "Private and secure hosting in Switzerland"
+          "Automated repetitive tasks (emails, data entry, reports)",
+          "Intelligent workflows connected to your tools",
+          "Custom AI chatbots and assistants",
+          "Private LLMs hosted in Switzerland",
+          "Integration of AI into your existing tools"
         ]
       },
       {

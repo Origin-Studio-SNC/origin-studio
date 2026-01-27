@@ -21,16 +21,16 @@
         ]
       },
       {
-        "id": "ai-solutions",
-        "title": "Künstliche Intelligenz & Private LLMs",
-        "shortDescription": "Sichere und personalisierte KI-Lösungen",
-        "description": "Wir integrieren künstliche Intelligenz in Ihre Geschäftsprozesse mit Fokus auf Vertraulichkeit und Sicherheit. Private Hosting Ihrer KI-Modelle in der Schweiz für vollständige Datensouveränität.",
+        "id": "ai-automation",
+        "title": "KI & Automatisierung für SMEs",
+        "shortDescription": "Spare Zeit mit KI und Automatisierung",
+        "description": "Lassen Sie Ihre Teams von wiederkehrenden Aufgaben befreien. Wir integrieren sichere und personalisierte KI-Lösungen in Ihre Prozesse, mit privatem Hosting in der Schweiz, der Vertraulichkeit Ihrer Daten garantiert.",
         "features": [
-          "Integration von LLMs in Ihre Prozesse",
-          "Personalisierte intelligente Chatbots",
-          "Datenanalyse mit KI",
-          "Automatisierungslösungen",
-          "Privates und sicheres Hosting in der Schweiz"
+          "Automatisierung von wiederkehrenden Aufgaben (Emails, Dateneingabe, Berichte)",
+          "Intelligente Workflows mit Ihren Tools",
+          "KI-Chatbots und -Assistenten auf Maß",
+          "Privates LLM-Hosting in der Schweiz",
+          "Integration von KI in Ihre bestehende Software"
         ]
       },
       {

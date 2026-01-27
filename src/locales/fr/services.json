@@ -21,16 +21,16 @@
         ]
       },
       {
-        "id": "ai-solutions",
-        "title": "Intelligence Artificielle & LLMs Privés",
-        "shortDescription": "Solutions IA sécurisées et personnalisées",
-        "description": "Nous intégrons l'intelligence artificielle dans vos processus métier avec un accent sur la confidentialité et la sécurité. Hébergement privé de vos modèles IA en Suisse pour une souveraineté totale de vos données.",
+        "id": "ai-automation",
+        "title": "IA & Automatisation pour PME",
+        "shortDescription": "Gagnez du temps avec l'IA et l'automatisation",
+        "description": "Libérez vos équipes des tâches répétitives grâce à l'automatisation intelligente. Nous intégrons des solutions IA personnalisées et sécurisées dans vos processus, avec un hébergement privé en Suisse garantissant la confidentialité de vos données.",
         "features": [
-          "Intégration de LLMs dans vos processus",
-          "Chatbots intelligents personnalisés",
-          "Analyse de données avec IA",
-          "Solutions d'automatisation",
-          "Hébergement privé et sécurisé en Suisse"
+          "Automatisation de tâches répétitives (emails, saisies, rapports)",
+          "Workflows intelligents connectés à vos outils",
+          "Chatbots et assistants IA sur mesure",
+          "LLMs privés hébergés en Suisse",
+          "Intégration d'IA dans vos outils existants"
         ]
       },
       {
