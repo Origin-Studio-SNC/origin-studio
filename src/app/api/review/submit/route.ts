@@ -9,7 +9,7 @@ const SECRET = process.env.FORM_SECRET || "change-this-in-production";
 const RATE_LIMIT_WINDOW = 15 * 60 * 1000; // 15 minutes
 const RATE_LIMIT_MAX = 3; // Max 3 submissions per window (plus strict pour les avis)
 const MAX_IMAGE_SIZE = 20 * 1024 * 1024; // 20MB
-const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1465388648399900898/37Io_pskliWkSIKQqfq4zNW-v8XBfVjV2AUHnhhbpBzECkq77L69sxvdiYpZAg_8s5mh";
+const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
 
 // In-memory rate limiting (for production, use Redis or similar)
 const rateLimitStore = new Map<string, { count: number; resetAt: number }>();
@@ -90,6 +90,11 @@ async function sendDiscordWebhook(data: {
   text: string;
   imageUrl?: string;
 }) {
+  if (!DISCORD_WEBHOOK_URL) {
+    console.warn("Discord webhook URL not configured");
+    return;
+  }
+
   const stars = "★".repeat(data.rating) + "☆".repeat(5 - data.rating);
   const ratingColor = data.rating >= 4 ? 0x5F10DC : data.rating >= 3 ? 0x8B5CF6 : 0x6B7280;
   
