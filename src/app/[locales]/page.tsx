@@ -22,12 +22,11 @@ import {
   TestimonialsTranslations,
   TechStackTranslations
 } from "@/types/translations";
-import { promises as fs } from 'fs';
-import path from 'path';
+import testimonialsDataRaw from '@/../public/testimonials.json';
 
 export async function generateMetadata({ 
   params 
-}: { 
+}: {  
   params: Promise<{ locales: 'fr' | 'en' | 'de' }> 
 }): Promise<Metadata> {
   const { locales } = await params;
@@ -84,10 +83,8 @@ export default async function Home({
   const techStack = dictionary.techStack as TechStackTranslations;
   const cta = dictionary.cta;
 
-  // Charger les testimonials depuis le fichier JSON
-  const testimonialsFile = path.join(process.cwd(), 'public', 'testimonials.json');
-  const testimonialsFileContent = JSON.parse(await fs.readFile(testimonialsFile, 'utf8'));
-  const testimonialsData: Testimonial[] = testimonialsFileContent.testimonials || testimonialsFileContent;
+  // Charger les testimonials depuis le fichier JSON importé
+  const testimonialsData: Testimonial[] = (testimonialsDataRaw as { testimonials: Testimonial[] }).testimonials;
   
   // Services cards avec 4 catégories
   const featureCards = [

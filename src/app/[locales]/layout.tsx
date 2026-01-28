@@ -6,9 +6,14 @@ import { getDictionary } from "@/lib/i18n/get-dictionnary";
 import Footer from "@/components/Footer";
 import { FooterTranslations } from "@/types/translations";
 import DarkVeilWrapper from "@/components/bg-ui/DarkVeilWrapper";
+import { i18n } from "@/lib/i18n/config";
+
+export async function generateStaticParams() {
+  return i18n.locales.map((locale) => ({ locales: locale }));
+}
 
 // Fonction pour générer les métadonnées dynamiques selon la locale
-export async function generateMetadata({ 
+export async function generateMetadata({  
   params 
 }: { 
   params: Promise<{ locales: 'fr' | 'en' | 'de' }> 
