@@ -20,7 +20,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locales } = await params;
   
-  const domain = "https://origin-studio.ch";
+  const domain = process.env.NEXT_PUBLIC_SITE_URL ?? "";
   
   let title, description, keywords, locale;
   
@@ -145,12 +145,13 @@ export default async function LocaleLayout({
   const currentYear = new Date().getFullYear();
 
   // JSON-LD Schema pour le SEO structuré
+  const domain = process.env.NEXT_PUBLIC_SITE_URL ?? "";
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Origin Studio",
-    "url": "https://origin-studio.ch",
-    "logo": "https://origin-studio.ch/logo_origin_full.svg",
+    "url": domain,
+    "logo": `${domain}/logo_origin_full.svg`,
     "description": locales === 'en' 
       ? "Swiss web agency specializing in custom web applications, private LLMs, and secure digital solutions."
       : "Agence web suisse spécialisée dans les applications web sur mesure, les modèles de langage privés et les solutions numériques sécurisées.",
@@ -173,7 +174,7 @@ export default async function LocaleLayout({
       "availableLanguage": ["French", "English"]
     },
     "sameAs": [
-      "https://origin-studio.ch"
+      domain
     ]
   };
 

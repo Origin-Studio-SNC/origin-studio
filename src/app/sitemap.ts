@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
  
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://origin-studio.ch'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? ''
   
   // Pages principales avec leurs versions multilingues
   const routes = [

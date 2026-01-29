@@ -40,7 +40,7 @@ export async function generateMetadata({
     };
   }
   
-  const domain = "https://origin-studio.ch";
+  const domain = process.env.NEXT_PUBLIC_SITE_URL ?? "";
   
   return {
     openGraph: {
