@@ -19,17 +19,31 @@ function getLocale(request: NextRequest) {
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
-  
+
   // Exclure les fichiers statiques (images, etc.)
   if (pathname.match(/\.(png|jpg|jpeg|gif|webp|svg|ico|json|JPG|PNG|JPEG|GIF|WEBP|SVG)$/i)) {
     return;
   }
-  
+
   // Exclure le dossier uploads
   if (pathname.startsWith('/uploads')) {
     return;
   }
-  
+
+  // Protéger /admin - rediriger vers login si pas de session
+  if (pathname.startsWith('/admin')) {
+    const sessionToken = request.cookies.get('better-auth.session_token')
+    if (!sessionToken) {
+      return NextResponse.redirect(new URL('/login', request.url))
+    }
+    return; // Laisser passer si authentifié
+  }
+
+  // Exclure /login du système de locales
+  if (pathname.startsWith('/login')) {
+    return;
+  }
+
   // Si on est à la racine, on redirige vers le français
   if (pathname === '/') {
     return NextResponse.redirect(new URL('/fr', request.url));
@@ -46,7 +60,7 @@ export function middleware(request: NextRequest) {
   if (pathname === '/404') {
     const referer = request.headers.get('referer');
     let locale = 'fr';
-    
+
     if (referer) {
       const refererLocale = referer.match(/\/(fr|en)(?=\/|$)/)?.[1];
       if (refererLocale && locales.includes(refererLocale)) {
@@ -55,7 +69,7 @@ export function middleware(request: NextRequest) {
     } else {
       locale = getLocale(request);
     }
-    
+
     return NextResponse.redirect(new URL(`/${locale}/404`, request.url));
   }
 
