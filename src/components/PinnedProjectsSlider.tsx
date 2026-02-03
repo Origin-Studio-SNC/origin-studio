@@ -12,16 +12,24 @@ interface PinnedProjectsSliderProps {
 }
 
 export default function PinnedProjectsSlider({ projects, translations }: PinnedProjectsSliderProps) {
+  // Sort projects: most recent first (year desc), then alphabetically by title
+  const sortedProjects = [...projects].sort((a, b) => {
+    if (b.year !== a.year) {
+      return b.year - a.year;
+    }
+    return a.title.localeCompare(b.title);
+  });
+  
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const nextProject = () => {
-    setCurrentIndex((prev) => (prev + 1) % projects.length);
+    setCurrentIndex((prev) => (prev + 1) % sortedProjects.length);
   };
 
   const prevProject = () => {
-    setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
+    setCurrentIndex((prev) => (prev - 1 + sortedProjects.length) % sortedProjects.length);
   };
 
   const openModal = (project: Project) => {
@@ -34,9 +42,9 @@ export default function PinnedProjectsSlider({ projects, translations }: PinnedP
     setSelectedProject(null);
   };
 
-  if (projects.length === 0) return null;
+  if (sortedProjects.length === 0) return null;
 
-  const currentProject = projects[currentIndex];
+  const currentProject = sortedProjects[currentIndex];
 
   return (
     <>
@@ -147,7 +155,7 @@ export default function PinnedProjectsSlider({ projects, translations }: PinnedP
             </motion.div>
 
             {/* Navigation */}
-            {projects.length > 1 && (
+            {sortedProjects.length > 1 && (
               <>
                 <button
                   onClick={prevProject}
@@ -165,9 +173,9 @@ export default function PinnedProjectsSlider({ projects, translations }: PinnedP
             )}
 
             {/* Dots indicator */}
-            {projects.length > 1 && (
+            {sortedProjects.length > 1 && (
               <div className="flex justify-center mt-6 gap-2">
-                {projects.map((_, index) => (
+                {sortedProjects.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => setCurrentIndex(index)}

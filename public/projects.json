@@ -7,8 +7,7 @@
       "description": "Application de mise en relation entre voisins. Maquette avancée sur Figma avec interface utilisateur moderne et intuitive.\n\nCaractéristiques principales :\n• Design UX/UI complet sur Figma\n• Interface de mise en relation entre voisins\n• Système de géolocalisation\n• Messagerie intégrée\n• Profils utilisateurs détaillés",
       "image": "/img/projects/allovoisin.webp",
       "link": "https://www.figma.com/proto/g4lcK1DKSSVCCu2LgRUasK/AlloVoisin-0.2?node-id=161-3094&p=f&viewport=113%2C498%2C0.11&t=KqsYY1aBKzd0UcX1-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=161%3A3095&show-proto-sidebar=1",
-      "year": 2025,
-      "pinned": true
+      "year": 2025
     },
     {
       "id": 2,
@@ -17,17 +16,17 @@
       "description": "Outils pour les développeurs et designers web, incluant un algorithme avancé de détection des couleurs sombres ou claires et un outils de calcul de consommation avec des simulations.\n\nFonctionnalités :\n• Algorithme de détection couleurs sombres/claires\n• Outils de calcul de consommation\n• Simulations avancées\n• Documentation complète\n• API pour développeurs",
       "image": "/img/projects/colortools.webp",
       "link": "https://ct.thbo.ch/",
-      "year": 2025,
-      "pinned": true
+      "year": 2025
     },
     {
       "id": 3,
       "title": "Crêpes & Cie",
       "language": "Français",
-      "description": "Site vitrine pour une crêperie locale. Design moderne et responsive avec système de commande en ligne et présentation des produits.\n\nFonctionnalités :\n• Design responsive moderne\n• Présentation des menus\n• Système de commande en ligne\n• Informations pratiques\n• Galerie de produits",
+      "description": "Site vitrine pour une crêperie locale. Design moderne et responsive avec système de commande en ligne et présentation des produits.\n\nFonctionnalités :\n• Design responsive moderne\n• Présentation des menus\n• Informations pratiques\n• Galerie de produits",
       "image": "/img/projects/crepescie.webp",
       "link": "https://crepescie.ch/",
-      "year": 2023
+      "year": 2023,
+      "pinned": true
     },
     {
       "id": 4,
@@ -47,7 +46,7 @@
       "image": "/img/projects/printlab.webp",
       "link": "https://printlab3d.ch",
       "year": 2025,
-      "pinned": true
+      "pinned": false
     },
     {
       "id": 6,
@@ -75,6 +74,16 @@
       "image": "/img/projects/thefork.webp",
       "link": "https://thboehi.github.io/The-Fork/",
       "year": 2022
+    },
+    {
+      "id": 9,
+      "title": "La Morille Gourmande",
+      "language": "Français",
+      "description": "Site de vente de Morilles de hautes qualité, avec un design élégant et une interface utilisateur intuitive pour une expérience agréable. Design responsive et moderne, luxueux.",
+      "image": "/img/projects/morillegourmande.webp",
+      "link": "https://morille-gourmande.ch",
+      "year": 2026,
+      "pinned": true
     }
   ]
 }
