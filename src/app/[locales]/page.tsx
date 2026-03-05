@@ -7,23 +7,18 @@ import IdentitySection from "@/components/IdentitySection";
 import StrengthCard from "@/components/StrengthCard";
 import TeamMemberMini from "@/components/TeamMemberMini";
 import CTA from "@/components/CTA";
-import TestimonialsSlider from "@/components/TestimonialsSlider";
 import TechStackIcons from "@/components/TechStackIcons";
 import SectionTitle from "@/components/SectionTitle";
 import SectionSubtitle from "@/components/SectionSubtitle";
 import type { Metadata } from "next";
-import type { Testimonial } from "@/types/testimonial";
 import {
   FeaturesTranslations,
   ProcessTranslations,
   IdentityTranslations,
   StrengthsTranslations,
   TeamMiniTranslations,
-  TestimonialsTranslations,
   TechStackTranslations
 } from "@/types/translations";
-import testimonialsDataRaw from '@/../public/testimonials.json';
-
 export async function generateMetadata({ 
   params 
 }: {  
@@ -79,13 +74,9 @@ export default async function Home({
   const identity = dictionary.identity as IdentityTranslations;
   const strengths = dictionary.strengths as StrengthsTranslations;
   const teamMini = dictionary.teamMini as TeamMiniTranslations;
-  const testimonials = dictionary.testimonials as TestimonialsTranslations;
   const techStack = dictionary.techStack as TechStackTranslations;
   const cta = dictionary.cta;
 
-  // Charger les testimonials depuis le fichier JSON importé
-  const testimonialsData: Testimonial[] = (testimonialsDataRaw as { testimonials: Testimonial[] }).testimonials;
-  
   // Services cards avec 4 catégories
   const featureCards = [
     {
