@@ -288,7 +288,7 @@ export default function ReviewForm({ translations }: ReviewFormProps) {
       </p>
       
       <div className="flex items-center justify-center gap-2 mb-8 p-3 bg-blue-900/20 border border-blue-700/30 rounded-lg">
-        <Save className="w-4 h-4 text-blue-400 flex-shrink-0" />
+        <Save className="w-4 h-4 text-blue-400 shrink-0" />
         <p className="text-sm text-blue-300 text-center">
           {translations.savedInfo}
         </p>
@@ -434,6 +434,7 @@ export default function ReviewForm({ translations }: ReviewFormProps) {
           )}
           {imagePreview && (
             <div className="mt-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={imagePreview}
                 alt="Aperçu"
