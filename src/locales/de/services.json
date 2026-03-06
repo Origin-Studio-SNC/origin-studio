@@ -307,44 +307,6 @@
             "cta": "Anruf planen"
           }
         ]
-      },
-      {
-        "id": "startup",
-        "title": "Startup-Launch-Angebot 🚀",
-        "description": "Speziell für neue Unternehmen in der Schweiz entwickelt",
-        "badge": "SONDERANGEBOT",
-        "packages": [
-          {
-            "name": "Launch",
-            "description": "Professionelle Website zu reduziertem Preis zum Start",
-            "price": "1'600 CHF",
-            "originalPrice": "2'500 CHF",
-            "paymentOptions": "Zahlbar in 4 Raten über 12 Monate (400 CHF x 4)",
-            "highlighted": true,
-            "details": [
-              { "label": "Lieferung", "value": "2-3 Wochen" },
-              { "label": "Seiten", "value": "1 Seite (+270 CHF/Seite)" },
-              { "label": "Abschnitte", "value": "6 Abschnitte (+60 CHF/Abschnitt)" },
-              { "label": "Design", "value": "Professionelle angepasste Vorlagen" },
-              { "label": "SEO", "value": "Basis (Keywords, Meta-Tags)" },
-              { "label": "Mehrsprachig", "value": "2 Sprachen (FR + DE oder EN)" },
-              { "label": "Support", "value": "2 Monate" },
-              { "label": "Hosting", "value": "1. Jahr inklusive" }
-            ],
-            "advantages": [
-              "Professionelle Website zu reduziertem Preis zum Start Ihrer Aktivität",
-              "Schnelle und effektive Online-Präsenz",
-              "Technischer Support während der kritischen ersten Monate",
-              "Möglichkeit zum Upgrade auf unsere höheren Pakete"
-            ],
-            "conditions": [
-              "Unternehmen in der Schweiz registriert seit weniger als 12 Monaten",
-              "\"Powered by Origin Studio\" Logo im Footer sichtbar (diskret aber klickbar)",
-              "Erlaubnis zur Nutzung des Projekts als Portfolio-Referenz"
-            ],
-            "cta": "Nutzen Sie das Angebot"
-          }
-        ]
       }
     ]
   },

@@ -475,68 +475,6 @@
             "cta": "Planifier un appel"
           }
         ]
-      },
-      {
-        "id": "startup",
-        "title": "Offre Lancement Startup 🚀",
-        "description": "Spécialement conçue pour les nouvelles entreprises en Suisse",
-        "badge": "OFFRE SPÉCIALE",
-        "packages": [
-          {
-            "name": "Lancement",
-            "description": "Site professionnel à prix réduit pour démarrer",
-            "price": "1'600 CHF",
-            "originalPrice": "2'500 CHF",
-            "paymentOptions": "Payable en 4x sur 12 mois (400 CHF x 4)",
-            "highlighted": true,
-            "details": [
-              {
-                "label": "Délai",
-                "value": "2-3 semaines"
-              },
-              {
-                "label": "Pages",
-                "value": "1 page (+270 CHF/page)"
-              },
-              {
-                "label": "Sections",
-                "value": "6 sections (+60 CHF/section)"
-              },
-              {
-                "label": "Design",
-                "value": "Templates adaptés professionnels"
-              },
-              {
-                "label": "SEO",
-                "value": "Basique (mots-clés, meta tags)"
-              },
-              {
-                "label": "Multilingue",
-                "value": "2 langues (FR + DE ou EN)"
-              },
-              {
-                "label": "Support",
-                "value": "2 mois"
-              },
-              {
-                "label": "Hébergement",
-                "value": "1ère année incluse"
-              }
-            ],
-            "advantages": [
-              "Site professionnel à prix réduit pour démarrer votre activité",
-              "Présence en ligne rapide et efficace",
-              "Support technique pendant les premiers mois critiques",
-              "Possibilité d'évolution vers nos formules supérieures"
-            ],
-            "conditions": [
-              "Entreprise immatriculée en Suisse depuis moins de 12 mois",
-              "Logo \"Powered by Origin Studio\" visible en footer (discret mais cliquable)",
-              "Autorisation d'utiliser le projet comme référence portfolio"
-            ],
-            "cta": "Profiter de l'offre"
-          }
-        ]
       }
     ]
   },

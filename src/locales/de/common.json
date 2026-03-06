@@ -14,7 +14,7 @@
     "projectsButton": "Ihr Projekt besprechen"
   },
   "identity": {
-    "text": "Origin Studio ist eine in der Schweiz gegründete Agentur von drei komplementären Entwicklern. Wir entwerfen elegante, schnelle und sichere digitale Lösungen mit menschlicher Begleitung von Anfang bis Ende."
+    "text": "Origin Studio ist eine in der Schweiz gegründete Agentur von zwei komplementären Entwicklern. Wir entwerfen elegante, schnelle und sichere digitale Lösungen mit menschlicher Begleitung von Anfang bis Ende."
   },
   "strengths": {
     "title": "Was uns auszeichnet",
@@ -33,20 +33,15 @@
   },
   "teamMini": {
     "title": "Das Team",
-    "thomas": {
-      "name": "Thomas",
-      "role": "Front-end & UI",
-      "description": "Elegante, fließende und benutzerorientierte Oberflächen."
-    },
     "eric": {
       "name": "Eric",
-      "role": "Back-end & Architektur",
-      "description": "Leistungsstarke APIs, Sicherheit und Skalierbarkeit."
+      "role": "Back-end & Infrastruktur",
+      "description": "Serverarchitektur, Codebase-Organisation und technische Infrastruktur."
     },
     "shadi": {
       "name": "Chadi",
-      "role": "Kundenbeziehungen & Strategie",
-      "description": "Bedarfsverständnis, Management und menschliche Begleitung."
+      "role": "Front-end & Kundenbeziehungen",
+      "description": "Benutzeroberflächen, Kundenbegleitung und Projektmanagement."
     }
   },
   "testimonials": {
@@ -223,11 +218,11 @@
   },
   "about": {
     "title": "Über Origin Studio",
-    "subtitle": "Drei Expertisen, eine gemeinsame Vision",
-    "intro": "Wir sind drei Entwickler, die leidenschaftlich am Web und an Innovation arbeiten. Gemeinsam entwerfen wir elegante, nachhaltige digitale Lösungen, die auf Ihre Bedürfnisse zugeschnitten sind.",
+    "subtitle": "Zwei Expertisen, eine gemeinsame Vision",
+    "intro": "Wir sind zwei Entwickler, die leidenschaftlich am Web und an Innovation arbeiten. Gemeinsam entwerfen wir elegante, nachhaltige digitale Lösungen, die auf Ihre Bedürfnisse zugeschnitten sind.",
     "story": {
       "title": "Unsere Geschichte",
-      "description": "Origin Studio entstand aus dem Treffen von drei Freunden, die dieselbe Vision teilten: nützliche, schöne und nachhaltige digitale Erlebnisse zu schaffen. Wir haben beschlossen, unsere komplementären Fähigkeiten zu vereinen, um einen menschlichen, transparenten und anspruchsvollen Ansatz für die Webentwicklung anzubieten.\n\nWir glauben, dass das Digitale klar, schön und nützlich sein sollte. Jedes Projekt, das wir erstellen, ist darauf ausgelegt, mit Ihnen zu wachsen."
+      "description": "Origin Studio entstand aus dem Zusammentreffen zweier Partner, die dieselbe Vision teilten: nützliche, schöne und nachhaltige digitale Erlebnisse zu schaffen. Wir haben beschlossen, unsere komplementären Fähigkeiten zu vereinen, um einen menschlichen, transparenten und anspruchsvollen Ansatz für die Webentwicklung anzubieten.\n\nWir glauben, dass das Digitale klar, schön und nützlich sein sollte. Jedes Projekt, das wir erstellen, ist darauf ausgelegt, mit Ihnen zu wachsen."
     },
     "mission": {
       "title": "Am Ursprung Ihres Erfolgs",
@@ -238,19 +233,14 @@
       "description": "Wir arbeiten seit mehreren Jahren zusammen. Unsere Komplementarität ist die Grundlage für kohärente Arbeit: Verständnis, Konzeption, Ausführung, ohne Informationsverlust.",
       "protectionMessage": "Anti-Roboter-Schutz, klicken Sie, um Kontaktinformationen zu sehen",
       "commercial": {
-        "title": "Vertriebsexperte",
-        "description": "Spezialisiert auf das Verstehen von Kundenbedürfnissen und die Umwandlung von Geschäftsanforderungen in angepasste technische Lösungen.",
+        "title": "Front-end & Kundenbeziehungen",
+        "description": "Frontend-Entwicklung, Verständnis der Kundenbedürfnisse und menschliche Begleitung in jeder Projektphase.",
         "name": "Chadi C."
       },
       "backend": {
-        "title": "Backend-Entwickler",
-        "description": "Experte für Serverarchitektur, Datenbanken und Integration komplexer Systeme für optimale Leistung.",
+        "title": "Back-end & Infrastruktur",
+        "description": "Serverarchitektur, Datenbanken, Codebase-Organisation und technisches Infrastrukturmanagement.",
         "name": "Eric T."
-      },
-      "frontend": {
-        "title": "Frontend-Entwickler",
-        "description": "Spezialisiert auf Benutzererfahrung und moderne Oberflächen, die Ästhetik und Funktionalität vereinen.",
-        "name": "Thomas B."
       }
     },
     "values": {
@@ -302,7 +292,7 @@
     "aboutButton": "Mehr über uns erfahren"
   },
   "footer": {
-    "description": "Drei Fachbereiche, eine Vision: Ihre Ideen in bemerkenswerte digitale Lösungen verwandeln.",
+    "description": "Zwei Fachbereiche, eine Vision: Ihre Ideen in bemerkenswerte digitale Lösungen verwandeln.",
     "services": {
       "title": "Dienstleistungen",
       "features": "Unsere Dienstleistungen",

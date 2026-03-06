@@ -14,7 +14,7 @@
     "projectsButton": "Discuss your project"
   },
   "identity": {
-    "text": "Origin Studio is an agency created in Switzerland by three complementary developers. We design elegant, fast and secure digital solutions, with human support from start to finish."
+    "text": "Origin Studio is an agency created in Switzerland by two complementary developers. We design elegant, fast and secure digital solutions, with human support from start to finish."
   },
   "strengths": {
     "title": "What sets us apart",
@@ -33,20 +33,15 @@
   },
   "teamMini": {
     "title": "The team",
-    "thomas": {
-      "name": "Thomas",
-      "role": "Front-end & UI",
-      "description": "Elegant, fluid and user-oriented interfaces."
-    },
     "eric": {
       "name": "Eric",
-      "role": "Back-end & Architecture",
-      "description": "High-performance APIs, security and scalability."
+      "role": "Back-end & Infrastructure",
+      "description": "Server architecture, codebase organisation and technical infrastructure."
     },
     "shadi": {
       "name": "Chadi",
-      "role": "Client Relations & Strategy",
-      "description": "Understanding needs, management and human support."
+      "role": "Front-end & Client Relations",
+      "description": "User interfaces, client support and project management."
     }
   },
   "testimonials": {
@@ -222,11 +217,11 @@
   },
   "about": {
     "title": "About Origin Studio",
-    "subtitle": "Three expertises, one shared vision",
-    "intro": "We are three developers passionate about the web and innovation. Together, we design elegant, sustainable digital solutions tailored to your needs.",
+    "subtitle": "Two expertises, one shared vision",
+    "intro": "We are two developers passionate about the web and innovation. Together, we design elegant, sustainable digital solutions tailored to your needs.",
     "story": {
       "title": "Our story",
-      "description": "Origin Studio was born from the meeting of three friends sharing the same vision: creating useful, beautiful, and sustainable digital experiences. We decided to unite our complementary skills to offer a human, transparent, and demanding approach to web development.\n\nWe believe that digital should be clear, beautiful, and useful. Every project we create is designed to grow with you."
+      "description": "Origin Studio was born from the meeting of two partners sharing the same vision: creating useful, beautiful, and sustainable digital experiences. We decided to unite our complementary skills to offer a human, transparent, and demanding approach to web development.\n\nWe believe that digital should be clear, beautiful, and useful. Every project we create is designed to grow with you."
     },
     "mission": {
       "title": "At the origin of your success",
@@ -237,19 +232,14 @@
       "description": "We have been working together for several years. Our complementarity is the foundation of coherent work: understanding, design, execution, without loss of information.",
       "protectionMessage": "Anti-robot protection, click to see contact information",
       "commercial": {
-        "title": "Commercial Expert",
-        "description": "Specialized in understanding customer needs and transforming business requirements into adapted technical solutions.",
+        "title": "Front-end & Client Relations",
+        "description": "Frontend development, understanding client needs and providing human support throughout every step of the project.",
         "name": "Chadi C."
       },
       "backend": {
-        "title": "Backend Developer",
-        "description": "Expert in server architecture, databases and integration of complex systems for optimal performance.",
+        "title": "Back-end & Infrastructure",
+        "description": "Server architecture, databases, codebase organisation and technical infrastructure management.",
         "name": "Eric T."
-      },
-      "frontend": {
-        "title": "Frontend Developer",
-        "description": "Specialized in user experience and modern interfaces, combining aesthetics and functionality.",
-        "name": "Thomas B."
       }
     },
     "values": {
@@ -301,7 +291,7 @@
     "aboutButton": "Learn more about us"
   },
   "footer": {
-    "description": "Three areas of expertise, one vision: transforming your ideas into remarkable digital solutions.",
+    "description": "Two areas of expertise, one vision: transforming your ideas into remarkable digital solutions.",
     "services": {
       "title": "Services",
       "features": "Our Services",

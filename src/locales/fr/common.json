@@ -14,7 +14,7 @@
     "projectsButton": "Discuter de votre projet"
   },
   "identity": {
-    "text": "Origin Studio est une agence créée en Suisse par trois développeurs complémentaires. Nous concevons des solutions digitales élégantes, rapides et sécurisées, avec un accompagnement humain du début à la fin."
+    "text": "Origin Studio est une agence créée en Suisse par deux développeurs complémentaires. Nous concevons des solutions digitales élégantes, rapides et sécurisées, avec un accompagnement humain du début à la fin."
   },
   "strengths": {
     "title": "Ce qui nous distingue",
@@ -33,20 +33,15 @@
   },
   "teamMini": {
     "title": "L'équipe",
-    "thomas": {
-      "name": "Thomas",
-      "role": "Front-end & UI",
-      "description": "Interfaces élégantes, fluides et orientées utilisateur."
-    },
     "eric": {
       "name": "Eric",
-      "role": "Back-end & Architecture",
-      "description": "API performantes, sécurité et scalabilité."
+      "role": "Back-end & Infrastructure",
+      "description": "Architecture serveur, organisation des données et infrastructure technique."
     },
     "shadi": {
       "name": "Chadi",
-      "role": "Relation client & Stratégie",
-      "description": "Compréhension du besoin, pilotage et accompagnement humain."
+      "role": "Front-end & Relation client",
+      "description": "Interfaces utilisateur, accompagnement client et pilotage de projet."
     }
   },
   "testimonials": {
@@ -169,11 +164,11 @@
   },
   "about": {
     "title": "À propos d'Origin Studio",
-    "subtitle": "Trois expertises, une vision commune",
-    "intro": "Nous sommes trois développeurs passionnés par le web et l'innovation. Ensemble, nous concevons des solutions digitales élégantes, durables et adaptées à vos besoins.",
+    "subtitle": "Deux expertises, une vision commune",
+    "intro": "Nous sommes deux développeurs passionnés par le web et l'innovation. Ensemble, nous concevons des solutions digitales élégantes, durables et adaptées à vos besoins.",
     "story": {
       "title": "Notre histoire",
-      "description": "Origin Studio est né de la rencontre entre trois amis partageant la même vision : créer des expériences digitales utiles, belles et durables. Nous avons décidé de réunir nos compétences complémentaires pour proposer une approche humaine, transparente et exigeante du développement web.\n\nNous pensons que le digital doit être clair, beau et utile. Chaque projet que nous créons est conçu pour grandir avec vous."
+      "description": "Origin Studio est né de la rencontre entre deux amis passionnés par le web et l'innovation partageant la même vision : créer des expériences digitales utiles, belles et durables. Nous avons décidé de réunir nos compétences complémentaires pour proposer une approche humaine, transparente et exigeante du développement web.\n\nNous pensons que le digital doit être clair, beau et utile. Chaque projet que nous créons est conçu pour grandir avec vous."
     },
     "mission": {
       "title": "À l'origine de vos succès",
@@ -184,19 +179,14 @@
       "description": "Nous travaillons ensemble depuis plusieurs années. Notre complémentarité est la base d'un travail cohérent : compréhension, conception, exécution, sans perte d'information.",
       "protectionMessage": "Protection anti-robot, cliquez pour voir les informations de contact",
       "commercial": {
-        "title": "Expert Commercial",
-        "description": "Spécialisé dans la compréhension des besoins clients et la transformation des exigences métier en solutions techniques adaptées.",
+        "title": "Front-end & Relation client",
+        "description": "Développement des interfaces utilisateur, compréhension des besoins clients et accompagnement humain à chaque étape du projet.",
         "name": "Chadi C."
       },
       "backend": {
-        "title": "Développeur Backend",
-        "description": "Expert en architecture serveur, bases de données et intégration de systèmes complexes pour des performances optimales.",
+        "title": "Back-end & Infrastructure",
+        "description": "Architecture serveur, bases de données, organisation et gestion de l'infrastructure technique.",
         "name": "Eric T."
-      },
-      "frontend": {
-        "title": "Développeur Frontend",
-        "description": "Spécialisé dans l'expérience utilisateur et les interfaces modernes, alliant esthétique et fonctionnalité.",
-        "name": "Thomas B."
       }
     },
     "values": {
@@ -302,7 +292,7 @@
     "aboutButton": "En savoir plus sur nous"
   },
   "footer": {
-    "description": "Trois expertises, une vision : transformer vos idées en solutions digitales remarquables.",
+    "description": "Deux expertises, une vision : transformer vos idées en solutions digitales remarquables.",
     "services": {
       "title": "Services",
       "features": "Nos Services",

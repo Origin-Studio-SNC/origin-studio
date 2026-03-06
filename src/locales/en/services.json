@@ -475,68 +475,6 @@
             "cta": "Schedule a call"
           }
         ]
-      },
-      {
-        "id": "startup",
-        "title": "Startup Launch Offer 🚀",
-        "description": "Specially designed for new companies in Switzerland",
-        "badge": "SPECIAL OFFER",
-        "packages": [
-          {
-            "name": "Launch",
-            "description": "Professional website at reduced price to get started",
-            "price": "1,600 CHF",
-            "originalPrice": "2,500 CHF",
-            "paymentOptions": "Payable in 4 installments over 12 months (400 CHF x 4)",
-            "highlighted": true,
-            "details": [
-              {
-                "label": "Delivery",
-                "value": "2-3 weeks"
-              },
-              {
-                "label": "Pages",
-                "value": "1 page (+270 CHF/page)"
-              },
-              {
-                "label": "Sections",
-                "value": "6 sections (+60 CHF/section)"
-              },
-              {
-                "label": "Design",
-                "value": "Professional adapted templates"
-              },
-              {
-                "label": "SEO",
-                "value": "Basic (keywords, meta tags)"
-              },
-              {
-                "label": "Multilingual",
-                "value": "2 languages (FR + DE or EN)"
-              },
-              {
-                "label": "Support",
-                "value": "2 months"
-              },
-              {
-                "label": "Hosting",
-                "value": "1st year included"
-              }
-            ],
-            "advantages": [
-              "Professional website at reduced price to start your activity",
-              "Fast and effective online presence",
-              "Technical support during the critical first months",
-              "Possibility to upgrade to our higher packages"
-            ],
-            "conditions": [
-              "Company registered in Switzerland for less than 12 months",
-              "\"Powered by Origin Studio\" logo visible in footer (discreet but clickable)",
-              "Authorization to use the project as a portfolio reference"
-            ],
-            "cta": "Take advantage of the offer"
-          }
-        ]
       }
     ]
   },
