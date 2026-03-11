@@ -5,7 +5,7 @@ import { writeFile } from "fs/promises";
 import { join } from "path";
 import { v4 as uuidv4 } from "uuid";
 
-const SECRET = process.env.FORM_SECRET || "change-this-in-production";
+const SECRET = process.env.FORM_SECRET;
 const RATE_LIMIT_WINDOW = 15 * 60 * 1000; // 15 minutes
 const RATE_LIMIT_MAX = 3; // Max 3 submissions per window (plus strict pour les avis)
 const MAX_IMAGE_SIZE = 20 * 1024 * 1024; // 20MB
@@ -15,6 +15,8 @@ const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
 const rateLimitStore = new Map<string, { count: number; resetAt: number }>();
 
 function verifyNonce(nonce: string): boolean {
+  const secret = SECRET;
+  if (!secret) return false;
   try {
     const [timestamp, signature] = nonce.split(".");
     if (!timestamp || !signature) return false;
@@ -27,7 +29,7 @@ function verifyNonce(nonce: string): boolean {
     if (age > 3600000) return false;
 
     // Verify signature
-    const hmac = crypto.createHmac("sha256", SECRET);
+    const hmac = crypto.createHmac("sha256", secret);
     hmac.update(timestamp);
     const expectedSignature = hmac.digest("hex");
 
@@ -237,21 +239,38 @@ export async function POST(request: NextRequest) {
         );
       }
 
-      // Validate image type
-      if (!image.type.startsWith("image/")) {
+      // Validate image type via whitelist (browser Content-Type is spoofable)
+      const ALLOWED_MIME = ["image/jpeg", "image/png", "image/webp"];
+      if (!ALLOWED_MIME.includes(image.type)) {
         return NextResponse.json(
-          { message: "Only images are accepted" },
+          { message: "Only JPEG, PNG and WebP images are accepted" },
           { status: 422 }
         );
       }
 
+      // Validate via magic bytes (first bytes actually prove the format)
+      const bytes = await image.arrayBuffer();
+      const header = new Uint8Array(bytes.slice(0, 12));
+      const isJpeg = header[0] === 0xff && header[1] === 0xd8 && header[2] === 0xff;
+      const isPng = header[0] === 0x89 && header[1] === 0x50 && header[2] === 0x4e && header[3] === 0x47;
+      const isWebp =
+        header[0] === 0x52 && header[1] === 0x49 && header[2] === 0x46 && header[3] === 0x46 &&
+        header[8] === 0x57 && header[9] === 0x45 && header[10] === 0x42 && header[11] === 0x50;
+      if (!isJpeg && !isPng && !isWebp) {
+        return NextResponse.json(
+          { message: "File content does not match an accepted image format" },
+          { status: 422 }
+        );
+      }
+
+      // Extension derived from validated magic bytes only (never from user input)
+      const safeExtension = isJpeg ? "jpg" : isPng ? "png" : "webp";
+
       // Generate UUID for filename
       const uuid = uuidv4();
-      const extension = image.name.split(".").pop() || "jpg";
-      const filename = `${uuid}.${extension}`;
+      const filename = `${uuid}.${safeExtension}`;
       
-      // Save image
-      const bytes = await image.arrayBuffer();
+      // Save image (reuse bytes already read for magic byte validation)
       const buffer = Buffer.from(bytes);
       
       const publicPath = join(process.cwd(), "public", "uploads", filename);

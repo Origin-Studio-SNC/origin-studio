@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
 import nodemailer from "nodemailer";
 
-const SECRET = process.env.FORM_SECRET || "change-this-in-production";
+const SECRET = process.env.FORM_SECRET;
 const RATE_LIMIT_WINDOW = 15 * 60 * 1000; // 15 minutes
 const RATE_LIMIT_MAX = 5; // Max 5 submissions per window
 
@@ -10,6 +10,8 @@ const RATE_LIMIT_MAX = 5; // Max 5 submissions per window
 const rateLimitStore = new Map<string, { count: number; resetAt: number }>();
 
 function verifyNonce(nonce: string): boolean {
+  const secret = SECRET;
+  if (!secret) return false;
   try {
     const [timestamp, signature] = nonce.split(".");
     if (!timestamp || !signature) return false;
@@ -22,7 +24,7 @@ function verifyNonce(nonce: string): boolean {
     if (age > 3600000) return false;
 
     // Verify signature
-    const hmac = crypto.createHmac("sha256", SECRET);
+    const hmac = crypto.createHmac("sha256", secret);
     hmac.update(timestamp);
     const expectedSignature = hmac.digest("hex");
 

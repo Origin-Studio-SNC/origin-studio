@@ -1,12 +1,17 @@
 import { NextResponse } from "next/server";
 import crypto from "crypto";
 
-const SECRET = process.env.FORM_SECRET || "change-this-in-production";
+const SECRET = process.env.FORM_SECRET;
 
 export async function GET() {
+  const secret = SECRET;
+  if (!secret) {
+    console.error("FORM_SECRET environment variable is not set");
+    return NextResponse.json({ error: "Server misconfigured" }, { status: 500 });
+  }
   try {
     const timestamp = Date.now().toString();
-    const hmac = crypto.createHmac("sha256", SECRET);
+    const hmac = crypto.createHmac("sha256", secret);
     hmac.update(timestamp);
     const signature = hmac.digest("hex");
     const nonce = `${timestamp}.${signature}`;

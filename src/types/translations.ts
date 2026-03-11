@@ -45,11 +45,6 @@ export type StrengthsTranslations = {
 
 export type TeamMiniTranslations = {
   title: string;
-  thomas: {
-    name: string;
-    role: string;
-    description: string;
-  };
   eric: {
     name: string;
     role: string;
@@ -239,11 +234,6 @@ export type AboutTranslations = {
       description: string;
     };
     backend: {
-      name: string;
-      title: string;
-      description: string;
-    };
-    frontend: {
       name: string;
       title: string;
       description: string;
